@@ -1,0 +1,35 @@
+.cpm-Button{
+    width: 130px;
+    height: 40px;
+    background-color: #1250DC;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #ffff;
+    margin-left: 5px;
+}
+.cpm-Button:hover{
+    background-color: blue;
+}
+@media (max-width: 400px)  {
+  .cpm-Button{
+    display: none;
+  }
+}
+@media (min-width: 400px) and (max-width: 840px) {
+  .cpm-Button{
+    display: none;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .cpm-Button{
+        width: 90px;
+        height: 30px;
+    }   
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .cpm-Button{
+        width: 90px;
+        height: 30px;
+    }   
+}
