@@ -1,10 +1,10 @@
-import Header from "./layouts/LayoutUser/Header";
 import "./App.css";
+import Home from "./pages/User/Home";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
+        <Home />
       </header>
     </div>
   );

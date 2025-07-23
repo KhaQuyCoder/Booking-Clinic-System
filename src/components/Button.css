@@ -11,6 +11,11 @@
 .cpm-Button:hover{
     background-color: blue;
 }
+@media (max-width: 400px)  {
+  .cpm-Button{
+    display: none;
+  }
+}
 @media (min-width: 400px) and (max-width: 840px) {
   .cpm-Button{
     display: none;
@@ -18,6 +23,12 @@
 }
 @media (min-width:768px) and (max-width:1023px) {
     .cpm-Button{
+        width: 90px;
+        height: 30px;
+    }   
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .cpm-Button{
         width: 90px;
         height: 30px;
     }   

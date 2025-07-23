@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import backgoroundHeader from "../../assets/image/backgrougHeader.webp";
-import logo from "../../assets/image/logo.png";
-import Button from "../../components/Button";
+import backgoroundHeader from "../../../assets/image/backgrougHeader.webp";
+import logo from "../../../assets/image/logo.png";
+import Button from "../../../components/Button";
 const Header = () => {
   const [data, setData] = useState([]);
   useEffect(() => {

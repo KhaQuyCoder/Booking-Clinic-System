@@ -1,8 +1,9 @@
 .container{
     font-family: 'Inter';
+    overflow: hidden;
 }
 .imageHeader{
-    width: 100%;
+    width: 100vw;
     height: 90px;
 }
 .bcg-Header{
@@ -15,10 +16,10 @@
     position: absolute;
     top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    left: 1%;
-    right: 1%;
+    left: -4%;
+    right: -4%;
 }
 .Option-Header{
     display: flex;
@@ -86,62 +87,78 @@ select.Option-Address::-webkit-scrollbar {
     display: none;
 }
 @media (max-width: 500px){
-    .text-Input{
-    font-size: 10px;
-   }
-   .logo-header{
-    width: 80px;
-   }
+   .Wrapper-Header,.Option-Header{
+        display: none;
+    }
+   .fa-bars{
+        display: block;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .Search-Header-text,
+    .text-Input,
+    .fa-magnifying-glass{
+        display: none;
+    }
 }
-@media (min-width: 400px) and (max-width: 840px) {
-   /* .imageHeader{
-        height: 120px;
-    } */
-  .Option-Header{
-    display: none;
-  }
-  .fa-bars{
-    display: block;
-    font-size: 20px;
-    margin-left: 30px;
-  }
+@media (min-width: 501px) and (max-width: 840px) {
+    .menuHeader{
+        padding: 0 20px;
+    }
+   .Option-Header{
+        display: none;
+    }
+   .fa-bars{
+        display: block;
+        font-size: 20px;
+        margin-left: 30px;
+    }
     .Search-Header-text{
         width: 100%;
         margin-left: 0px;
     }
    .Option-Address{
-    width: 100%;
-     margin-left: 0px;
-     margin-top: 6px;
-   }
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
    .System-Option-Header{
-    width: 100px;
-   }
+        width: 100px;
+    }
    .Search-Header{
-    margin: 0 30px;
-   }
+        margin: 0 30px;
+    }
    .fa-magnifying-glass{
-    display: none;
-   }
+        display: none;
+    }
    .text-Input{
-    margin-top: -7px;
-   }
+        margin-top: -7px;
+    }
 }
-@media (min-width:840px) and (max-width:1023px) {
+@media (min-width:841px) and (max-width:1023px) {
+    .menuHeader{
+        padding: 0 20px;
+   }
    .logo-header{
-    width: 100px;
+        width: 100px;
    }
    .Option-Header > li{
         width: max-content;
    }
    .System-Option-Header{
-    display: flex;flex-direction: column;row-gap: 5px;
+        display: flex;flex-direction: column;row-gap: 5px;
    }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .Option-Header > li{
     width: max-content;
    }
-   
+   .System-Option-Header{
+        display: flex;flex-direction: column;row-gap: 5px;
+   }
+   .menuHeader{
+        padding: 0 20px;
+   }
 }
+
