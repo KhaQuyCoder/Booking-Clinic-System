@@ -1,10 +1,10 @@
-import Loading from "./components/LoadingComponent/Loading";
 import "./App.css";
+import Home from "./page/User/Home";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Loading />
+        <Home />
       </header>
     </div>
   );
