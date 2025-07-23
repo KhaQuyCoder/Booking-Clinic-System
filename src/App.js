@@ -1,10 +1,10 @@
-import Button from "./components/Button";
+import Loading from "./components/LoadingComponent/Loading";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button />
+        <Loading />
       </header>
     </div>
   );
