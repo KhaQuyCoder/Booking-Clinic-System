@@ -1,0 +1,92 @@
+.container-feedback{
+    position: relative;
+}
+.wrapper-feedBack{
+    display: flex;
+    column-gap: 30px;
+    margin: 0 40px;
+    padding:  10px;
+    overflow: hidden;
+}
+.item-feedBack{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 430px;
+}
+.image-user-feedback{
+    width: 50px;
+    margin: 0;
+}
+.infor-user-feedback{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.user-feedBack{
+    margin: 0;
+}
+.content-feedBack{
+    height: 280px;
+}
+.name-clinic-feedback{
+    font-weight: 600;
+}
+.clinic-feedback{
+    margin-top: 5px;
+    color:#6C757D ;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: absolute;
+    top: 50%;
+}
+.fa-arrow-right{
+    right: 0;
+}
+.fa-arrow-left:hover{
+    transform: translateX(-4px);
+}
+.fa-arrow-right:hover{
+    transform: translateX(4px);
+}
+@media (max-width: 1400px) {
+    .container-feedback {
+        overflow-x: auto;
+        scroll-behavior:smooth;
+        overflow-x: hidden;
+    }
+    
+    .fa-arrow-left,
+    .fa-arrow-right {
+        display: none;
+    }
+    .wrapper-feedBack{
+        transform: translateX(-30px);
+        overflow: auto;
+    }
+    .wrapper-feedBack::-webkit-scrollbar{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .item-feedBack{
+        min-width:290px ;
+        height: 540px;
+    }
+    .wrapper-feedBack{
+        margin: 0;
+        transform: translateX(20px);
+    }
+    .infor-user-feedback{
+        margin-top: 160px;
+    }
+}

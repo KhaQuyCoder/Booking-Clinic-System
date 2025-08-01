@@ -10,12 +10,14 @@
     "facilityOwner": "PGS.TS Nguyễn Văn A",
     "Phone": "0423434244",
     "DateStart": "9/04/2013",
-    "specialty": "Sản phụ khoa, Ngoại thần kinh, Chấn thương chỉnh hình, Nhi khoa, Tim mạch",
+    "specialty": ["Sản phụ khoa", "Ngoại thần kinh", "Chấn thương chỉnh hình", "Nhi khoa", "Tim mạch"],
     "docter": [
       {
         "name": "BS. Nguyễn Hữu Nghĩa",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2021/03/bac-si-cam-ngoc-phuong.png",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -31,6 +33,8 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -46,6 +50,8 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -61,6 +67,8 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -76,6 +84,8 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -91,6 +101,8 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -106,6 +118,8 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -121,6 +135,8 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -136,6 +152,8 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -151,6 +169,8 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -175,12 +195,15 @@
     "facilityOwner": "GS.TS Trần Thị B",
     "Phone": "0423434244",
     "DateStart": "15/08/2016",
-    "specialty": "Tiêu hóa, Tai Mũi Họng, Nội tổng quát, Tim mạch, Nhi khoa",
+    "specialty": ["Tiêu hóa", "Tai Mũi Họng", "Nội tổng quát", "Tim mạch", "Nhi khoa"],
     "docter": [
       {
         "name": "BS. Phạm Minh Đức",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -196,6 +219,8 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -211,6 +236,8 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -226,6 +253,8 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -241,6 +270,8 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -256,6 +287,8 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -271,6 +304,8 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -286,6 +321,8 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -301,6 +338,8 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -316,6 +355,8 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -340,12 +381,14 @@
     "facilityOwner": "TS.BS Lê Văn C",
     "Phone": "0423434244",
     "DateStart": "22/07/2017",
-    "specialty": "Nội tổng quát, Tiêu hóa, Chấn thương chỉnh hình, Nhi khoa, Da liễu",
+    "specialty": ["Nội tổng quát", "Tiêu hóa", "Chấn thương chỉnh hình", "Nhi khoa", "Da liễu"],
     "docter": [
       {
         "name": "BS. Đỗ Văn Hùng",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-tran-quang-binh-avt.png",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -361,6 +404,8 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -376,6 +421,8 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -391,6 +438,8 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -406,6 +455,8 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -421,6 +472,8 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -436,6 +489,8 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -451,6 +506,8 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -466,6 +523,8 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -481,6 +540,8 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -505,12 +566,14 @@
     "facilityOwner": "PGS.TS Nguyễn Thị D",
     "Phone": "0423434244",
     "DateStart": "8/03/2015",
-    "specialty": "Răng hàm mặt, Nội tổng quát, Ngoại thần kinh, Da liễu, Chấn thương chỉnh hình",
+    "specialty": ["Răng hàm mặt", "Nội tổng quát", "Ngoại thần kinh", "Da liễu", "Chấn thương chỉnh hình"],
     "docter": [
       {
         "name": "BS. Nguyễn Văn Mạnh",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2021/03/bac-si-do-minh-hung.png",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -526,6 +589,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -541,6 +605,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -556,6 +621,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -571,6 +637,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -586,6 +653,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -601,6 +669,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -616,6 +685,7 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -631,6 +701,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -646,6 +717,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -670,12 +742,14 @@
     "facilityOwner": "ThS.BS Trần Văn E",
     "Phone": "0423434244",
     "DateStart": "7/06/2016",
-    "specialty": "Chấn thương chỉnh hình, Tai Mũi Họng, Nhi khoa, Ngoại thần kinh, Nội tổng quát",
+    "specialty": ["Chấn thương chỉnh hình", "Tai Mũi Họng", "Nhi khoa", "Ngoại thần kinh", "Nội tổng quát"],
     "docter": [
       {
         "name": "BS. Trần Thị Hoa",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-vu-truong-khanh.png",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -691,6 +765,7 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -706,6 +781,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -721,6 +797,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -736,6 +813,7 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -751,6 +829,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -766,6 +845,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -781,6 +861,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -796,6 +877,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -811,6 +893,7 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -835,12 +918,13 @@
     "facilityOwner": "TS.BS Lê Thị F",
     "Phone": "0423434244",
     "DateStart": "21/06/2016",
-    "specialty": "Tiêu hóa, Nhi khoa, Sản phụ khoa, Da liễu, Tai Mũi Họng",
+    "specialty": ["Tiêu hóa", "Nhi khoa", "Sản phụ khoa", "Da liễu", "Tai Mũi Họng"],
     "docter": [
       {
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -856,6 +940,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -871,6 +956,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -886,6 +972,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -901,6 +988,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -916,6 +1004,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -931,6 +1020,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -946,6 +1036,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -961,6 +1052,7 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -976,6 +1068,7 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1000,12 +1093,13 @@
     "facilityOwner": "PGS.TS Phạm Văn G",
     "Phone": "0423434244",
     "DateStart": "20/09/2013",
-    "specialty": "Tai Mũi Họng, Tim mạch, Sản phụ khoa, Tiêu hóa, Ngoại thần kinh",
+    "specialty": ["Tai Mũi Họng", "Tim mạch", "Sản phụ khoa", "Tiêu hóa", "Ngoại thần kinh"],
     "docter": [
       {
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1021,6 +1115,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1036,6 +1131,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1051,6 +1147,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1066,6 +1163,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1081,6 +1179,7 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1096,6 +1195,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1111,6 +1211,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1126,6 +1227,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1141,6 +1243,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1165,12 +1268,13 @@
     "facilityOwner": "GS.TS Trần Văn H",
     "Phone": "0423434244",
     "DateStart": "14/01/2019",
-    "specialty": "Tai Mũi Họng, Răng hàm mặt, Tiêu hóa, Nhi khoa, Ngoại thần kinh",
+    "specialty": ["Tai Mũi Họng", "Răng hàm mặt", "Tiêu hóa", "Nhi khoa", "Ngoại thần kinh"],
     "docter": [
       {
         "name": "BS. Lê Văn Tùng",
         "specialty": "Nhi khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1186,6 +1290,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1201,6 +1306,7 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1216,6 +1322,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1231,6 +1338,7 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1246,6 +1354,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1261,6 +1370,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1276,6 +1386,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1291,6 +1402,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1306,6 +1418,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1330,12 +1443,13 @@
     "facilityOwner": "ThS.BS Nguyễn Thị I",
     "Phone": "0423434244",
     "DateStart": "21/04/2015",
-    "specialty": "Răng hàm mặt, Tai Mũi Họng, Ngoại thần kinh, Nội tổng quát, Nhi khoa",
+    "specialty": ["Răng hàm mặt", "Tai Mũi Họng", "Ngoại thần kinh", "Nội tổng quát", "Nhi khoa"],
     "docter": [
       {
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1351,6 +1465,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1366,6 +1481,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1381,6 +1497,7 @@
         "name": "BS. Nguyễn Văn Mạnh",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1396,6 +1513,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1411,6 +1529,7 @@
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1426,6 +1545,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1441,6 +1561,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1456,6 +1577,7 @@
         "name": "BS. Nguyễn Hữu Nghĩa",
         "specialty": "Sản phụ khoa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1471,6 +1593,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Tai Mũi Họng",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1495,12 +1618,13 @@
     "facilityOwner": "PGS.TS Đỗ Văn K",
     "Phone": "0423434244",
     "DateStart": "7/02/2018",
-    "specialty": "Da liễu, Chấn thương chỉnh hình, Răng hàm mặt, Ngoại thần kinh, Tai Mũi Họng",
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],
     "docter": [
       {
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1516,6 +1640,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1531,6 +1656,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1546,6 +1672,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1561,6 +1688,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1576,6 +1704,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1591,6 +1720,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1606,6 +1736,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1621,6 +1752,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1636,6 +1768,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1659,12 +1792,12 @@
     "facilityOwner": "PGS.TS Đỗ Văn K",
     "Phone": "0423434244",
     "DateStart": "7/02/2018",
-    "specialty": "Da liễu, Chấn thương chỉnh hình, Răng hàm mặt, Ngoại thần kinh, Tai Mũi Họng",
-    "docter": [
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],    "docter": [
       {
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1680,6 +1813,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1695,6 +1829,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1710,6 +1845,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1725,6 +1861,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1740,6 +1877,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1755,6 +1893,7 @@
         "name": "BS. Lê Minh Tuấn",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1770,6 +1909,7 @@
         "name": "BS. Đỗ Văn Hùng",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1785,6 +1925,7 @@
         "name": "BS. Nguyễn Thị Mai",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1800,6 +1941,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1823,12 +1965,13 @@
     "facilityOwner": "PGS.TS Đỗ Văn K",
     "Phone": "0423434244",
     "DateStart": "7/02/2018",
-    "specialty": "Da liễu, Chấn thương chỉnh hình, Răng hàm mặt, Ngoại thần kinh, Tai Mũi Họng",
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],   
     "docter": [
       {
         "name": "BS. Hồ Thị Thu Hà",
         "specialty": "Da liễu",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1844,6 +1987,7 @@
         "name": "BS. Trần Thị Hoa",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1859,6 +2003,7 @@
         "name": "BS. Mai Văn Huy",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1874,6 +2019,7 @@
         "name": "BS. Phạm Thị Lan",
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1889,6 +2035,7 @@
         "name": "BS. Lê Văn Tùng",
         "specialty": "Chấn thương chỉnh hình",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1904,6 +2051,7 @@
         "name": "BS. Phạm Minh Đức",
         "specialty": "Tiêu hóa",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1917,8 +2065,10 @@
       },
       {
         "name": "BS. Lê Minh Tuấn",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
         "specialty": "Răng hàm mặt",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1932,8 +2082,10 @@
       },
       {
         "name": "BS. Đỗ Văn Hùng",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
         "specialty": "Nội tổng quát",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1947,8 +2099,10 @@
       },
       {
         "name": "BS. Nguyễn Thị Mai",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",  
         "specialty": "Tim mạch",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
@@ -1964,6 +2118,7 @@
         "name": "BS. Trần Văn Bình",
         "specialty": "Ngoại thần kinh",
         "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
         "training": [
           "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
           "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",

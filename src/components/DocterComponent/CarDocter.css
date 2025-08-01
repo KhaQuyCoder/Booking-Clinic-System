@@ -1,0 +1,79 @@
+.flip-card {
+  width: 250px;
+  height: 430px;
+  perspective: 1000px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.image-docter {
+  height: 180px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.specialty-docter {
+  height: 60px;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.description-clinic {
+  color: #6C757D;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-back {
+  background-color: #f0f0f0;
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner:hover {
+  transform: scale(105%);
+}
+.item-docterAll{
+  display: flex;
+  column-gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 490px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+.description-clinic-forDocterAll{
+  margin-top: -20px;
+  min-height: 80px;
+}
+.specialty-docterAll{
+  margin-top: -10px;
+}
+
+@media (max-width:800px){
+  .specialty-docterAll{
+    margin: 7px 0;
+  }
+
+}
