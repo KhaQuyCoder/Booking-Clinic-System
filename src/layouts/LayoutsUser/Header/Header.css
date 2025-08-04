@@ -4,16 +4,14 @@
 }
 .bcg-Header{
     height: 90px;
-   
 }
-.container{
+.custom-container{
     font-family: 'Inter';
     overflow: hidden;
     position: fixed;
     top:0;
     z-index: 9999999;
 }
-
 .imageHeader{
     width: 100vw;
     height: 90px;
@@ -46,7 +44,7 @@
     height: max-content;
     margin-top: 6px;
 }
-.Search-Header-text{
+.custom-Search-Header-text{
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -56,7 +54,7 @@
     min-width: 70%;
     margin-left: 10px;
 }
-.text-Input,.fa-magnifying-glass{
+.custom-text-Input,.fa-magnifying-glass{
     position: absolute;
     top: 30%;
     padding-left: 20px;
@@ -106,7 +104,7 @@ select.Option-Address::-webkit-scrollbar {
         margin-left: 30px;
     }
     .Search-Header-text,
-    .text-Input,
+    .custom-text-Input,
     .fa-magnifying-glass{
         display: none;
     }
@@ -115,7 +113,7 @@ select.Option-Address::-webkit-scrollbar {
     .menuHeader{
         padding: 0 20px;
     }
-   .Option-Header,.Search-Header-text,.text-Input{
+   .Option-Header,.custom-text-Input,.custom-Search-Header-text{
         display: none;
     }
    .fa-bars{
@@ -138,10 +136,10 @@ select.Option-Address::-webkit-scrollbar {
    .Search-Header{
         margin: 0 30px;
     }
-   .fa-magnifying-glass,.text-Input{
+   .fa-magnifying-glass,.custom-text-Input{
         display: none;
     }
-   .text-Input{
+   .custom-text-Input{
         margin-top: -7px;
     }
 }

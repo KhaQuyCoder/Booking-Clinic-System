@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from "react";
+import { useContext, useMemo, useState, useEffect } from "react";
 import "./Docter.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import Footer from "../../../components/FooterComponent/Footer";
@@ -6,8 +6,10 @@ import clinicData from "../../../data/clinic.json";
 import { DocterAll } from "../../../components/DocterComponent/CarDocter";
 import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../../../components/LoadingComponent/Loading";
+import Filter from "../../../components/FIlterComponent/Filter";
+import { FilterAll } from "../../../components/FIlterComponent/Filter";
 import { State } from "../../../state/context";
-
+import TotalPage from "../../../components/TotalPagaComponent/TotalPage";
 export const Docter = () => {
   const navigate = useNavigate();
   const { page: pageParam } = useParams();
@@ -16,7 +18,11 @@ export const Docter = () => {
   const [hocHamFilter, setHocHamFilter] = useState("");
   const [specialtyFilter, setSpecialtyFilter] = useState("");
   const { loading, setLoading } = useContext(State);
-
+  const data = [
+    { id: 1, name: "Học hàm", value: "" },
+    { id: 2, name: "Giáo sư", value: "Giáo sư" },
+    { id: 3, name: "Phó giáo sư", value: "Phó giáo sư" },
+  ];
   const specialtyData = useMemo(() => {
     const allSpecialties = clinicData.flatMap((item) => item.specialty || []);
     return [...new Set(allSpecialties.map((s) => s.trim()))];
@@ -43,8 +49,6 @@ export const Docter = () => {
   }, [pageParam, totalPages]);
 
   const doctorsToShow = useMemo(() => {
-    console.log(filteredDoctors);
-
     const start = (currentPage - 1) * PER_PAGE;
     const end = start + PER_PAGE;
     return filteredDoctors.slice(start, end);
@@ -70,33 +74,21 @@ export const Docter = () => {
     navigate("/bac-si/page/1");
     setTimeout(() => setLoading(false), 800);
   };
-
+  useEffect(() => {
+    window.scrollTo({ top: true, behavior: "instant" });
+  }, []);
   return (
     <>
       <Header />
       <div className="container-docterAll">
-        <select
-          defaultValue=""
-          className="filter-specialty"
-          onChange={(e) => handleFilterDocterSpecialty(e.target.value)}
-        >
-          <option value="">Chuyên khoa</option>
-          {specialtyData.map((specialty, index) => (
-            <option key={index} value={specialty}>
-              {specialty}
-            </option>
-          ))}
-        </select>
-        <select
-          defaultValue=""
-          className="filter-specialty"
-          onChange={(e) => handleFilterDocterHocHam(e.target.value)}
-        >
-          <option value="">Học hàm</option>
-          <option value="Giáo sư">Giáo sư</option>
-          <option value="Phó giáo sư">Phó giáo sư</option>
-        </select>
-
+        <Filter
+          handleFilterDocterSpecialty={handleFilterDocterSpecialty}
+          specialtyData={specialtyData}
+        />
+        <FilterAll
+          handleFilterDocterHocHam={handleFilterDocterHocHam}
+          data={data}
+        />
         {loading && <Loading />}
 
         {!loading && (
@@ -111,15 +103,11 @@ export const Docter = () => {
               )}
             </div>
             <div className="indexPage">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                <span
-                  key={p}
-                  className={p === currentPage ? "active" : ""}
-                  onClick={() => handlePage(p)}
-                >
-                  {p}
-                </span>
-              ))}
+              <TotalPage
+                totalPages={totalPages}
+                currentPage={currentPage}
+                handlePage={handlePage}
+              />
             </div>
           </>
         )}

@@ -54,8 +54,8 @@ const Header = () => {
   };
   return (
     <div className="main-home">
-      <div className="container">
-        <div className="bcg-Header center">
+      <div className="custom-container">
+        <div className="bcg-Header">
           <img
             className="imageHeader"
             src={backgoroundHeader}
@@ -73,15 +73,19 @@ const Header = () => {
               <ul className="Option-Header">
                 <li onClick={() => navigate("/")}>Trang chủ</li>
                 <li onClick={() => navigate("/bac-si")}>Bác sĩ</li>
-                <li>Phòng khám</li>
-                <li>Tư vấn</li>
-                <li>Blog</li>
-                <li>Chính sách bảo mật</li>
-                <li>Kênh phòng khám</li>
+                <li onClick={() => navigate("/phong-kham")}>Phòng khám</li>
+                <li onClick={() => navigate("/tu-van")}>Tư vấn</li>
+                <li onClick={() => navigate("/blog")}>Blog</li>
+                <li onClick={() => navigate("/chinh-sach-bao-mat")}>
+                  Chính sách bảo mật
+                </li>
+                <li onClick={() => navigate("/tao-phong-kham")}>
+                  Kênh phòng khám
+                </li>
               </ul>
               <div className="Search-Header">
                 <input
-                  className="Search-Header-text"
+                  className="custom-Search-Header-text"
                   type="text"
                   onClick={handlerEnterSearch}
                   placeholder={checkTextSearch ? "Bạn muốn tìm gì?" : ""}
@@ -89,7 +93,7 @@ const Header = () => {
                   onBlur={handelBlurSearch}
                 />
                 <p
-                  className="text-Input"
+                  className="custom-text-Input"
                   ref={textSearch}
                   onClick={handlerEnterSearch}
                 >

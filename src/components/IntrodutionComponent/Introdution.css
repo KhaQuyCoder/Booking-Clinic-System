@@ -13,10 +13,11 @@
 }
 .wrapper-system{
     position: relative;
-    max-width: 1650px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 100px 20px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .titile-home{
@@ -26,7 +27,7 @@
 }
 .backgoroundBody{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .teamDocter-img{
     max-width: 100%;
@@ -34,7 +35,7 @@
 .name-system{
     margin-top: 50px;
 }
-@media (max-width:800px){
+@media (max-width:1400px){
     .titile-home{
         font-size: 2rem;
     }

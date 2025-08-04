@@ -10,6 +10,7 @@ import Specialty from "../../../components/SpecialtyComponent/Specialty";
 import FeedBack from "../../../components/FeddBackComponent/FeedBack";
 import Footer from "../../../components/FooterComponent/Footer";
 import ScrollReveal from "scrollreveal";
+import ClinicCpn from "../../../components/ClinicComponent/ClinicCpn";
 const Main = () => {
   const { loading, resetPage } = useContext(State);
   const clinicRef = useRef();
@@ -29,41 +30,12 @@ const Main = () => {
         </div>
       )}
       {resetPage && (
-        <div>
+        <div className="test">
           <div className="container-main" ref={clinicRef}>
             <h2 className="title-clinic">Phòng khám</h2>
             <div className="wrapper-clinic">
               {dataClinic.map((item, index) => (
-                <div className="item-clinic" key={index}>
-                  <img
-                    className="image-clinic"
-                    src={item.image}
-                    alt={item.name}
-                  />
-                  <div>
-                    <p className="name-clinic">{item.name}</p>
-                    <p className="location-clinic">
-                      <i class="fa-solid fa-location-dot"></i>
-                      {item.location}
-                    </p>
-                    <p className="openClock-clinic">
-                      <i class="fa-regular fa-clock"></i>
-                      {item.openClock}
-                    </p>
-                    <span className="status-clinic">
-                      <span
-                        className={
-                          item.status
-                            ? "color-status-open-clinic"
-                            : "color-status-close-clinic"
-                        }
-                      ></span>
-                      <span>
-                        {item.status ? "Đang hoạt động" : "Đã đóng cửa"}
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                <ClinicCpn item={item} index={index} />
               ))}
             </div>
             <h2 className="title-docter">Bác sĩ</h2>
@@ -85,9 +57,9 @@ const Main = () => {
             <HealthNews />
             <FeedBack />
           </div>
-          <Footer />
         </div>
       )}
+      {!loading && <Footer />}
     </>
   );
 };

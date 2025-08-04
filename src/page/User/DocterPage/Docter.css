@@ -3,11 +3,10 @@
     max-width: 1600px; 
     margin: 0 auto; 
     padding-top: 130px;
+
 }
 .wrapper-docterAll{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -29,8 +28,8 @@
 .active{
     background-color: #1250DC;
 }
-.filter-specialty {
-    margin-left: 10px;
+.filter-specialty{
+  margin-left: 10px;
   min-width: 260px;
   padding: 10px 40px 10px 14px; 
   border: 1px solid #e5e7eb;   
