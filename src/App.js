@@ -1,8 +1,18 @@
+import ScheduleAppointment from './Feature/Duc/Doctor/ScheduleMedicalAppointment/ScheduleMedicalAppointment';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Feature/Duc/Doctor/Components/Layout'; 
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Đặt Layout bọc xung quanh các Route con */}
+        <Route path="/" element={<Layout />}>
+          <Route path="schedule" element={<ScheduleAppointment />} />
+          {/* Thêm các route con khác trong Layout */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
