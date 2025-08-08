@@ -1,0 +1,14 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+.content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+}

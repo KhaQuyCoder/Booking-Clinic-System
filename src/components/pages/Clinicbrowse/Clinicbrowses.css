@@ -1,0 +1,10 @@
+.clinicbrowses {
+    width: 1166px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    padding-top: 60px;
+    gap: 10px;
+}

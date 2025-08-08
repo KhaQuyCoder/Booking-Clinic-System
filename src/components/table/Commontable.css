@@ -1,0 +1,44 @@
+.containertable {
+    width: 1156px;
+    height: 480px;
+    display: flex;
+    flex-grow: 1;
+}
+#customers {
+    width: 100%;
+    height: 480px;
+    border-collapse: collapse;
+}
+#customers th {
+    border: 1px solid #6C757D;
+    padding-left: 10px;
+    text-align: center;
+    height: 60px;
+}
+#customers td {
+    padding-left: 10px;
+    text-align: left;
+    height: 40px;
+    color: #6C757D;
+}
+.actis {
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.acti {
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #D9D9D9;
+    }
+}
+#customers tbody tr {
+    &:hover{
+        background-color: #D9D9D9;
+    }
+}

@@ -1,0 +1,73 @@
+[
+    {
+        "idclinic": "75PK0001",
+        "name": "BS.NGUYỄN MẠNH PHÚ",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 9:00"
+    },
+    {
+        "idclinic": "75PK0002",
+        "name": "BS. HÙNG VIỆT",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 10:00"
+    },
+    {
+        "idclinic": "75PK0003",
+        "name": "PHÒNG KHÁM NHI TÂM ĐỨC",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 10:00"
+    },
+    {
+        "idclinic": "75PK0004",
+        "name": "BS. MINH TRÍ",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 11:00"
+    },
+    {
+        "idclinic": "75PK0005",
+        "name": "BS. VÕ LÂM PHƯỚC",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 12:00"
+    },
+    {
+        "idclinic": "75PK0006",
+        "name": "BS. LÊ XUÂN HIỀN",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 12:10"
+    },
+    {
+        "idclinic": "75PK0007",
+        "name": "NHA KHOA LITTLE SÀI GÒN",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/07/2025 14:00"
+    },
+    {
+        "idclinic": "75PK0008",
+        "name": "NHA KHOA CỐ ĐÔ",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/08/2025 11:00"
+    },
+    {
+        "idclinic": "75PK0009",
+        "name": "NHA KHOA BÌNH MINH",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/08/2025 11:01"
+    },
+    {
+        "idclinic": "75PK0010",
+        "name": "BS. HỒ THỊ PHƯƠNG THẢO",
+        "type": "Chuyên khoa Sản - Tư nhân",
+        "role": "Admin phòng khám",
+        "timesent": "10/08/2025 11:50"
+    }
+
+]

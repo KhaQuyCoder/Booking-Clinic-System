@@ -1,0 +1,73 @@
+[
+    {
+        "idclinic": "75PK0001",
+        "name": "BS.NGUYỄN MẠNH PHÚ",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "phone": "0901163456",
+        "address": "Số 456 Lý thường kiệt"
+    },
+    {
+        "idclinic": "75PK0002",
+        "name": "BS. HÙNG VIỆT",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "phone": "0931163456",
+        "address": "Số 9 Lê Lợi"
+    },
+    {
+        "idclinic": "75PK0003",
+        "name": "PHÒNG KHÁM NHI TÂM ĐỨC",
+        "type": "Chuyên khoa Nhi - Tư nhân",
+        "phone": "0911163456",
+        "address": "Số 267 Bà Triệu"
+    },
+    {
+        "idclinic": "75PK0004",
+        "name": "BS. MINH TRÍ",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "phone": "0942221568",
+        "address": "Số 653 Nguyễn Tất Thành "
+    },
+    {
+        "idclinic": "75PK0005",
+        "name": "BS. VÕ LÂM PHƯỚC",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "phone": "0962221568",
+        "address": "Số 8 Đào Duy Anh"
+    },
+    {
+        "idclinic": "75PK0006",
+        "name": "BS. LÊ XUÂN HIỀN",
+        "type": "Chuyên khoa TMH - Tư nhân",
+        "phone": "0972221568",
+        "address": "Số 25 Nguyễn Chí Thanh"
+    },
+    {
+        "idclinic": "92PK0001",
+        "name": "NHA KHOA LITTLE SÀI GÒN",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "phone": "0982221569",
+        "address": "Số 69 Hoàng Đan"
+    },
+    {
+        "idclinic": "92PK0002",
+        "name": "NHA KHOA CỐ ĐÔ",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "phone": "0321657891",
+        "address": "Số 12 Hùng Vương"
+    },
+    {
+        "idclinic": "92PK00039",
+        "name": "NHA KHOA BÌNH MINH",
+        "type": "Chuyên khoa RHM - Tư nhân",
+        "phone": "0392221569",
+        "address": "Sô 555 Nguyễn Trãi"
+    },
+    {
+        "idclinic": "92PK0004",
+        "name": "BS. HỒ THỊ PHƯƠNG THẢO",
+        "type": "Chuyên khoa Sản - Tư nhân",
+        "phone": "0399588125",
+        "address": "Số 112 Mai Thúc Loan"
+    }
+
+]
