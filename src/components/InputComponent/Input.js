@@ -7,12 +7,13 @@ const Input = ({
   handelBLurText,
   message,
   checkMessage,
+  className,
 }) => {
   return (
     <div className="wrapper-input-cpm">
       <label>
         <input
-          className="input-cpm"
+          className={`input-cpm ${className}`}
           onFocus={() => handelTransitionText(labelRef)}
           onBlur={() => handelBLurText(refInput, labelRef)}
           ref={refInput}

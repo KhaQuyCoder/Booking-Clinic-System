@@ -51,14 +51,11 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-inner:hover {
-  transform: scale(105%);
-}
 .item-docterAll{
   display: flex;
   column-gap: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 490px;
+  width: 430px;
   padding: 10px;
   border-radius: 10px;
   margin: 0;
@@ -70,7 +67,12 @@
 .specialty-docterAll{
   margin-top: -10px;
 }
-
+@media (max-width:450px) {
+  .item-docterAll{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
 @media (max-width:800px){
   .specialty-docterAll{
     margin: 7px 0;

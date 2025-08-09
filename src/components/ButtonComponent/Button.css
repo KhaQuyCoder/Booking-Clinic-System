@@ -24,13 +24,16 @@
   text-decoration: none;
   color: #ffff;
 }
+.btn-viewMore{
+  margin: 0;
+}
 .cpm-viewMore:hover{
   color: black;
 }
 .item-docter:hover .card {
     transform: rotateY(180deg);
 }
-.booking-home,.advise-home{
+.booking-home,.advise-home,.exit,.confirm{
   padding: 10px 15px;
   border-radius: 10px;
   border: none;
@@ -40,14 +43,26 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.booking-home:hover,.advise-home:hover{
+.booking-home:hover,.advise-home > a:hover{
   color: #ffff;
 }
 .advise-home{
   background-color: #1250DC;
   margin-left: 10px;
 }
+.exit{
+  background-color: #EA5455;
+  margin-right: 10px;
+  width: 100px;
+}.confirm{
+  width: 100px;
+  background-color: #1250DC;
+}
+.advise-home > a{
+  text-decoration: none;
+  color: black;
 
+}
 
 @media (max-width: 400px)  {
   .cpm-Button{

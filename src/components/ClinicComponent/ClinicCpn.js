@@ -1,8 +1,16 @@
-import React from "react";
 import "./ClinicCpn.css";
+import { useNavigate } from "react-router-dom";
 const ClinicCpn = ({ item, index }) => {
+  const navigate = useNavigate();
+  const handelClickDetailClinic = (slug) => {
+    navigate(`/chi-tiet-phong-kham/${slug}`);
+  };
   return (
-    <div className="item-clinic" key={index}>
+    <div
+      className="item-clinic"
+      key={index}
+      onClick={() => handelClickDetailClinic(item.slug)}
+    >
       <img className="image-clinic" src={item.image} alt={item.name} />
       <div>
         <p className="name-clinic">{item.name}</p>

@@ -5,15 +5,18 @@ import logo from "../../../assets/image/logo .png";
 import Button from "../../../components/ButtonComponent/Button";
 import { State } from "../../../state/context";
 import { useNavigate } from "react-router-dom";
+import Recomment from "../../../components/RecomentComponent/Recomment";
 
 const Header = () => {
   const [data, setData] = useState([]);
-  const { setLoading, setResetPage } = useContext(State);
+  const { setLoading, setResetPage, setValueText, valueText } =
+    useContext(State);
   const textSearch = useRef();
   const Search = useRef();
   const navigate = useNavigate();
-
   const [checkTextSearch, setCheckTextSearch] = useState(false);
+  const [text, setText] = useState("");
+
   useEffect(() => {
     const FetchData = async () => {
       try {
@@ -52,6 +55,36 @@ const Header = () => {
     setCheckTextSearch(false);
     textSearch.current.style.display = "block";
   };
+  useEffect(() => {
+    const textAnimation = "Tìm kiếm bác sĩ, phòng khám...";
+    let index = 0;
+    let checkIndex = false;
+
+    const textSearchAnimation = () => {
+      setText(textAnimation.slice(0, index));
+      if (!checkIndex) {
+        if (index < textAnimation.length) {
+          index++;
+        } else {
+          checkIndex = true;
+        }
+      } else {
+        if (index > 0) {
+          index--;
+        } else {
+          checkIndex = false;
+        }
+      }
+    };
+    const interval = setInterval(textSearchAnimation, 70);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const handelChangeText = (e) => {
+    setValueText(e.target.value);
+  };
   return (
     <div className="main-home">
       <div className="custom-container">
@@ -79,9 +112,7 @@ const Header = () => {
                 <li onClick={() => navigate("/chinh-sach-bao-mat")}>
                   Chính sách bảo mật
                 </li>
-                <li onClick={() => navigate("/tao-phong-kham")}>
-                  Kênh phòng khám
-                </li>
+                <li onClick={() => navigate("/confirm")}>Kênh phòng khám</li>
               </ul>
               <div className="Search-Header">
                 <input
@@ -91,13 +122,14 @@ const Header = () => {
                   placeholder={checkTextSearch ? "Bạn muốn tìm gì?" : ""}
                   ref={Search}
                   onBlur={handelBlurSearch}
+                  onChange={(e) => handelChangeText(e)}
                 />
                 <p
                   className="custom-text-Input"
                   ref={textSearch}
                   onClick={handlerEnterSearch}
                 >
-                  Tìm kiếm bác sĩ, phòng khám...
+                  {text}
                 </p>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <select
@@ -109,6 +141,7 @@ const Header = () => {
                     <option key={item.id}>{item.full_name}</option>
                   ))}
                 </select>
+                {valueText.length > 0 && <Recomment />}
               </div>
             </div>
 

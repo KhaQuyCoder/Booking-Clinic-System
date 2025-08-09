@@ -131,6 +131,12 @@ const Question = () => {
       setCheckMessageAge(false);
     }
   };
+  useEffect(() => {
+    window.scrollTo({
+      top: "true",
+      behavior: "instant",
+    });
+  }, []);
   return (
     <>
       <Header />

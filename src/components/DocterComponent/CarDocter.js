@@ -1,8 +1,7 @@
-// DoctorCard.js
-import React, { useState } from "react";
+import { useState } from "react";
 import "./CarDocter.css";
 import Button from "../../../src/components/ButtonComponent/Button";
-const CarDocter = ({ doctor }) => {
+const CarDocter = ({ doctor, item }) => {
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -23,7 +22,12 @@ const CarDocter = ({ doctor }) => {
             <p className="description-clinic">{doctor.description}</p>
 
             <div className="booking-docter">
-              <Button booking={true} title={true} />
+              <Button
+                booking={true}
+                title={true}
+                path={`/${item.slug}/dat-lich-kham`}
+                nameDocter={doctor.name}
+              />
               <Button booking={true} />
             </div>
           </div>
@@ -41,7 +45,7 @@ const CarDocter = ({ doctor }) => {
     </div>
   );
 };
-export const DocterAll = ({ doctor }) => {
+export const DocterAll = ({ doctor, path }) => {
   return (
     <>
       <div className="item-docterAll">
@@ -58,7 +62,12 @@ export const DocterAll = ({ doctor }) => {
             {doctor.description}
           </p>
           <div className="booking-docter">
-            <Button booking={true} title={true} />
+            <Button
+              booking={true}
+              title={true}
+              path={path}
+              nameDocter={doctor.name}
+            />
             <Button booking={true} />
           </div>
         </div>

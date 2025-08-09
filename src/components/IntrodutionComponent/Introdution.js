@@ -19,11 +19,11 @@ const Introdution = () => {
       distance: "300px",
       duration: "2500",
     });
-    sr.reveal(imgDocterBody.current, { origin: "left", delay: 400 });
-    sr.reveal(imgBody.current, { origin: "top" });
-    sr.reveal(titleRef.current, { delay: 600 });
-    sr.reveal(bookRef.current, { origin: "right", delay: 700 });
-  });
+    sr.reveal(imgDocterBody?.current, { origin: "left", delay: 400 });
+    sr.reveal(imgBody?.current, { origin: "top" });
+    sr.reveal(titleRef?.current, { delay: 600 });
+    sr.reveal(bookRef?.current, { origin: "right", delay: 700 });
+  }, []);
   return (
     <>
       {loading && (

@@ -2,6 +2,7 @@
   {
     "name": "Phòng khám An Tâm",
     "address": "12A Phan Chu Trinh, Thừa Thiên Huế",
+    "slug":"phong-kham-an-tam",
     "location": "Thừa Thiên Huế",
     "openClock": "7h30 -17h30",
     "status": false,
@@ -187,6 +188,7 @@
   {
     "name": "Phòng khám Hòa Bình",
     "address": "34B Nguyễn Huệ, Đà Nẵng",
+    "slug":"phong-kham-hoa-binh",
     "location": "Đà Nẵng",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -373,6 +375,7 @@
   {
     "name": "Phòng khám Tâm Đức",
     "address": "56C Lê Lợi, TP. Hồ Chí Minh",
+    "slug":"phong-kham-tam-duc",
     "location": "TP. Hồ Chí Minh",
     "openClock": "7h30 -17h30",
     "status": false,
@@ -558,6 +561,7 @@
   {
     "name": "Phòng khám Việt Nhật",
     "address": "78D Hai Bà Trưng, Hà Nội",
+    "slug":"phong-kham-viet-nhat",
     "location": "Hà Nội",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -734,6 +738,7 @@
   {
     "name": "Phòng khám Sức Khỏe Vàng",
     "address": "90E Trần Hưng Đạo, Cần Thơ",
+    "slug":"phong-kham-suc-khoe-vang",
     "location": "Cần Thơ",
     "openClock": "7h30 -17h30",
     "status": false,
@@ -910,6 +915,7 @@
   {
     "name": "Phòng khám Nhân Ái",
     "address": "21F Phan Đình Phùng, Nghệ An",
+    "slug":"phong-kham-nhan-ai",
     "location": "Nghệ An",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -1085,6 +1091,7 @@
   {
     "name": "Phòng khám Thiện Tâm",
     "address": "11G Lê Duẩn, Khánh Hòa",
+    "slug":"phong-kham-thien-tam",
     "location": "Khánh Hòa",
     "openClock": "7h30 -17h30",
     "status": false,
@@ -1260,6 +1267,7 @@
   {
     "name": "Phòng khám Đông Tây Y",
     "address": "19H Bạch Đằng, Bình Dương",
+    "slug":"phong-kham-dong-tay-y",
     "location": "Bình Dương",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -1435,6 +1443,7 @@
   {
     "name": "Phòng khám Hy Vọng",
     "address": "88I Nguyễn Trãi, Đắk Lắk",
+    "slug":"phong-kham-hy-vong",
     "location": "Đắk Lắk",
     "openClock": "7h30 -17h30",
     "status": false,
@@ -1610,6 +1619,7 @@
   {
     "name": "Phòng khám Tân Tiến",
     "address": "66J Hùng Vương, Lâm Đồng",
+    "slug":"phong-kham-tan-tien",
     "location": "Lâm Đồng",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -1784,6 +1794,7 @@
   },{
     "name": "Phòng khám Tân Tiến",
     "address": "66J Hùng Vương, Lâm Đồng",
+    "slug":"phong-kham-tan-tien",
     "location": "Lâm Đồng",
     "openClock": "7h30 -17h30",
     "status": true,
@@ -1957,6 +1968,7 @@
   },{
     "name": "Phòng khám Tân Tiến",
     "address": "66J Hùng Vương, Lâm Đồng",
+    "slug":"phong-kham-tan-tien",
     "location": "Lâm Đồng",
     "openClock": "7h30 -17h30",
     "status": true,

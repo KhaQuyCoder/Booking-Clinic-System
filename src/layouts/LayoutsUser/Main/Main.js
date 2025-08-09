@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "./Main.css";
 import dataClinic from "../../../data/clinic.json";
 import { State } from "../../../state/context";
@@ -11,6 +11,8 @@ import FeedBack from "../../../components/FeddBackComponent/FeedBack";
 import Footer from "../../../components/FooterComponent/Footer";
 import ScrollReveal from "scrollreveal";
 import ClinicCpn from "../../../components/ClinicComponent/ClinicCpn";
+import FeedBackData from "../../../data/feedBack.json";
+
 const Main = () => {
   const { loading, resetPage } = useContext(State);
   const clinicRef = useRef();
@@ -20,8 +22,10 @@ const Main = () => {
       distance: "300px",
       duration: "2500",
     });
-    rs.reveal(clinicRef.current, { origin: "left" });
-  });
+    rs.reveal(clinicRef?.current, { origin: "left" });
+
+    return () => rs.destroy();
+  }, []);
   return (
     <>
       {loading && (
@@ -35,7 +39,7 @@ const Main = () => {
             <h2 className="title-clinic">Phòng khám</h2>
             <div className="wrapper-clinic">
               {dataClinic.map((item, index) => (
-                <ClinicCpn item={item} index={index} />
+                <ClinicCpn item={item} index={index} key={index} />
               ))}
             </div>
             <h2 className="title-docter">Bác sĩ</h2>
@@ -46,16 +50,20 @@ const Main = () => {
                   item.docter
                     .slice(0, 1)
                     .map((IteamDocter, idx) => (
-                      <CarDocter key={`${index}-${idx}`} doctor={IteamDocter} />
+                      <CarDocter
+                        key={`${index}-${idx}`}
+                        doctor={IteamDocter}
+                        item={item}
+                      />
                     ))
                 )}
             </div>
             <div className="ViewMore-docter">
-              <ViewMore />
+              <ViewMore path={"/bac-si"} />
             </div>
             <Specialty />
             <HealthNews />
-            <FeedBack />
+            <FeedBack dataFeedBack={FeedBackData} />
           </div>
         </div>
       )}

@@ -1,6 +1,6 @@
 .container-docterAll{
     width: 100%;
-    max-width: 1600px; 
+    max-width: 1400px; 
     margin: 0 auto; 
     padding-top: 130px;
 
@@ -43,7 +43,6 @@
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 16px;
-
   font-size: 14px;
   color: #111827;       
   transition: border-color .2s, box-shadow .2s, background-color .2s;
