@@ -12,8 +12,8 @@ function Listbrowseclinic() {
     useEffect(() => {
         setClinics(clinicData);
     }, []);
-    const handlereview = () => {
-        navigate(`/duyet-phong-kham/thong-tin-phong-kham`, { state : {}});
+    const handleReview = (clinic) => {
+        navigate(`/duyet-phong-kham/thong-tin-phong-kham/${clinic.id}`, { state : {clinic}});
     };
 
     const columnsClinic = [
@@ -21,12 +21,12 @@ function Listbrowseclinic() {
         { name: "Tên phòng khám", key: 'name' },
         { name: "Loại hình phòng khám", key: 'type' },
         { name: "Vai trò", key: 'role' },
-        { name: "Thời gian gửi", key: 'timesent' }
+        { name: "Thời gian gửi", key: 'timesent' } 
     ];
     const actions = [
-        <FaFileAlt key ="view" className="iconf" onClick={() => handlereview()} aria-label="XEM CHI TIẾT" />,
-        <FaCheckCircle className="iconf" />,
-        <FaCircleXmark className="iconf" />,
+        (clinic) => <FaFileAlt title="Xem chi tiết" className="iconf" onClick={() => handleReview(clinic)} />,
+        (clinic) => <FaCheckCircle title="Duyệt" className="iconf" onClick={() => console.log('Duyệt', clinic.id)} />,
+        (clinic) => <FaCircleXmark title="Từ chối" className="iconf" onClick={() => console.log('Từ chối', clinic.id)} />,
     ];
     return (
         <div>

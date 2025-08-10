@@ -1,7 +1,7 @@
 import React from "react"
 import "./Commontable.css"
 
-const Commontable = ({ columns, data, actions }) => {
+const Commontable = ({ columns = [], data= [], actions }) => {
 
     return (
         <div className="containertable">
@@ -15,11 +15,16 @@ const Commontable = ({ columns, data, actions }) => {
                 <tbody>
                     {data.map(item =>
                         <tr key={item.id}>
-                            {columns.map(column => <td key={column.key}>{item[column.key]}</td>)}
+                            {columns.map(column => <td key={column.key + item.id}>{item[column.key]}</td>)}
                             {actions && (
                                 <td className="actis">
-                                    {actions.map((action, index) => (
-                                        <button key={index} className="acti" >{action}</button>))}
+                                    {actions.map((action, index) => {
+                                        if (typeof action === 'function') {
+                                            const node = action(item);
+                                            return <span key={index} className="acti">{node}</span>;
+                                        }
+                                        return <span key={index} className="acti">{action}</span>;
+                                      })}
                                 </td>
                             )}
 

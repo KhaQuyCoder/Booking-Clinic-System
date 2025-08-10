@@ -1,16 +1,35 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
+import clinicData from '../../../data/Browseclinic.json';
 
 function Detailinforclinic() {
     const location = useLocation();
     const navigate = useNavigate();
-    const clinic = location.state || {};
+    const {id} = useParams();
+
+    const [clinic, setClinic] = useState(location.state?.clinic || null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (!clinic) {
+            setLoading(true);
+            const found = clinicData.find(c => String(c.id) === String(id));
+            if (found) {
+                setClinic(found);
+            }
+            setLoading(false);
+        }
+    }, [clinic, id]);
     
-    if(!clinic.id) {
-        return <div>Không có dữ liệu phòng khám. <button onClick={() => navigate(-1)}><BiArrowBack />Quay lại</button></div>
+    if(loading) return <div>Đang load...</div>;
+
+    if(!clinic) {
+        return (
+            <div>Không có dữ liệu phòng khám.<button onClick={() => navigate(-1)}><BiArrowBack />Quay lại</button></div>
+        );
     }
 
     return (
