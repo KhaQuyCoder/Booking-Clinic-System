@@ -6,7 +6,7 @@ import React from 'react';
 import {HeaderSearch} from './Headersearch';
 import { HeaderInfor } from './Headerinfor';
 import './Header.css';
-function HeadeR() {
+function Header() {
   return (
     <div className="header">
         <HeaderSearch />
@@ -14,4 +14,4 @@ function HeadeR() {
     </div>
   );
 }
-export {HeadeR};
+export {Header};

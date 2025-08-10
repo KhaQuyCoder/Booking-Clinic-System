@@ -10,12 +10,9 @@ function Listbrowsedoctor() {
     useEffect(() => {
         setDoctors(doctorData);
     }, []);
-    console.log("doctors: ", doctors);
-    console.log("typeof doctor: ", typeof doctors);
-    console.log("doctorData =", doctorData);
-    console.log("Array.isArray(doctorData) =", Array.isArray(doctorData));
+    
     const columnsDoctor = [
-        { name: "ID bác sĩ", key: 'iddoctor' },
+        { name: "ID bác sĩ", key: 'id' },
         { name: "Tên bác sĩ", key: 'name' },
         { name: "Phòng khám", key: 'clinic' },
         { name: "Vai trò", key: 'role' },

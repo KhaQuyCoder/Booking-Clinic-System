@@ -1,73 +1,73 @@
 [
     {
-        "idclinic": "75PK0001",
+        "id": "75PK0001",
         "name": "BS.NGUYỄN MẠNH PHÚ",
         "type": "Chuyên khoa Nhi - Tư nhân",
-        "phone": "0901163456",
-        "address": "Số 456 Lý thường kiệt"
+        "phone": "0983 102 064",
+        "address": "297 Điện Biên Phủ"
     },
     {
-        "idclinic": "75PK0002",
+        "id": "75PK0002",
         "name": "BS. HÙNG VIỆT",
         "type": "Chuyên khoa Nhi - Tư nhân",
         "phone": "0931163456",
-        "address": "Số 9 Lê Lợi"
+        "address": "95 Ngô Thế Lân"
     },
     {
-        "idclinic": "75PK0003",
+        "id": "75PK0003",
         "name": "PHÒNG KHÁM NHI TÂM ĐỨC",
         "type": "Chuyên khoa Nhi - Tư nhân",
         "phone": "0911163456",
-        "address": "Số 267 Bà Triệu"
+        "address": "17 An Dương Vương"
     },
     {
-        "idclinic": "75PK0004",
+        "id": "75PK0004",
         "name": "BS. MINH TRÍ",
         "type": "Chuyên khoa TMH - Tư nhân",
-        "phone": "0942221568",
-        "address": "Số 653 Nguyễn Tất Thành "
+        "phone": "0386267509",
+        "address": "40 Phan Chu Trinh"
     },
     {
-        "idclinic": "75PK0005",
+        "id": "75PK0005",
         "name": "BS. VÕ LÂM PHƯỚC",
         "type": "Chuyên khoa TMH - Tư nhân",
-        "phone": "0962221568",
-        "address": "Số 8 Đào Duy Anh"
+        "phone": "02343527777",
+        "address": "38 Lê Thánh Tôn"
     },
     {
-        "idclinic": "75PK0006",
+        "id": "75PK0006",
         "name": "BS. LÊ XUÂN HIỀN",
         "type": "Chuyên khoa TMH - Tư nhân",
-        "phone": "0972221568",
-        "address": "Số 25 Nguyễn Chí Thanh"
+        "phone": "0979722215",
+        "address": "299 Nguyễn Trãi"
     },
     {
-        "idclinic": "92PK0001",
+        "id": "75PK0007",
         "name": "NHA KHOA LITTLE SÀI GÒN",
         "type": "Chuyên khoa RHM - Tư nhân",
-        "phone": "0982221569",
-        "address": "Số 69 Hoàng Đan"
+        "phone": "0329146688",
+        "address": "04 Hai Bà Trưng"
     },
     {
-        "idclinic": "92PK0002",
+        "id": "75PK0008",
         "name": "NHA KHOA CỐ ĐÔ",
         "type": "Chuyên khoa RHM - Tư nhân",
-        "phone": "0321657891",
-        "address": "Số 12 Hùng Vương"
+        "phone": "0935979758",
+        "address": "84 Nguyễn Huệ"
     },
     {
-        "idclinic": "92PK00039",
+        "id": "75PK0009",
         "name": "NHA KHOA BÌNH MINH",
         "type": "Chuyên khoa RHM - Tư nhân",
-        "phone": "0392221569",
-        "address": "Sô 555 Nguyễn Trãi"
+        "phone": "02343524536",
+        "address": "1 Huỳnh Thúc Kháng"
     },
     {
-        "idclinic": "92PK0004",
+        "id": "75PK0010",
         "name": "BS. HỒ THỊ PHƯƠNG THẢO",
         "type": "Chuyên khoa Sản - Tư nhân",
         "phone": "0399588125",
-        "address": "Số 112 Mai Thúc Loan"
+        "address": "13 Tôn Đức Thắng"
     }
 
 ]

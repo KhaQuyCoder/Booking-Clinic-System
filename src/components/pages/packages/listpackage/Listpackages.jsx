@@ -8,12 +8,9 @@ function Listpackages() {
     useEffect(() => {
         setPackagess(packageData);
     }, []);
-    console.log("packagess: ", packagess);
-    console.log("typeof packagess: ", typeof packagess);
-    console.log("packageData=", packageData);
-    console.log("Array.isArray(packageData) =", Array.isArray(packageData));
+
     const columnsPackage = [
-        {name: "ID gói", key: "idpackage"},
+        {name: "ID gói", key: "id"},
         {name: "Tên gói", key: "name"},
         {name: "Loại chu kỳ", key: "termtype"},
         {name: "Số ngày hiệu lực", key: "effectiveday"},

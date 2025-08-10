@@ -7,13 +7,9 @@ function Listclinicmanager() {
     useEffect(() => {
         setManagers(managerData);
     }, []);
-    console.log("managers: ", managers);
-    console.log("typeof managers: ", typeof managers);
-    console.log("managerData=", managerData);
-    console.log("Array.isArray(managerData) =", Array.isArray(managerData));
     
     const columnsManager = [
-        {name: "ID phòng khám", key: 'idclinic'},
+        {name: "ID phòng khám", key: 'id'},
         {name: "Tên phòng khám", key: 'name'},
         {name: "Loại hình phòng khám", key: 'type'},
         {name: "Số điện thoại", key: 'phone'},

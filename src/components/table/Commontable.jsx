@@ -8,18 +8,18 @@ const Commontable = ({ columns, data, actions }) => {
             <table id="customers">
                 <thead>
                     <tr>
-                        {columns.map(column => <th key={column.id}>{column.name}</th>)}
+                        {columns.map(column => <th key={column.key}>{column.name}</th>)}
                         {actions && <th>Hành động</th>}
                     </tr>
                 </thead>
                 <tbody>
                     {data.map(item =>
                         <tr key={item.id}>
-                            {columns.map(column => <td key={column.id}>{item[column.key]}</td>)}
+                            {columns.map(column => <td key={column.key}>{item[column.key]}</td>)}
                             {actions && (
                                 <td className="actis">
                                     {actions.map((action, index) => (
-                                        <button key={index} className="acti">{action}</button>))}
+                                        <button key={index} className="acti" >{action}</button>))}
                                 </td>
                             )}
 

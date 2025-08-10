@@ -1,25 +1,26 @@
-// import Button from "./components/Button";
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HeadeR } from "./components/Header";
+import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { Clinicbrowses } from './components/pages/Clinicbrowse/Clinicbrowses';
 import './App.css';
 import { Doctorbrowses } from './components/pages/Doctorbrowse/Doctorbrowses';
 import { Clinicmanagers } from './components/pages/Clinicmanager/Clinicmanagers';
 import { Alllistpackages } from './components/pages/packages/listpackage/Alllistpackages';
+import { Detailclinicbrowse } from './components/pages/Detailclinicbrowse/Detailclinicbrowse';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <HeadeR />
+        <Header />
         <div className="main-layout">
           <Sidebar />
           <div className="content">
             <Routes>
               <Route path="/account/userprofile" element={<div>userprofile</div>} />
               <Route path="/duyet-phong-kham" element={<Clinicbrowses />} />
+              <Route path="/duyet-phong-kham/thong-tin-phong-kham" element={<Detailclinicbrowse />} />
               <Route path="/duyet-bac-si" element={<Doctorbrowses />} />
               <Route path="/quan-ly-phong-kham" element={<Clinicmanagers />} />
               <Route path="/quan-ly-goi/tao-goi" element={<div>Create Package</div>} />
