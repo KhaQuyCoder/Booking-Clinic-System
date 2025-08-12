@@ -9,10 +9,13 @@
     height: 480px;
     border-collapse: collapse;
 }
+#customers thead {
+    background-color: #F3F6FA;
+}
 #customers th {
-    border: 1px solid #6C757D;
+    border-right: 1px solid #6C757D;
     padding-left: 10px;
-    text-align: center;
+    text-align: left;
     height: 60px;
 }
 #customers td {
@@ -24,8 +27,6 @@
 .actis {
     gap: 20px;
     display: flex;
-    text-align: center;
-    justify-content: center;
 }
 .acti {
     border-radius: 5px;

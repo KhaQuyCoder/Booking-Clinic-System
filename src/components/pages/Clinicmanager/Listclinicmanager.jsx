@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import managerData from '../../../data/Managerclinic.json'
+import managerData from '../../../data/Browseclinic.json';
 import { FaFileAlt, FaTrashAlt, FaWrench } from "react-icons/fa";
 import { Commontable } from "../../table/Commontable";
 function Listclinicmanager() {

@@ -1,0 +1,48 @@
+.detailinforclinic{
+    width: 100%;
+    overflow-x: hidden;
+}
+.detailcolumn {
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 10px;
+}
+.detailcolumn p {
+    padding-left: 80px;
+    width: 100%;
+    border-bottom: 1.5px dashed #000;
+    color: #6C757D;
+}
+.detailcolumn span {
+    padding-right: 10px;
+    color: #000;
+}
+.detailrow {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+}
+.detailrow p {
+    margin: 0;
+}
+.interacts {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+.interact {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    &:hover {
+        background-color: #1250DC;
+        cursor: pointer;
+    }
+}

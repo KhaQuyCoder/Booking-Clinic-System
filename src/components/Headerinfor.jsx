@@ -4,8 +4,6 @@ import 'tippy.js/dist/tippy.css';
 import {FiMail, FiBell } from 'react-icons/fi';
 import {AiOutlineMoon} from 'react-icons/ai';
 import {BiMessageDots } from 'react-icons/bi';
-// import { useState, useEffect } from 'react';
-// import {HiMiniUserCircle} from 'react-icons/hi2';
 import './Headerinfor.css';
 function HeaderInfor() {
     // const [avatarUser, setAvatarUser] = useState("");

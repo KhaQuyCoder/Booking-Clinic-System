@@ -6,15 +6,15 @@ import { Routing } from './Routing/Routing';
 
 function App() {
   return (
-      <div className="App">
+    <div className="App">
+      <Sidebar />
+      <div className="main-layout">
         <Header />
-        <div className="main-layout">
-          <Sidebar />
-          <div className="content">
-            <Routing />
-          </div>
+        <div className="content">
+          <Routing />
         </div>
       </div>
+    </div>
   );
 }
 

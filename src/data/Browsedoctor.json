@@ -4,69 +4,349 @@
         "name": "NGUYỄN MẠNH PHÚ",
         "clinic": "BS.NGUYỄN MẠNH PHÚ",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 9:00"
+        "timesent": "10/07/2025 9:00",
+        "dateofbirth": "10/10/1970",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046189909911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bsnguyenmanhphu@bvtrunguonghue.vn",
+        "phone": "0983102064",
+        "hometown": "297 Điện Biên Phủ, Phường Trường An, Thành Phố Huế",
+        "permanent": "297 Điện Biên Phủ, Phường Trường An, Thành Phố Huế",
+        "residence": "297 Điện Biên Phủ, Phường Trường An, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000002",
         "name": "PHAN HÙNG VIỆT",
         "clinic": "BS. HÙNG VIỆT",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 10:00"
+        "timesent": "10/07/2025 10:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000003",
         "name": "NGUYỄN TÂM ĐỨC",
         "clinic": "PHÒNG KHÁM NHI TÂM ĐỨC",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 10:00"
+        "timesent": "10/07/2025 10:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000004",
         "name": "NGUYỄN MINH TRÍ",
         "clinic": "BS. MINH TRÍ",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 11:00"
+        "timesent": "10/07/2025 11:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000005",
         "name": "VÕ LÂM PHƯỚC",
         "clinic": "BS. VÕ LÂM PHƯỚC",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 12:00"
+        "timesent": "10/07/2025 12:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000006",
         "name": "LÊ XUÂN HIỀN",
         "clinic": "BS. LÊ XUÂN HIỀN",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 12:10"
+        "timesent": "10/07/2025 12:10",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000007",
         "name": "LÊ THIÊN THANH",
         "clinic": "NHA KHOA LITTLE SÀI GÒN",
         "role": "Bác sĩ",
-        "timesent": "10/07/2025 14:00"
+        "timesent": "10/07/2025 14:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000008",
         "name": "ĐỖ HẰNG NGA",
         "clinic": "NHA KHOA CỐ ĐÔ",
         "role": "Bác sĩ",
-        "timesent": "10/08/2025 11:00"
+        "timesent": "10/08/2025 11:00",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nữ",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000009",
         "name": "NGUYỄN BÌNH MINH",
         "clinic": "NHA KHOA BÌNH MINH",
         "role": "Bác sĩ",
-        "timesent": "10/08/2025 11:01"
+        "timesent": "10/08/2025 11:01",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nam",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     },
     {
         "id": "75BS000002",
         "name": "HỒ THỊ PHƯƠNG THẢO",
         "clinic": "BS. HỒ THỊ PHƯƠNG THẢO",
         "role": "Bác sĩ",
-        "timesent": "10/08/2025 10:05"
+        "timesent": "10/08/2025 10:05",
+        "dateofbirth": "10/01/1969",
+        "gender": "Nữ",
+        "placeofbirth": "Thành phố Huế",
+        "nation": "việt Nam",
+        "ethnicity": "Kinh",
+        "religion": "Không",
+        "idnumber": "046180999911",
+        "dateofid": "31/05/2021",
+        "placeofid": "Cục cảnh sát Thừa Thiên Huế",
+        "email": "bshungviet@bvtrunguonghue.vn",
+        "phone": "0931163456",
+        "hometown": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "permanent": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "residence": "95 Ngô Thế Lân, Phường Phú Xuân, Thành Phố Huế",
+        "specialty": "Nhi khoa",
+        "certificate": "",
+        "academictitle": "Phó giáo sư",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Trường Đại Học Y Dược Huế.",
+          "Từng làm việc tại bệnh viện Trung Ương Huế.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
     }
 ]
