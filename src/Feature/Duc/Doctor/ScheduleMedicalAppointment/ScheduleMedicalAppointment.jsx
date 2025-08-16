@@ -61,7 +61,7 @@ const ScheduleAppointment = () => {
                     ))}
                 </div>
             </div>
-
+            
             {/*nút lưu*/}
             <button className="save-btn" onClick = {handleSave}>
                 Lưu lịch

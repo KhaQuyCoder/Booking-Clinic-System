@@ -1,0 +1,14 @@
+[
+  {
+    "phone": "0987654321",
+    "password": "password123"
+  },
+  {
+    "phone": "0912345678",
+    "password": "abc123"
+  },
+  {
+    "phone": "0909090909",
+    "password": "mySecretPass"
+  }
+]

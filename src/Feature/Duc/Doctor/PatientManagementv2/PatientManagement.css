@@ -1,0 +1,9 @@
+.patient-management-wrap {
+
+}
+
+.patient-management-wrap.btn-action {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
