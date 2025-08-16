@@ -3,7 +3,7 @@ import "./Clinic.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import clinicData from "../../../data/clinic.json";
 import ClinicCpn from "../../../components/ClinicComponent/ClinicCpn";
-import Filter, { FilterAll } from "../../../components/FIlterComponent/Filter";
+import Filter from "../../../components/FIlterComponent/Filter";
 import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../../../components/LoadingComponent/Loading";
 import { State } from "../../../state/context";
@@ -12,7 +12,6 @@ const Clinic = () => {
   const navigate = useNavigate();
   const PER_PAGE = 15;
   const { page: pageParam } = useParams();
-  const data = [{}];
   const [specialty, setSpecialty] = useState("");
   const { setLoading, loading } = useContext(State);
   const specialtyData = useMemo(() => {

@@ -140,6 +140,16 @@ select.Option-Address::-webkit-scrollbar {
     }
 
 }
+@media (max-width:1050px) {
+    .Option-Header,.custom-Search-Header-text,.fa-magnifying-glass{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+}
 @media (min-width:841px) and (max-width:1023px) {
     .menuHeader{
         padding: 0 20px;

@@ -1,7 +1,7 @@
 import Header from "../../../layouts/LayoutsUser/Header/Header.js";
 import "./Booking.css";
 import dataClinic from "../../../data/clinic.json";
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import DetaiClinicCpn from "../../../components/DetailClinicComponent/DetaiClinicCpn.js";
 import Button from "../../../components/ButtonComponent/Button.js";
@@ -9,12 +9,15 @@ import Footer from "../../../components/FooterComponent/Footer.js";
 import CadendaBooking from "../../../data/CalendaBooking.json";
 import FormConfiml from "../../../components/FormConfimlComponent/FormConfirm.js";
 import Opacity from "../../../components/OpacityComponent/Opacity.js";
+import Message from "../../../components/MessageComponent/Message.js";
+import { State } from "../../../state/context.js";
+import calendaDone from "../../../data/calendaDone.json";
 const Booking = () => {
   const { slug: slugParam } = useParams();
   const [day, setDay] = useState();
   const [hour, setHour] = useState();
   const [clickBooking, setClickBooking] = useState(false);
-
+  const { messageRef } = useContext(State);
   const nameDocterBooking = JSON.parse(
     localStorage.getItem("nameDocterBooking")
   );
@@ -28,18 +31,27 @@ const Booking = () => {
       (docter) => docter.name === nameDocterBooking
     );
     setDocterFind(data);
-    console.log(docterFind);
   }, [dataFilterClinic]);
+
   useEffect(() => {
     window.scrollTo({
       top: "true",
       behavior: "instant",
     });
   }, []);
+
   const handelConfirmBooking = (day, hour) => {
     setDay(day);
     setHour(hour);
     setClickBooking(true);
+  };
+  const handelShowMessage = () => {
+    messageRef.current.style.transform = "translateX(0%)";
+    setClickBooking(false);
+    setTimeout(() => {
+      if (messageRef.current)
+        messageRef.current.style.transform = "translateX(104%)";
+    }, 2000);
   };
   return (
     <>
@@ -52,6 +64,7 @@ const Booking = () => {
             day={day}
             hour={hour}
             setClickBooking={setClickBooking}
+            handelShowMessage={handelShowMessage}
           />
         )}
         <Header />
@@ -99,15 +112,22 @@ const Booking = () => {
                   {CadendaBooking.map((day, i) => (
                     <td key={i}>
                       <div className="time-list">
-                        {day.Morning.map((hour, idx) => (
-                          <span
-                            key={idx}
-                            className="time-slot"
-                            onClick={() => handelConfirmBooking(day.day, hour)}
-                          >
-                            {hour}
-                          </span>
-                        ))}
+                        {day.Morning.map((timeSlot, idx) => {
+                          const isBooked = calendaDone.some(
+                            (c) =>
+                              c.date.trim() === day.month.trim() &&
+                              c.time.trim() === timeSlot.trim()
+                          );
+
+                          return (
+                            <div
+                              key={idx}
+                              className={isBooked ? "doneBooking" : "time-slot"}
+                            >
+                              {timeSlot}
+                            </div>
+                          );
+                        })}
                       </div>
                     </td>
                   ))}
@@ -117,15 +137,26 @@ const Booking = () => {
                   {CadendaBooking.map((day, i) => (
                     <td key={i}>
                       <div className="time-list">
-                        {day.afternoon.map((hour, idx) => (
-                          <span
-                            key={idx}
-                            className="time-slot"
-                            onClick={() => handelConfirmBooking(day.day, hour)}
-                          >
-                            {hour}
-                          </span>
-                        ))}
+                        {day.afternoon.map((timeSlot, idx) => {
+                          const checkCaledaDoneBooking = calendaDone.some(
+                            (c) =>
+                              c.date.trim() === day.month.trim() &&
+                              c.time.trim() === timeSlot.trim()
+                          );
+
+                          return (
+                            <div
+                              key={idx}
+                              className={
+                                checkCaledaDoneBooking
+                                  ? "doneBooking"
+                                  : "time-slot"
+                              }
+                            >
+                              {timeSlot}
+                            </div>
+                          );
+                        })}
                       </div>
                     </td>
                   ))}
@@ -134,6 +165,7 @@ const Booking = () => {
             </table>
           </div>
         </div>
+        <Message ref={messageRef} />
         <Footer />
       </div>
     </>

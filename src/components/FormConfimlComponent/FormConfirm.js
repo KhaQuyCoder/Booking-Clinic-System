@@ -6,6 +6,7 @@ const FormConfiml = ({
   day,
   hour,
   setClickBooking,
+  handelShowMessage,
 }) => {
   const today = new Date();
   const month = today.getMonth() + 1;
@@ -48,7 +49,11 @@ const FormConfiml = ({
       </div>
       <div style={{ float: "inline-end" }}>
         <Exit name={"Thoát"} className={"exit"} clickExit={handelClickExit} />
-        <Exit name={"Xác nhận"} className={"confirm"} />
+        <Exit
+          name={"Xác nhận"}
+          className={"confirm"}
+          handelShowMessage={handelShowMessage}
+        />
       </div>
     </div>
   );

@@ -2,10 +2,14 @@ import { useContext, useEffect, useCallback } from "react";
 import "./Opacity.css";
 import { State } from "../../state/context";
 
-const Opacity = () => {
+const Opacity = ({ mobileRef, setMobile }) => {
   const { valueText, setValueText } = useContext(State);
 
   const handleClickOpacity = useCallback(() => {
+    if (mobileRef?.current) {
+      mobileRef.current.style.transform = "translateX(100%)";
+      setMobile(false);
+    }
     setValueText("");
   }, [setValueText]);
 

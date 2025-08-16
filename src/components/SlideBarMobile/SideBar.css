@@ -1,0 +1,38 @@
+.container-sidebarMobile{
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 60%;
+    background-color: #2469df;
+    z-index: 999999999;
+    transform: translateX(100%);
+    transition: 0.2s linear;
+}
+.list-option-mobile,.list-option-mobile-setting{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 0;
+}
+.list-option-mobile{
+    margin-top: 20px;
+}
+.list-option-mobile-setting{
+    border-top: 1px solid black;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+.list-option-mobile > a,.list-option-mobile-setting > a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    margin-left: 20px;
+}
+.list-option-mobile-setting > a{
+    margin-left: 0;
+}
+.list-option-mobile > a:hover, .list-option-mobile-setting > a:hover{
+    color: #fff;
+}

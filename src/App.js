@@ -14,6 +14,10 @@ import { useContext } from "react";
 import Opacity from "./components/OpacityComponent/Opacity";
 import NotFound from "./components/NotFoundComponent/NotFound";
 import Booking from "./page/User/BookingPage/Booking";
+import HistoryBooking from "./page/User/HistoryBookingPage/HistoryBooking";
+import Profile from "./page/User/ProfilePage/Profile";
+import AppointmentList from "./page/User/BookingStatus/AppointmentList";
+import SearchClinic from "./page/User/SearchClinicPage/SearchClinic";
 function App() {
   const { valueText } = useContext(State);
   return (
@@ -33,6 +37,10 @@ function App() {
         <Route path="/dang-ky-phong-kham" element={<SigupClinic />} />
         <Route path="chi-tiet-phong-kham/:slug" element={<DetailClinic />} />
         <Route path="/:slug/dat-lich-kham" element={<Booking />} />
+        <Route path="/lich-su-kham-benh" element={<HistoryBooking />} />
+        <Route path="/trang-ca-nhan" element={<Profile />} />
+        <Route path="/xem-lich-kham" element={<AppointmentList />} />
+        <Route path="/tim-kiem" element={<SearchClinic />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

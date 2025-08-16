@@ -32,8 +32,11 @@ export const Advise = ({ path }) => (
   </button>
 );
 
-export const Exit = ({ name, className, clickExit }) => (
-  <button className={className} onClick={clickExit}>
+export const Exit = ({ name, className, clickExit, handelShowMessage }) => (
+  <button
+    className={className}
+    onClick={name === "Thoát" ? clickExit : handelShowMessage}
+  >
     {name}
   </button>
 );
