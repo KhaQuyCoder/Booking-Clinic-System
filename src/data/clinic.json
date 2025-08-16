@@ -1,0 +1,2135 @@
+[
+  {
+    "name": "Phòng khám An Tâm",
+    "address": "12A Phan Chu Trinh, Thừa Thiên Huế",
+    "location": "Thừa Thiên Huế",
+    "openClock": "7h30 -17h30",
+    "status": false,
+    "image": "data:image/jpeg;base64,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",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Nguyễn Văn A",
+    "Phone": "0423434244",
+    "DateStart": "9/04/2013",
+    "specialty": ["Sản phụ khoa", "Ngoại thần kinh", "Chấn thương chỉnh hình", "Nhi khoa", "Tim mạch"],
+    "docter": [
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2021/03/bac-si-cam-ngoc-phuong.png",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/tran-duy-khuong.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Hòa Bình",
+    "address": "34B Nguyễn Huệ, Đà Nẵng",
+    "location": "Đà Nẵng",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "data:image/jpeg;base64,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",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "GS.TS Trần Thị B",
+    "Phone": "0423434244",
+    "DateStart": "15/08/2016",
+    "specialty": ["Tiêu hóa", "Tai Mũi Họng", "Nội tổng quát", "Tim mạch", "Nhi khoa"],
+    "docter": [
+      {
+        "name": "BS. Phạm Minh Đức",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/duoc-si-hoang-thi-lan.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2024/04/ds-hoang-thi-trang.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Tâm Đức",
+    "address": "56C Lê Lợi, TP. Hồ Chí Minh",
+    "location": "TP. Hồ Chí Minh",
+    "openClock": "7h30 -17h30",
+    "status": false,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleBk8gk-t-dia48KV4O0Nzt4xYvW-mJ56kw&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "TS.BS Lê Văn C",
+    "Phone": "0423434244",
+    "DateStart": "22/07/2017",
+    "specialty": ["Nội tổng quát", "Tiêu hóa", "Chấn thương chỉnh hình", "Nhi khoa", "Da liễu"],
+    "docter": [
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-tran-quang-binh-avt.png",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/02/bs-nguyen-duy-trinh.png",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Việt Nhật",
+    "address": "78D Hai Bà Trưng, Hà Nội",
+    "location": "Hà Nội",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTa2IoQH0AL3ahpcxPuX5TMJdKvhevwhFUmA&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Nguyễn Thị D",
+    "Phone": "0423434244",
+    "DateStart": "8/03/2015",
+    "specialty": ["Răng hàm mặt", "Nội tổng quát", "Ngoại thần kinh", "Da liễu", "Chấn thương chỉnh hình"],
+    "docter": [
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2021/03/bac-si-do-minh-hung.png",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Sức Khỏe Vàng",
+    "address": "90E Trần Hưng Đạo, Cần Thơ",
+    "location": "Cần Thơ",
+    "openClock": "7h30 -17h30",
+    "status": false,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjYEolRXfUjUHs_mgtstzDL77VZNWUexJIg&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "ThS.BS Trần Văn E",
+    "Phone": "0423434244",
+    "DateStart": "7/06/2016",
+    "specialty": ["Chấn thương chỉnh hình", "Tai Mũi Họng", "Nhi khoa", "Ngoại thần kinh", "Nội tổng quát"],
+    "docter": [
+      {
+        "name": "BS. Trần Thị Hoa",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2011/01/bs-vu-truong-khanh.png",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Nhân Ái",
+    "address": "21F Phan Đình Phùng, Nghệ An",
+    "location": "Nghệ An",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_5K3JqixQDelhXEyxgAbTz2F97QGYYBBG3Q&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "TS.BS Lê Thị F",
+    "Phone": "0423434244",
+    "DateStart": "21/06/2016",
+    "specialty": ["Tiêu hóa", "Nhi khoa", "Sản phụ khoa", "Da liễu", "Tai Mũi Họng"],
+    "docter": [
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Thiện Tâm",
+    "address": "11G Lê Duẩn, Khánh Hòa",
+    "location": "Khánh Hòa",
+    "openClock": "7h30 -17h30",
+    "status": false,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAeg4RqPbtNj65FPNe-N0_hmIQqKx4prL34Q&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Phạm Văn G",
+    "Phone": "0423434244",
+    "DateStart": "20/09/2013",
+    "specialty": ["Tai Mũi Họng", "Tim mạch", "Sản phụ khoa", "Tiêu hóa", "Ngoại thần kinh"],
+    "docter": [
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Phó giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Đông Tây Y",
+    "address": "19H Bạch Đằng, Bình Dương",
+    "location": "Bình Dương",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbYnX-xNkcnFMe0x4e9gw5QUcruH32tStWg&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "GS.TS Trần Văn H",
+    "Phone": "0423434244",
+    "DateStart": "14/01/2019",
+    "specialty": ["Tai Mũi Họng", "Răng hàm mặt", "Tiêu hóa", "Nhi khoa", "Ngoại thần kinh"],
+    "docter": [
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Nhi khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Hy Vọng",
+    "address": "88I Nguyễn Trãi, Đắk Lắk",
+    "location": "Đắk Lắk",
+    "openClock": "7h30 -17h30",
+    "status": false,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOjIkXQs3TmkE8Izx04_C4UgA6jbg5ofHhA&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "ThS.BS Nguyễn Thị I",
+    "Phone": "0423434244",
+    "DateStart": "21/04/2015",
+    "specialty": ["Răng hàm mặt", "Tai Mũi Họng", "Ngoại thần kinh", "Nội tổng quát", "Nhi khoa"],
+    "docter": [
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Văn Mạnh",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Hữu Nghĩa",
+        "specialty": "Sản phụ khoa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Tai Mũi Họng",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phòng khám Tân Tiến",
+    "address": "66J Hùng Vương, Lâm Đồng",
+    "location": "Lâm Đồng",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lyTabvGG1nJGLy_i9TmERXn9jgN0v9P2_g&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Đỗ Văn K",
+    "Phone": "0423434244",
+    "DateStart": "7/02/2018",
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],
+    "docter": [
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },{
+    "name": "Phòng khám Tân Tiến",
+    "address": "66J Hùng Vương, Lâm Đồng",
+    "location": "Lâm Đồng",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lyTabvGG1nJGLy_i9TmERXn9jgN0v9P2_g&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Đỗ Văn K",
+    "Phone": "0423434244",
+    "DateStart": "7/02/2018",
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],    "docter": [
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  },{
+    "name": "Phòng khám Tân Tiến",
+    "address": "66J Hùng Vương, Lâm Đồng",
+    "location": "Lâm Đồng",
+    "openClock": "7h30 -17h30",
+    "status": true,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lyTabvGG1nJGLy_i9TmERXn9jgN0v9P2_g&s",
+    "description": "Phòng khám cung cấp dịch vụ y tế chất lượng cao với đội ngũ y bác sĩ chuyên nghiệp và trang thiết bị hiện đại.",
+    "facilityOwner": "PGS.TS Đỗ Văn K",
+    "Phone": "0423434244",
+    "DateStart": "7/02/2018",
+    "specialty": ["Da liễu", "Chấn thương chỉnh hình", "Răng hàm mặt", "Ngoại thần kinh", "Tai Mũi Họng"],   
+    "docter": [
+      {
+        "name": "BS. Hồ Thị Thu Hà",
+        "specialty": "Da liễu",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Thị Hoa",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Mai Văn Huy",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Thị Lan",
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Văn Tùng",
+        "specialty": "Chấn thương chỉnh hình",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Phạm Minh Đức",
+        "specialty": "Tiêu hóa",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Lê Minh Tuấn",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
+        "specialty": "Răng hàm mặt",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Đỗ Văn Hùng",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",
+        "specialty": "Nội tổng quát",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Nguyễn Thị Mai",
+        "image":"https://tamanhhospital.vn/wp-content/uploads/2023/09/bs-tran-van-hinh-avt.png",  
+        "specialty": "Tim mạch",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      },
+      {
+        "name": "BS. Trần Văn Bình",
+        "specialty": "Ngoại thần kinh",
+        "description": "Bác sĩ có kinh nghiệm trong lĩnh vực chuyên môn cao, từng công tác tại nhiều bệnh viện lớn trong và ngoài nước.",
+        "HocHam":"Giáo sư",
+        "training": [
+          "Tham gia nhiều khóa đào tạo chuyên sâu tại Singapore, Thái Lan, Hàn Quốc.",
+          "Có chứng chỉ chuyên môn quốc tế về kỹ thuật điều trị mới.",
+          "Thường xuyên cập nhật kiến thức y khoa hiện đại."
+        ],
+        "working": [
+          "Từng làm việc tại bệnh viện Bạch Mai.",
+          "Từng làm việc tại bệnh viện Chợ Rẫy.",
+          "Hiện đang là trưởng khoa tại phòng khám hiện tại."
+        ]
+      }
+    ]
+  }
+]

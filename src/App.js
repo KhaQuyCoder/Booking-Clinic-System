@@ -1,12 +1,17 @@
-import Loading from "./components/LoadingComponent/Loading";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./page/User/HomePage/Home";
+import Context from "./state/context";
+import { Docter } from "./page/User/DocterPage/Docter";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Loading />
-      </header>
-    </div>
+    <Context>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bac-si" element={<Docter />} />
+        <Route path="bac-si/page/:page" element={<Docter />} />
+      </Routes>
+    </Context>
   );
 }
 

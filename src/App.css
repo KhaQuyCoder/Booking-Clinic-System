@@ -6,4 +6,16 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+@media (max-width: 1400px) {
+    body{
+      font-size: 15px;
+    }
+    h2{
+      font-size: 1.2rem;
+    }
+    .container-docterCar{
+      margin-left: 20px;
+    }
+}
+
 
