@@ -8,7 +8,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <LogoSidebar />
-            <Acc />
+            <Acc name="Quan"/>
             <Bodysidebar />
             <Logsidebar />
         </div>

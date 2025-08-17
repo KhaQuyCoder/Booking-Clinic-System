@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { FaFileAlt, FaCheckCircle} from "react-icons/fa";
 import doctorData from '../../../data/Browsedoctor.json';
-// import './Listbrowsedoctor.css';
 import { Commontable } from "../../table/Commontable";
 import { FaCircleXmark } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function Listbrowsedoctor() {
     const [doctors, setDoctors] = useState([]);
+    const navigate = useNavigate();
     useEffect(() => {
         setDoctors(doctorData);
     }, []);
+    const handleReview = (doctor) => {
+        navigate(`/duyet-bac-si/thong-tin-bac-si/${doctor.id}`, {state : {doctor}});
+    };
     
     const columnsDoctor = [
         { name: "ID bác sĩ", key: 'id' },
@@ -19,9 +23,9 @@ function Listbrowsedoctor() {
         { name: "Thời gian gửi", key: 'timesent' }
     ];
     const actions = [
-        <FaFileAlt className="iconf" />,
-        <FaCheckCircle className="iconf" />,
-        <FaCircleXmark className="iconf" />,
+        (doctor) => <FaFileAlt title="Xem chi tiết" className="iconf" onClick={() => handleReview(doctor)} />,
+        (doctor) => <FaCheckCircle title="Duyệt" className="iconf" onClick={() => console.log('Duyệt', doctor.id)}/>,
+        (doctor) => <FaCircleXmark title="Từ chối" className="iconf" onClick={() => console.log('Từ chối', doctor.id)}/>,
     ];
     return (
         <div>
