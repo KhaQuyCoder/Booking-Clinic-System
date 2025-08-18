@@ -36,6 +36,7 @@
     font-size: 16px;
     color: #000;
     outline: none;
+    font-family: 'Inter';
 }
 input:not(:placeholder-shown) ~ .iconSearch {
     color: #000;

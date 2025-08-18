@@ -9,6 +9,9 @@ function Listclinicmanager() {
     useEffect(() => {
         setManagers(managerData);
     }, []);
+    const handleReject = (id) => {
+        setManagers((oldManagers) => oldManagers.filter((manager) => manager.id !== id));
+    };
     const handleReview = (manager) => {
         navigate(`/quan-ly-phong-kham/thong-tin-phong-kham/${manager.id}`,{state: {manager}});
     }
@@ -25,7 +28,7 @@ function Listclinicmanager() {
     const actions = [
         (manager) => <FaFileAlt title="Xem chi tiết" className="iconf" onClick={() => handleReview(manager)}/>,
         (manager) => <FaWrench title="Sửa thông tin" className="iconf" onClick={() => handleFix(manager)}/>,
-        (manager) => <FaTrashAlt title="Xóa phòng khám" className="iconf" onClick={() => console.log('Xóa', manager.id)} />
+        (manager) => <FaTrashAlt title="Xóa phòng khám" className="iconf" onClick={() => handleReject(manager.id)} />
     ];
     return(
         <div>

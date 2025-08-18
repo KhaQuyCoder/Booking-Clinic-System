@@ -12,8 +12,14 @@ function Listbrowseclinic() {
     useEffect(() => {
         setClinics(clinicData);
     }, []);
+        const handleApprove = (id) => {
+                setClinics((oldClinics) => oldClinics.filter((clinic) => clinic.id !== id));
+        };
+        const handleReject = (id) => {
+                setClinics((oldClinics) => oldClinics.filter((clinic) => clinic.id !== id));
+        };
     const handleReview = (clinic) => {
-        navigate(`/duyet-phong-kham/thong-tin-phong-kham/${clinic.id}`, { state : {clinic}});
+        navigate(`/duyet-phong-kham/thong-tin-phong-kham/${clinic.id}`, { state: { clinic } });
     };
 
     const columnsClinic = [
@@ -21,12 +27,12 @@ function Listbrowseclinic() {
         { name: "Tên phòng khám", key: 'name' },
         { name: "Loại hình phòng khám", key: 'type' },
         { name: "Vai trò", key: 'role' },
-        { name: "Thời gian gửi", key: 'timesent' } 
+        { name: "Thời gian gửi", key: 'timesent' },
     ];
     const actions = [
         (clinic) => <FaFileAlt title="Xem chi tiết" className="iconf" onClick={() => handleReview(clinic)} />,
-        (clinic) => <FaCheckCircle title="Duyệt" className="iconf" onClick={() => console.log('Duyệt', clinic.id)} />,
-        (clinic) => <FaCircleXmark title="Từ chối" className="iconf" onClick={() => console.log('Từ chối', clinic.id)} />,
+        (clinic) => <FaCheckCircle title="Duyệt" className="iconf" onClick={() => handleApprove(clinic.id)} />,
+        (clinic) => <FaCircleXmark title="Từ chối" className="iconf" onClick={() => handleReject(clinic.id)} />,
     ];
     return (
         <div>
