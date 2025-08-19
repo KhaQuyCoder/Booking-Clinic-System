@@ -3,13 +3,14 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
-import doctorData from '../../../data/Browsedoctor.json';
 import './Detailinfordoctor.css';
+import { useCommon } from "../../components/CommonContext";
 
 function Detailinfordoctor(){
     const location = useLocation();
     const navigate = useNavigate();
     const { id } = useParams();
+    const {doctors, approveDoctor, rejectDoctor} = useCommon();
 
     const [doctor, setDoctor] = useState(location.state?.doctor || null);
     const [loading, setLoading] = useState(false);
@@ -17,13 +18,24 @@ function Detailinfordoctor(){
     useEffect(() => {
         if(!doctor) {
             setLoading(true);
-            const found = doctorData.find(c => String(c.id) === String(id));
+            const found = doctors.find(c => String(c.id) === String(id));
             if(found) {
                 setDoctor(found);
             }
         }
         setLoading(false);
-    }, [doctor, id]);
+    }, [doctor, id, doctors]);
+    const onApprove = () => {
+        approveDoctor(doctor.id);
+        navigate(-1);
+    };
+    const onReject = () => {
+        const confirmDelete = window.confirm("Bạn có chắc muốn từ chối bác sĩ này?");
+        if (confirmDelete) {
+            rejectDoctor(doctor.id);
+            navigate(-1);
+        }
+    };
 
     if (loading) return <div>Đang load...</div>;
 
@@ -84,8 +96,8 @@ function Detailinfordoctor(){
                 </div>
                 <div className="interacts">
                     <button className="interact" onClick={() => navigate(-1)}><BiArrowBack />Quay lại</button>
-                    <button className="interact"><FaCheckCircle color="#2ecc71"/> Duyệt</button>
-                    <button className="interact"><FaCircleXmark color="#D72638"/> Từ chối</button>
+                    <button className="interact" onClick={onApprove}><FaCheckCircle color="#2ecc71"/> Duyệt</button>
+                    <button className="interact" onClick={onReject}><FaCircleXmark color="#D72638"/> Từ chối</button>
                 </div>
             </div>
         );

@@ -1,19 +1,22 @@
 import React from 'react';
-import { Header } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
 import './App.css';
 import { Routing } from './Routing/Routing';
+import { Header } from './layouts/header/Header';
+import { Sidebar } from './layouts/Sidebar/Sidebar';
+import { CommonProvider } from './components/CommonContext';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <div className="main-layout">
-        <Header />
-        <div className="content">
-          <Routing />
+      <CommonProvider>
+        <Sidebar />
+        <div className="main-layout">
+          <Header />
+          <div className="content">
+            <Routing />
+          </div>
         </div>
-      </div>
+      </CommonProvider>
     </div>
   );
 }

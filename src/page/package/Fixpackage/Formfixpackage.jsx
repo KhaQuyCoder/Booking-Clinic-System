@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import packagesData from '../../../../data/Packagelist.json';
+import packagesData from '../../../data/Packagelist.json';
 import { BiArrowBack } from "react-icons/bi";
 import { LiaSave } from "react-icons/lia";
 

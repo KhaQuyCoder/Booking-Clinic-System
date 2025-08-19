@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Clinicbrowses } from "../components/pages/Clinicbrowse/Clinicbrowses";
-import { Detailclinicbrowse } from "../components/pages/Detailclinicbrowse/Detailclinicbrowse";
-import { Doctorbrowses } from "../components/pages/Doctorbrowse/Doctorbrowses";
-import { Clinicmanagers } from "../components/pages/Clinicmanager/Clinicmanagers";
-import { Alllistpackages } from "../components/pages/packages/listpackage/Alllistpackages";
-import { Detaildoctor } from "../components/pages/Detaildoctor/Detaildoctor";
-import { Detailinformanager } from "../components/pages/Detailmanager/Detailinformanager";
-import { Createpackage } from "../components/pages/packages/createpackage/Createpackage";
-import { Fixclinic } from "../components/pages/Fixclinic/Fixclinic";
-import { Detailpackage } from "../components/pages/packages/Detailpackage/Detailpackage";
-import { Fixpackage } from "../components/pages/packages/Fixpackage/Fixpackage";
+import { Clinicbrowses } from "../page/Clinicbrowse/Clinicbrowses";
+import { Detailclinicbrowse } from "../page/Detailclinicbrowse/Detailclinicbrowse";
+import { Doctorbrowses } from "../page/Doctorbrowse/Doctorbrowses";
+import { Clinicmanagers } from "../page/Clinicmanager/Clinicmanagers";
+import { Alllistpackages } from "../page/package/listpackage/Alllistpackages";
+import { Detaildoctor } from "../page/Detaildoctor/Detaildoctor";
+import { Detailmanager } from "../page/Detailmanager/Detailmanager";
+import { Createpackage } from "../page/package/createpackage/Createpackage";
+import { Fixclinic } from "../page/Fixclinic/Fixclinic";
+import { Detailpackage } from "../page/package/Detailpackage/Detailpackage";
+import { Fixpackage } from "../page/package/Fixpackage/Fixpackage";
 
 function Routing() {
     return (
@@ -21,7 +21,7 @@ function Routing() {
             <Route path="/duyet-bac-si" element={<Doctorbrowses />} />
             <Route path="/duyet-bac-si/thong-tin-bac-si/:id" element ={<Detaildoctor />} />
             <Route path="/quan-ly-phong-kham" element={<Clinicmanagers />} />
-            <Route path="/quan-ly-phong-kham/thong-tin-phong-kham/:id" element={<Detailinformanager />} />
+            <Route path="/quan-ly-phong-kham/thong-tin-phong-kham/:id" element={<Detailmanager />} />
             <Route path="/quan-ly-phong-kham/sua-thong-tin-phong-kham/:id" element= {<Fixclinic />} />
             <Route path="/quan-ly-goi/tao-goi" element={<Createpackage />} />
             <Route path="/quan-ly-goi/danh-sach-goi" element={<Alllistpackages />} />

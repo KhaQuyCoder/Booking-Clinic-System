@@ -3,13 +3,14 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
-import clinicData from '../../../data/Browseclinic.json';
 import './Detailinforclinic.css';
+import { useCommon } from "../../components/CommonContext";
 
 function Detailinforclinic() {
     const location = useLocation();
     const navigate = useNavigate();
     const { id } = useParams();
+    const { clinics, approveClinic, rejectClinic } = useCommon();
 
     const [clinic, setClinic] = useState(location.state?.clinic || null);
     const [loading, setLoading] = useState(false);
@@ -17,13 +18,24 @@ function Detailinforclinic() {
     useEffect(() => {
         if (!clinic) {
             setLoading(true);
-            const found = clinicData.find(c => String(c.id) === String(id));
+            const found = clinics.find(c => String(c.id) === String(id));
             if (found) {
                 setClinic(found);
             }
             setLoading(false);
         }
-    }, [clinic, id]);
+    }, [clinic, id, clinics]);
+    const onApprove = () => {
+        approveClinic(clinic.id);
+        navigate(-1);
+    };
+    const onReject = () => {
+        const confirmDelete = window.confirm("Bạn có chắc muốn từ chối phòng khám này?");
+        if (confirmDelete) {
+            rejectClinic(clinic.id);
+            navigate(-1);
+        }
+    };
 
     if (loading) return <div>Đang load...</div>;
 
@@ -69,8 +81,8 @@ function Detailinforclinic() {
             </div>
             <div className="interacts">
                 <button className="interact" onClick={() => navigate(-1)}><BiArrowBack />Quay lại</button>
-                <button className="interact"><FaCheckCircle color="#2ecc71"/> Duyệt</button>
-                <button className="interact"><FaCircleXmark color="#D72638"/> Từ chối</button>
+                <button className="interact" onClick={onApprove}><FaCheckCircle color="#2ecc71" /> Duyệt</button>
+                <button className="interact" onClick={onReject}><FaCircleXmark color="#D72638" /> Từ chối</button>
             </div>
         </div>
     );

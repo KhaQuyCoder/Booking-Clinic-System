@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { FaTrashAlt, FaWrench } from "react-icons/fa";
-import clinicData from '../../../data/Browseclinic.json';
 import './Detailinformanager.css';
+import { useCommon } from "../../components/CommonContext";
 
 function Detailinformanager() {
     const location = useLocation();
     const navigate = useNavigate();
     const { id } = useParams();
+    const { clinics, rejectClinic } = useCommon();
 
     const [manager, setManager] = useState(location.state?.manager || null);
     const [loading, setLoading] = useState(false);
@@ -16,13 +17,21 @@ function Detailinformanager() {
     useEffect(() => {
         if (!manager) {
             setLoading(true);
-            const found = clinicData.find(c => String(c.id) === String(id));
+            const found = clinics.find(c => String(c.id) === String(id));
             if (found) {
                 setManager(found);
             }
             setLoading(false);
         }
-    }, [manager, id]);
+    }, [manager, id, clinics]);
+
+    const handleReject = () => {
+        const confirmDelete = window.confirm("Bạn có chắc muốn xóa phòng khám này?");
+        if (confirmDelete) {
+            rejectClinic(manager.id);
+            navigate(-1);
+        }
+    };
 
     const handleFix = (manager) => {
         navigate(`/quan-ly-phong-kham/sua-thong-tin-phong-kham/${manager.id}`, {state: {manager}});
@@ -72,7 +81,7 @@ function Detailinformanager() {
             <div className="interacts">
                 <button className="interact" onClick={() => navigate(-1)}><BiArrowBack />Quay lại</button>
                 <button className="interact" onClick={() => handleFix(manager)}><FaWrench color="#2ecc71"/> Sửa</button>
-                <button className="interact"><FaTrashAlt color="#D72638"/> Xóa</button>
+                <button className="interact" onClick={handleReject}><FaTrashAlt color="#D72638"/> Xóa</button>
             </div>
         </div>
     );

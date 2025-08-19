@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaFileAlt, FaCheckCircle } from "react-icons/fa";
-import clinicData from '../../../data/Browseclinic.json';
 import './Listbrowseclinic.css';
-import { Commontable } from "../../table/Commontable";
+import { Commontable } from "../../components/table/Commontable";
 import { FaCircleXmark } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useCommon } from "../../components/CommonContext";
 
 function Listbrowseclinic() {
-    const [clinics, setClinics] = useState([]);
     const navigate = useNavigate();
-    useEffect(() => {
-        setClinics(clinicData);
-    }, []);
-        const handleApprove = (id) => {
-                setClinics((oldClinics) => oldClinics.filter((clinic) => clinic.id !== id));
-        };
-        const handleReject = (id) => {
-                setClinics((oldClinics) => oldClinics.filter((clinic) => clinic.id !== id));
-        };
+    const {clinics, approveClinic, rejectClinic} = useCommon();
+
+    const handleApprove = (id) => {
+        approveClinic(id);
+    };
+    const handleReject = (id) => {
+        const confirmDelete = window.confirm("Bạn có chắc muốn từ chối phòng khám này?");
+        if (confirmDelete) {
+            rejectClinic(id);
+        }
+    };
     const handleReview = (clinic) => {
         navigate(`/duyet-phong-kham/thong-tin-phong-kham/${clinic.id}`, { state: { clinic } });
     };

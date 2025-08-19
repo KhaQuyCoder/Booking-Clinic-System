@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import clinicData from '../../../data/Browseclinic.json';
+import clinicData from '../../data/Browseclinic.json';
 import { useForm } from "react-hook-form";
 import { LiaSave } from "react-icons/lia";
 import { BiArrowBack } from "react-icons/bi";
