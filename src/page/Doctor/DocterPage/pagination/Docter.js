@@ -1,12 +1,12 @@
 import React, { useContext, useMemo, useState } from "react";
 import "./Docter.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
-import Footer from "../../../components/FooterComponent/Footer";
-import clinicData from "../../../data/clinic.json";
-import { DocterAll } from "../../../components/DocterComponent/CarDocter";
+import Footer from "../../../../components/FooterComponent/Footer";
+import clinicData from "../../../../data/clinic.json";
+import { DocterAll } from "../../../../components/DocterComponent/CarDocter";
 import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../../../components/LoadingComponent/Loading";
-import { State } from "../../../state/context";
+import { State } from "../../../../state/context";
 
 export const Docter = () => {
   const navigate = useNavigate();

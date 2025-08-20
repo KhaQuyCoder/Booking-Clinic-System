@@ -79,7 +79,8 @@ const PatientTable = () => {
                       variant="contained"
                       color="primary"
                       size="small"
-                       sx={{ mr: 1,  height: "40px" }}
+                      sx={{ mr: 1,  height: "40px" }}
+                      onClick={() => navigate(`/PatientEdit/${p.id}`)} 
                     >
                       <img src={iconEdit} />
                     </Button>
@@ -87,7 +88,8 @@ const PatientTable = () => {
                       variant="contained"
                       color="primary"
                       size="small"
-                       sx={{ mr: 1,  height: "40px" }}
+                      sx={{ mr: 1,  height: "40px" }}
+                      onClick={() => navigate(`/ViewMR/${p.id}`)} 
                     >
                       <img src={iconView} />
                     </Button>
@@ -95,7 +97,8 @@ const PatientTable = () => {
                       variant="contained"
                       color="primary"
                       size="small"
-                       sx={{ mr: 1,  height: "40px" }}
+                      sx={{ mr: 1,  height: "40px" }}
+                      onClick={() => navigate(`/MedicalHistory/${p.id}`)}
                     >
                      <img src={iconHistory} />
                     </Button>
