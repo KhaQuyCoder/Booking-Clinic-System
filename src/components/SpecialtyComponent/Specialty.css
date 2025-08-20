@@ -21,6 +21,7 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
 .item-specialty-top:hover,.item-specialty-bot:hover{
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }

@@ -22,7 +22,6 @@ const DetaiClinicCpn = ({ clinicDetailShow }) => {
           )}
           <p>Chủ cơ sở: {clinicDetailShow.facilityOwner}</p>
           <div>
-            <BookingHome />
             <Advise path={"/tu-van"} />
           </div>
         </p>

@@ -6,9 +6,11 @@ import { State } from "../../../state/context";
 
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
-  const { avatar, setAvatar } = useContext(State);
+  const { avatar, setAvatar, phone, setPhone } = useContext(State);
+  const [warning, setWarning] = useState(true);
   const [profile, setProfile] = useState({
     name: "Hồ Khả Quý",
+    phone: phone,
     gender: "Nam",
     hometown: "Hà Nội",
     allergy:
@@ -46,6 +48,19 @@ const Profile = () => {
     <>
       <Header />
       <div className="profile-container">
+        {warning && (
+          <div className="done-searchSpecialty profile">
+            <p style={{ margin: "0" }}>
+              Nếu có thể hãy điền đầy đủ thông tin bên dưới để bác sĩ có thể nắm
+              bắt được tình hình sức khỏe của bạn nhé!
+            </p>
+            <i
+              style={{ margin: "0" }}
+              class="fa-solid fa-xmark close"
+              onClick={() => setWarning(false)}
+            ></i>
+          </div>
+        )}
         <div className="profile-card">
           <h2>Hồ sơ cá nhân</h2>
           <div className="wrapper-profile">
@@ -99,6 +114,7 @@ const Profile = () => {
 function getLabel(key) {
   const labels = {
     name: "Họ và tên",
+    phone: "Số điện thoại",
     gender: "Giới tính",
     hometown: "Quê quán",
     allergy: "Dị ứng",

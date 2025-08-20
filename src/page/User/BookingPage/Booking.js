@@ -79,18 +79,23 @@ const Booking = () => {
           <div className="wrapper-booking">
             <img src={docterFind?.image} className="image-booking" />
             <div className="infor-docter-booking">
-              <p className="name-docter-booking">{docterFind?.name} </p>
-              <p className="specialty-booking">
-                Trưởng khoa {docterFind?.specialty}{" "}
+              <p className="name-docter-booking">
+                {docterFind?.name} -{" "}
+                <span className="specialty-booking">
+                  Trưởng khoa {docterFind?.specialty}{" "}
+                </span>{" "}
               </p>
-              <p>
+              <p style={{ margin: "7px 0" }}>
                 <strong>Quá trình công tác:</strong>
-                {docterFind?.working.map((work, index) => (
+                {docterFind?.working.slice(0, 7).map((work, index) => (
                   <p key={index}>{work}</p>
                 ))}
               </p>
-              <p className="des-booking">{docterFind?.description}</p>
-              <Button booking={true} />
+              <Button
+                booking={true}
+                path={`/xem-chi-tiet-bac-si/${docterFind?.slugDocter}`}
+                idDocter={docterFind?.idDocter}
+              />
             </div>
           </div>
           <div>
@@ -123,6 +128,9 @@ const Booking = () => {
                             <div
                               key={idx}
                               className={isBooked ? "doneBooking" : "time-slot"}
+                              onClick={() =>
+                                handelConfirmBooking(day.day, timeSlot)
+                              }
                             >
                               {timeSlot}
                             </div>
@@ -151,6 +159,9 @@ const Booking = () => {
                                 checkCaledaDoneBooking
                                   ? "doneBooking"
                                   : "time-slot"
+                              }
+                              onClick={() =>
+                                handelConfirmBooking(day.day, timeSlot)
                               }
                             >
                               {timeSlot}

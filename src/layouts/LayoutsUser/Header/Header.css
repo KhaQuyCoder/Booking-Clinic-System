@@ -97,13 +97,19 @@ select.Option-Address::-webkit-scrollbar {
 }
 
 @media (max-width: 500px){
-   .Wrapper-Header,.Option-Header{
+   .Option-Header{
         display: none;
+    }
+    .logo-header{
+        width: 80px;
     }
    .fa-bars{
         display: block;
         font-size: 20px;
         margin-left: 30px;
+    }
+    .menuHeader{
+        margin-top: 10px;
     }
     .Search-Header-text,
     .custom-text-Input,

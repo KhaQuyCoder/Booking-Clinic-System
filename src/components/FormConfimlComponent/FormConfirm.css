@@ -35,6 +35,7 @@
   padding: 10px;
   text-align: center;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .confirm-table thead th {

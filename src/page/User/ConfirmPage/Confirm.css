@@ -1,4 +1,5 @@
 .container-confirm {
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -21,7 +22,7 @@
     cursor: pointer;
     border-radius: 10px;
     background-color: #2469df;
-    margin-top: 50px;
+    margin: 20px 0;
 }
 
 .next-confirm:hover {

@@ -5,7 +5,6 @@ import clinicData from "../../../data/clinic.json";
 import FeedBackData from "../../../data/feedBack.json";
 import "./Detail.css";
 import Footer from "../../../components/FooterComponent/Footer";
-
 import { DocterAll } from "../../../components/DocterComponent/CarDocter";
 import FeedBack from "../../../components/FeddBackComponent/FeedBack";
 import adchievementsData from "../../../data/adchievements.json";
@@ -16,9 +15,7 @@ const Detail = () => {
   const [clinicDetailShow, setClinicDetailShow] = useState({});
   const [dataDocterDetail, setDataDocterDetail] = useState([]);
   const [dataAdchievement, setDataAdchievement] = useState([]);
-
   const [feedBackList, setFeedBackList] = useState([]);
-
   const [nameClinic, setNameClinic] = useState("");
 
   useEffect(() => {

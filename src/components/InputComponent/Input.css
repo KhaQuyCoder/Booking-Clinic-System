@@ -1,5 +1,6 @@
 .wrapper-input-cpm {
     position: relative;
+    margin: 0;
 }
 
 .input-cpm {
@@ -11,12 +12,6 @@
     min-width: 250px;
     border: 1px solid #e5e7eb;
 }
-/* .address-sigupclinic{
-    min-width: 900px;
-}
-.name-sigupclinic{
-    width: 420px;
-} */
 .text-input-cpm {
     position: absolute;
     top: 15%;

@@ -5,7 +5,9 @@
   margin: 10px;
   cursor: pointer;
 }
-
+.container-docterCar{
+  margin: 0;
+}
 .image-docter {
   height: 180px;
 }

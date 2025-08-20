@@ -81,14 +81,17 @@ export const Docter = () => {
     <>
       <Header />
       <div className="container-docterAll">
-        <Filter
-          handleFilterDocterSpecialty={handleFilterDocterSpecialty}
-          specialtyData={specialtyData}
-        />
-        <FilterAll
-          handleFilterDocterHocHam={handleFilterDocterHocHam}
-          data={data}
-        />
+        <div className="wrapper-filter-docter">
+          <Filter
+            handleFilterDocterSpecialty={handleFilterDocterSpecialty}
+            specialtyData={specialtyData}
+          />
+          <FilterAll
+            handleFilterDocterHocHam={handleFilterDocterHocHam}
+            data={data}
+          />
+        </div>
+
         {loading && <Loading />}
 
         {!loading && (

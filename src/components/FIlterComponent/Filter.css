@@ -13,4 +13,8 @@
     min-width: 250px;
     cursor: pointer;
     background-position: right 12px center;
+    margin: 0
+}
+.filter-specialty{
+    margin: 0;
 }

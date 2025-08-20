@@ -1,4 +1,3 @@
-import React from "react";
 import "./TotalPage.css";
 const TotalPage = ({ totalPages, currentPage, handlePage }) => {
   return (

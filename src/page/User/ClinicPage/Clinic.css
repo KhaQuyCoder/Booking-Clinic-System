@@ -2,4 +2,8 @@
     max-width: 1400px;
     width: 100%;
     margin-top: 120px;
+    padding: 20px;
+}
+.wrapper-clinic{
+    margin-top: 20px;
 }

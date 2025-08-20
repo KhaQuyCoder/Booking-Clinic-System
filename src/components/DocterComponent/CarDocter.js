@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./CarDocter.css";
 import Button from "../../../src/components/ButtonComponent/Button";
 const CarDocter = ({ doctor, item }) => {
@@ -28,7 +28,11 @@ const CarDocter = ({ doctor, item }) => {
                 path={`/${item.slug}/dat-lich-kham`}
                 nameDocter={doctor.name}
               />
-              <Button booking={true} />
+              <Button
+                booking={true}
+                path={`/xem-chi-tiet-bac-si/${doctor.slugDocter}`}
+                idDocter={doctor.idDocter}
+              />
             </div>
           </div>
 
@@ -45,7 +49,7 @@ const CarDocter = ({ doctor, item }) => {
     </div>
   );
 };
-export const DocterAll = ({ doctor, path }) => {
+export const DocterAll = ({ doctor }) => {
   return (
     <>
       <div className="item-docterAll">
@@ -65,10 +69,15 @@ export const DocterAll = ({ doctor, path }) => {
             <Button
               booking={true}
               title={true}
-              path={path}
+              path={`/${doctor.slugClinic}/dat-lich-kham`}
               nameDocter={doctor.name}
+              docter={doctor}
             />
-            <Button booking={true} />
+            <Button
+              booking={true}
+              path={`/xem-chi-tiet-bac-si/${doctor.slugDocter}`}
+              idDocter={doctor.idDocter}
+            />
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ h2 {
 }
 
 .table-responsive {
+    width: 100%;
     overflow-x: auto;
 }
 
@@ -24,6 +25,7 @@ h2 {
 .history-table td {
     padding: 12px 15px;
     text-align: left;
+    white-space: nowrap;
 }
 .history-table tr:hover{
     background-color: #fbf7f7;

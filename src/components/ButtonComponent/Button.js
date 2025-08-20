@@ -1,9 +1,13 @@
 import "./Button.css";
 import { Link, useNavigate } from "react-router-dom";
-const Button = ({ login, booking, title, path, nameDocter }) => {
+const Button = ({ login, booking, title, path, nameDocter, idDocter }) => {
   const navigate = useNavigate();
   const handelBooking = () => {
     localStorage.setItem("nameDocterBooking", JSON.stringify(nameDocter));
+    navigate(path);
+  };
+  const handelViewDetailDocter = () => {
+    localStorage.setItem("idDocter", JSON.stringify(idDocter));
     navigate(path);
   };
   return !booking ? (
@@ -11,7 +15,7 @@ const Button = ({ login, booking, title, path, nameDocter }) => {
   ) : (
     <button
       className={title ? "btn-booking-docter" : "btn-viewMore"}
-      onClick={handelBooking}
+      onClick={title ? handelBooking : handelViewDetailDocter}
     >
       {title ? "Đặt lịch khám" : "Xem chi tiết"}
     </button>

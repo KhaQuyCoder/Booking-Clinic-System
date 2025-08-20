@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import "./AppointmentList.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import Footer from "../../../components/FooterComponent/Footer";
-import appointments from "../../../data/calendaDone.json";
+import appointmentsData from "../../../data/calendaDone.json";
 const AppointmentList = () => {
+  const [appointments, setAppointments] = useState(appointmentsData);
+
   const cancelAppointment = (id) => {
     const confirmCancel = window.confirm("Bạn có chắc muốn hủy lịch khám này?");
     if (confirmCancel) {
-      appointments((prev) => prev.filter((appt) => appt.id !== id));
+      setAppointments((prev) => prev.filter((appt) => appt.id !== id));
     }
   };
-
+  useEffect(() => {
+    window.scrollTo({
+      top: "true",
+      behavior: "instant",
+    });
+  }, []);
   return (
     <>
       <Header />

@@ -12,6 +12,7 @@
 }
 
 .table-wrapper {
+  width: 100%;
   overflow-x: auto; 
 }
 
@@ -27,6 +28,7 @@
 .appointment-table td {
   padding: 12px 15px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .appointment-table thead {

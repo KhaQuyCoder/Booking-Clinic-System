@@ -67,7 +67,7 @@ const IsLoginSucessfull = () => {
             <div className="option-user-islogin">
               <Link to={"/trang-ca-nhan"}>Hồ sơ của tôi</Link>
               <Link to={"/lich-su-kham-benh"}>Lịch sử khám bệnh</Link>
-              <Link>Khám lâm sàn - online</Link>
+              <Link to={"/kham-lam-san"}>Khám lâm sàn - online</Link>
             </div>
             <div className="setting-user-islogin">
               <Link>Cài đặt</Link>
