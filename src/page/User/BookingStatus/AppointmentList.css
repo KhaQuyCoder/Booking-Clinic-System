@@ -1,0 +1,84 @@
+.appointment-container {
+  width: 100%;
+  max-width: 1340px;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-container h2 {
+  margin-bottom: 20px;
+  color: #2469df;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.appointment-table th,
+.appointment-table td {
+  padding: 12px 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.appointment-table thead {
+    border-radius: 10px;
+    color: black;
+}
+.fa-circle-xmark{
+    color: #dc3545;
+    cursor: pointer;
+}
+.appointment-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.status.confirmed {
+  background: #d4f4dd;
+  color: #28c76f;
+}
+.fa-circle-check{
+  color: #28c76f;
+}
+.status.pending {
+  background: #fff4d4;
+  color: #b26a00;
+}
+
+.cancel-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #e60000;
+}
+
+@media (max-width: 768px) {
+  .appointment-table th,
+  .appointment-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

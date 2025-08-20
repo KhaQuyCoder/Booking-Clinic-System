@@ -1,0 +1,43 @@
+.container-introdution{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.image-introdution{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 0;
+}
+.wrapper-system{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.titile-home{
+    color: blue;
+    font-size: 4rem;
+    max-width: 600px;
+}
+.backgoroundBody{
+    width: 100%;
+    min-height: 100vh;
+}
+.teamDocter-img{
+    max-width: 100%;
+}
+.name-system{
+    margin-top: 50px;
+}
+@media (max-width:1400px){
+    .titile-home{
+        font-size: 2rem;
+    }
+}

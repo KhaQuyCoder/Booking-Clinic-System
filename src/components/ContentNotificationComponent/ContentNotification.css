@@ -1,0 +1,65 @@
+.container-ContentNotification {
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    overflow-y: auto;
+    animation: translateDown 0.3s linear;
+}
+
+.container-ContentNotification::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper-notification {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 70px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.wrapper-notification:hover{
+    background-color: #ededed;
+}
+.title-notification{
+    margin:10px 0 0 20px;
+}
+.image-notification {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.content-notification {
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;    
+}
+.fa-xmark{
+    font-size: 20px;
+    color: #A8A8A8;
+}
+.fa-xmark:hover{
+    color: black;
+}
+@keyframes translateDown {
+    from {
+        transform: translateY(-2%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,59 @@
+.container-main {
+    font-family: 'Inter';
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.test{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.wrapper-clinic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wrapper-docter {
+    display: flex;
+}
+
+.loading-main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.ViewMore-docter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 840px) {
+    .title-clinic {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .container-main {
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1400px) {
+
+    .wrapper-docter{
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .wrapper-docter::-webkit-scrollbar{
+        display: none;
+    }
+    .title-docter{
+        margin: 10px 0 10px 30px;
+    }
+
+}

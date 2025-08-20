@@ -1,0 +1,77 @@
+[
+    {
+        "name":"Ngoại nhi",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2025/05/icon-khoa-ngoai-nhi-tam-anh.png",
+        "clinic":5
+    },
+    {
+        "name":"Viên gan và gan nhiễm mỡ",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2022/02/logo-tieu-hoa-gan-mat-f.png",
+        "clinic":2
+    },
+    {
+        "name":"Trung tâm kiểm soát cân nặng và điều trị béo phì",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2024/09/trung-tam-kiem-soat-can-nang-va-dieu-tri-beo-phi.png",
+        "clinic":5
+    },
+    {
+        "name":"Khoa ngoại thần kinh - cột sống",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2025/04/icon-khoa-ngoai-than-kinh-cot-song.png",
+        "clinic":3
+    },
+    {
+        "name":"Trung tâm hỗ trợ sinh sản",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa-ivf.png",
+        "clinic":3
+    },
+    {
+        "name":"Trung tâm mắt công nghệ cao",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2024/02/trung-tam-mat-cong-nghe-cao.png",
+        "clinic":7
+    },
+    {
+        "name":"Khoa tiêu hóa - Gan mật - Tụy",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2022/02/logo-tieu-hoa-gan-mat-f.png",
+        "clinic":2
+    },
+    {
+        "name":"Khoa cơ sương khớp",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2021/03/khoa-noi-co-xuong-khop.png",
+        "clinic":4
+    },
+    {
+        "name":"Khoa nội tổng hợp",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2020/12/khoa-noitonghop.png",
+        "clinic":5
+    },
+    {
+        "name":"Khoa gia liểu - thẩm mỹ da",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2023/04/khoa-da-lieu.png",
+        "clinic":2
+    },
+    {
+        "name":"Khoa ngoại vú - đầu mặt cổ",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2022/12/icon-khoa-ngoai-vu-2023.png",
+        "clinic":4
+    },
+    {
+        "name":"Khoa ưng bứu",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2020/12/icon-ung-buou-chuyen-khoa.png",
+        "clinic":4
+    },
+    {
+        "name":"Khoa ngoại vú - đầu mặt cổ",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2022/12/icon-khoa-ngoai-vu-2023.png",
+        "clinic":4
+    },
+    {
+        "name":"Khoa ưng bứu",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2020/12/icon-ung-buou-chuyen-khoa.png",
+        "clinic":4
+    },
+    {
+        "name":"Khoa ưng bứu",
+        "imgae":"https://tamanhhospital.vn/wp-content/uploads/2020/12/icon-ung-buou-chuyen-khoa.png",
+        "clinic":4
+    }
+]

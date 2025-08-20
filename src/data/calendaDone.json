@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "clinic": "Phòng khám Đa khoa Hà Nội",
+    "doctor": "BS. Nguyễn Văn A",
+    "address": "123 Nguyễn Trãi, Hà Nội",
+    "date": "2025-08-20",
+    "time": "8h-8h30",
+    "method": "Khám trực tiếp",
+    "status": "Đã xác nhận"
+  },
+  {
+    "id": 2,
+    "clinic": "Phòng khám Nội tổng hợp",
+    "doctor": "BS. Trần Thị B",
+    "address": "456 Lê Lợi, TP.HCM",
+    "date": "2025-08-21 ",
+    "time": "14h-14h30",
+    "method": "Khám online",
+    "status": "Chờ xác nhận"
+  }
+]
