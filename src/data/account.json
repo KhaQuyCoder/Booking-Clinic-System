@@ -1,0 +1,17 @@
+[
+  {
+    "phone": "0987654321",
+    "password": "password123",
+    "role": "doctor"
+  },
+  {
+    "phone": "0912345678",
+    "password": "abc123",
+    "role": "user"
+  },
+  {
+    "phone": "0909090909",
+    "password": "mySecretPass",
+    "role": "admin"
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "recordId": "HS001",
+    "patientId": "BN001",
+    "examDate": "2025-08-16",
+    "specialty": "Nội thần kinh",
+    "doctorName": "BS. Trần Văn Minh",
+    "finalDiagnosis": "Tai biến mạch máu não giai đoạn sớm",
+    "status": "Đã xử lý",
+    "notes": "Bệnh nhân cần nghỉ ngơi, tránh căng thẳng",
+    "avatar": "https://chothuestudio.com/wp-content/uploads/2022/08/b6wee1gedvoxsunes6k1644935334560-533x800.jpg"
+  },
+  {
+    "recordId": "HS002",
+    "patientId": "BN001",
+    "examDate": "2025-08-17",
+    "specialty": "Tim mạch",
+    "doctorName": "BS. Nguyễn Thị Hoa",
+    "finalDiagnosis": "Thiếu máu cơ tim cục bộ",
+    "status": "Tái khám",
+    "notes": "Khám lại sau 1 tháng"
+  },
+  {
+    "recordId": "HS003",
+    "patientId": "BN001",
+    "examDate": "2025-08-18",
+    "specialty": "Nội tiết",
+    "doctorName": "BS. Lê Văn Hùng",
+    "finalDiagnosis": "Tiểu đường type 2",
+    "status": "Đang theo dõi",
+    "notes": "Cần đo đường huyết hàng ngày"
+  },
+  {
+    "recordId": "HS004",
+    "patientId": "BN001",
+    "examDate": "2025-08-15",
+    "specialty": "Tim mạch",
+    "doctorName": "BS. Nguyễn Thị Hoa",
+    "finalDiagnosis": "Đau thắt ngực ổn định",
+    "status": "Đã xử lý",
+    "notes": "Hạn chế vận động mạnh"
+  },
+  {
+    "recordId": "HS005",
+    "patientId": "BN001",
+    "examDate": "2025-08-16",
+    "specialty": "Nội thần kinh",
+    "doctorName": "BS. Trần Văn Minh",
+    "finalDiagnosis": "Nhức đầu căng cơ",
+    "status": "Tái khám",
+    "notes": "Uống thuốc khi cần"
+  },
+  {
+    "recordId": "HS006",
+    "patientId": "BN001",
+    "examDate": "2025-08-19",
+    "specialty": "Nhi khoa",
+    "doctorName": "BS. Phạm Thị Lan",
+    "finalDiagnosis": "Cúm mùa",
+    "status": "Đã xử lý",
+    "notes": "Nghỉ ngơi và uống thuốc"
+  },
+  {
+    "recordId": "HS006",
+    "patientId": "BN001",
+    "examDate": "2025-08-19",
+    "specialty": "Nhi khoa",
+    "doctorName": "BS. Phạm Thị Lan",
+    "finalDiagnosis": "Cúm mùa",
+    "status": "Đã xử lý",
+    "notes": "Nghỉ ngơi và uống thuốc"
+  }
+]

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "./Introdution.css";
 import bcg from "../../assets/image/backgroundBody3.webp";
 import teamDocter from "../../assets/image/TeamDocter.png";

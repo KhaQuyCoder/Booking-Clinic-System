@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import "./Header.css";
 import backgoroundHeader from "../../../assets/image/backgrougHeader.webp";
-import logo from "../../../assets/image/logo .png";
+import logo from "../../../assets/image/logo.png";
 import Button from "../../../components/ButtonComponent/Button";
 import { State } from "../../../state/context";
 import { useNavigate } from "react-router-dom";

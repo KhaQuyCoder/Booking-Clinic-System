@@ -71,7 +71,7 @@ const IsLoginSucessfull = () => {
             </div>
             <div className="setting-user-islogin">
               <Link>Cài đặt</Link>
-              <Link>Đăng xuất</Link>
+              <Link to={"/login"}>Đăng xuất</Link>
             </div>
           </div>
         )}

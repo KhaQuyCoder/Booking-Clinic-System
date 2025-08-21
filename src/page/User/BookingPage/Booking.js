@@ -85,9 +85,9 @@ const Booking = () => {
                   Trưởng khoa {docterFind?.specialty}{" "}
                 </span>{" "}
               </p>
+              <strong>Quá trình công tác:</strong>
               <p style={{ margin: "7px 0" }}>
-                <strong>Quá trình công tác:</strong>
-                {docterFind?.working.slice(0, 7).map((work, index) => (
+                {docterFind?.working.slice(0, 8).map((work, index) => (
                   <p key={index}>{work}</p>
                 ))}
               </p>

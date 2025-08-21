@@ -61,7 +61,6 @@ export const DocterAll = ({ doctor }) => {
           <p className="specialty-docter specialty-docterAll">
             Trưởng khoa {doctor.specialty}
           </p>
-          <p></p>
           <p className="description-clinic description-clinic-forDocterAll">
             {doctor.description}
           </p>

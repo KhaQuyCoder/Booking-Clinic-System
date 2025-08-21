@@ -1,16 +1,17 @@
 import { useContext, useMemo, useState, useEffect } from "react";
 import "./Docter.css";
-import Header from "../../../layouts/LayoutsUser/Header/Header";
-import Footer from "../../../components/FooterComponent/Footer";
-import clinicData from "../../../data/clinic.json";
-import { DocterAll } from "../../../components/DocterComponent/CarDocter";
+import Header from "../../../../layouts/LayoutsUser/Header/Header";
+import Footer from "../../../../components/FooterComponent/Footer";
+import clinicData from "../../../../data/clinic.json";
+import { DocterAll } from "../../../../components/DocterComponent/CarDocter";
 import { useNavigate, useParams } from "react-router-dom";
-import Loading from "../../../components/LoadingComponent/Loading";
-import Filter from "../../../components/FIlterComponent/Filter";
-import { FilterAll } from "../../../components/FIlterComponent/Filter";
-import { State } from "../../../state/context";
-import TotalPage from "../../../components/TotalPagaComponent/TotalPage";
-export const Docter = () => {
+import Loading from "../../../../components/LoadingComponent/Loading";
+import Filter from "../../../../components/FIlterComponent/Filter";
+import { FilterAll } from "../../../../components/FIlterComponent/Filter";
+import { State } from "../../../../state/context";
+import TotalPage from "../../../../components/TotalPagaComponent/TotalPage";
+
+const Docter = () => {
   const navigate = useNavigate();
   const { page: pageParam } = useParams();
   const PER_PAGE = 15;
@@ -119,3 +120,4 @@ export const Docter = () => {
     </>
   );
 };
+export default Docter;

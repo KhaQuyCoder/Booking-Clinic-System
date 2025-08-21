@@ -11,63 +11,86 @@ const CreateClinic = () => {
           <div className="form-grid">
             <div className="form-group div1">
               <label>
-                <span style={{ color: "red" }}>*</span>Tên phòng khám
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Tên phòng khám</span>
+                </span>
               </label>
               <input type="text" placeholder="Nhập tên phòng khám" />
             </div>
             <div className="form-group div2">
               <label>
-                <span style={{ color: "red" }}>*</span>Địa chỉ
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Địa chỉ</span>
+                </span>
               </label>
               <input type="text" placeholder="Nhập địa chỉ" />
             </div>
             <div className="form-group div3">
               <label>
-                <span style={{ color: "red" }}>*</span>Số điện thoại liên hệ
+                <span style={{ color: "red" }}>
+                  *{" "}
+                  <span style={{ color: "black" }}>Số điện thoại liên hệ</span>
+                </span>
               </label>
               <input type="text" placeholder="Nhập số điện thoại" />
             </div>
             <div className="form-group div4">
               <label>
                 {" "}
-                <span style={{ color: "red" }}>*</span>Email phòng khám
+                <span style={{ color: "red" }}>
+                  * <span style={{ color: "black" }}>Email phòng khám</span>
+                </span>
               </label>
               <input type="email" placeholder="Nhập email" />
             </div>
             <div className="form-group div5">
               <label>
-                <span style={{ color: "red" }}>*</span>Loại hình phòng khám
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Loại hình phòng khám</span>
+                </span>
               </label>
               <input type="text" placeholder="Ví dụ: Đa khoa, Nhi khoa..." />
             </div>
             <div className="form-group div6">
               <label>
-                <span style={{ color: "red" }}>*</span>Tên người đại diện đăng
-                ký
+                <span style={{ color: "red" }}>
+                  *
+                  <span style={{ color: "black" }}>
+                    Tên người đại diện đăng ký
+                  </span>
+                </span>
               </label>
               <input type="text" placeholder="Họ và tên" />
             </div>
             <div className="form-group div7">
               <label>
-                <span style={{ color: "red" }}>*</span>Ngày thành lập
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Ngày thành lập</span>
+                </span>
               </label>
               <input type="date" />
             </div>
             <div className="form-group div8">
               <label>
-                <span style={{ color: "red" }}>*</span>Giấy phép hoạt động
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Giấy phép hoạt động</span>
+                </span>
               </label>
               <input type="file" />
             </div>
             <div className="form-group div9">
               <label>
-                <span style={{ color: "red" }}>*</span>Logo phòng khám
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Logo phòng khám</span>
+                </span>
               </label>
               <input type="file" />
             </div>
             <div className="form-group div10 full-width">
               <label>
-                <span style={{ color: "red" }}>*</span>Miêu tả phòng khám
+                <span style={{ color: "red" }}>
+                  *<span style={{ color: "black" }}>Miêu tả phòng khám</span>
+                </span>
               </label>
               <textarea placeholder="Nhập miêu tả..." />
             </div>

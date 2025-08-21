@@ -20,7 +20,9 @@ h2 {
     width: 100%;
     border-collapse: collapse;
 }
-
+.table-responsive::-webkit-scrollbar{
+    display: none !important;
+}
 .history-table th,
 .history-table td {
     padding: 12px 15px;

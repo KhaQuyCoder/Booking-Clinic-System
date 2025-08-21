@@ -43,6 +43,9 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.booking-home{
+  margin-right: 7px;
+}
 .booking-home:hover,.advise-home > a:hover{
   color: #ffff;
 }
