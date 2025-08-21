@@ -1,3 +1,28 @@
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    div.header {
+        position: fixed;
+    }
+    div.sidebar {
+        position: fixed;
+    }
+}
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+.content {
+    margin-top: 60px;
+    margin-left: 264px;
+    height: calc(100vh-60px);
+    padding: 10px;
+    flex: 1;   
+    overflow-y: auto;
+    background-color: #fff;
+}
 *{
     box-sizing: border-box;
     margin: 0 auto;

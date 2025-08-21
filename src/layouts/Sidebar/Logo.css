@@ -1,0 +1,16 @@
+.logobox {
+    width: 244px;
+    height: 60px;
+    display: flex;
+    direction: row;
+    align-items: left;
+    justify-content: left;
+    margin-left: 10px;
+    border-bottom: 1px solid #000;
+}
+.logoSidebar {
+    width: 70px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}

@@ -1,0 +1,30 @@
+.filterclinic {
+    width: 1136px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+}
+.filter,
+.arrange {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: none;
+    
+    &:hover {
+        background-color:#D9D9D9;
+        cursor: pointer;
+    }
+
+    &:focus-within {
+        background-color: #D9D9D9;
+    }
+}
+.sp {
+    color : #6C757D;
+}

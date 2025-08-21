@@ -1,3 +1,9 @@
+import React from 'react';
+import './App.css';
+import { Routing } from './Routing/Routing';
+import { Header } from './layouts/header/Header';
+import { Sidebar } from './layouts/Sidebar/Sidebar';
+import { CommonProvider } from './components/CommonContext';
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./page/User/HomePage/Home";
@@ -19,10 +25,21 @@ import AppointmentList from "./page/User/BookingStatus/AppointmentList";
 import SearchClinic from "./page/User/SearchClinicPage/SearchClinic";
 import CreateClinic from "./page/User/SigupClinicPage/CreateClinic";
 import CallDocter from "./page/User/CallDocterPage/CallDocter";
-import DetailDocter from "./page/User/DetailPage/DetailDocter";
+import DetailDocter from "./page/User/DetailPage/DetailDocter;
 function App() {
   const { valueText } = useContext(State);
   return (
+    <div className="App">
+      <CommonProvider>
+        <Sidebar />
+        <div className="main-layout">
+          <Header />
+          <div className="content">
+            <Routing />
+          </div>
+        </div>
+      </CommonProvider>
+    </div>
     <>
       {valueText.length > 0 && <Opacity />}
       <Routes>
