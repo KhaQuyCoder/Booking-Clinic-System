@@ -1,0 +1,112 @@
+[
+    {
+        "id": "2025N001",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 1 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "30",
+        "price": "3.000.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N002",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 2 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "60",
+        "price": "5.990.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N003",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 3 tháng",
+        "termtype": "Quý",
+        "effectiveday": "90",
+        "price": "8.500.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N004",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 4 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "120",
+        "price": "11.000.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N005",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 5 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "150",
+        "price": "14.000.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N006",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 6 tháng",
+        "termtype": "Quý",
+        "effectiveday": "180",
+        "price": "16.500.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N007",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "7 tháng Gói",
+        "termtype": "Tháng",
+        "effectiveday": "210",
+        "price": "18.500.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N008",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 8 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "240",
+        "price": "20.000.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N009",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 9 tháng",
+        "termtype": "Quý",
+        "effectiveday": "270",
+        "price": "24.000.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    },
+    {
+        "id": "2025N010",
+        "idname": "Quan Admin",
+        "date": "10/12/2025",
+        "name": "Gói 10 tháng",
+        "termtype": "Tháng",
+        "effectiveday": "300",
+        "price": "25.500.000",
+        "currencytype": "VNĐ",
+        "describe": ""
+    }
+]

@@ -1,26 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
+.App {
+  display: flex;
+
+  /* flex-direction: column; */
+  /* height: 100vh; */
+  div.header {
+    position: fixed;
+  }
+
+  div.sidebar {
+    position: fixed;
+  }
 }
-html,body {
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  margin-top: 60px;
+  margin-left: 264px;
+  height: calc(100vh-60px);
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+html,
+body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-               Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    Roboto, 'Helvetica Neue', Arial, sans-serif !important;
   min-height: 100%;
   margin: 0;
   padding: 0;
 }
+
 @media (max-width: 1400px) {
-    body{
-      font-size: 15px;
-    }
-    h2{
-      font-size: 1.2rem;
-    }
-    .container-docterCar{
-      margin-left: 20px;
-    }
+  body {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container-docterCar {
+    margin-left: 20px;
+  }
 }
-
-

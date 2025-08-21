@@ -9,7 +9,7 @@
   --radius: 10px;
 }
 
-.clinic-container {
+.cliniContainer {
     width: 100%;
   max-width: 1340px;
   margin-top: 100px;
@@ -19,7 +19,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.section-title {
+.sectionTitle {
   margin: 20px 0 15px;
   color: var(--primary);
   font-weight: 600;
@@ -28,23 +28,23 @@
   padding-left: 8px;
 }
 
-.clinic-form {
+.clinicForm {
   margin-bottom: 25px;
 }
 
-.form-grid {
+.formGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 8px;
 }
-.form-group > input,textarea,label{
+.formGroup > input,textarea,label{
     margin: 0;
 }
-.form-group > label{
+.formGroup > label{
     margin-bottom: 5px;
 }
-.form-group {
+.formGroup {
   display: flex;
   flex-direction: column;
 }
@@ -99,7 +99,7 @@
     width:100%;
     grid-column: span 4 / span 4;
 }
-.form-group label {
+.formGroup label {
   font-weight: 500;
   font-size: 14px;
   color: var(--text-dark);
@@ -121,7 +121,7 @@ textarea:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(36, 105, 223, 0.1);
 }
-.plan-container {
+.planContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -184,10 +184,10 @@ textarea:focus {
   left: 0;
   top: 2px;
 }
-.form-group > label > span{
+.formGroup > label > span{
   margin: 0;
 }
-.form-group > label{
+.formGroup > label{
   display: flex;
   
 }
@@ -203,15 +203,15 @@ textarea:focus {
   color: #fff;
 }
 
-.btn-free {
+.btnFree {
   background: var(--primary);
 }
 
-.btn-standard {
+.btnStandard {
   background: var(--success);
 }
 
-.btn-premium {
+.btnPremium {
   background: var(--warning);
 }
 
@@ -219,12 +219,12 @@ textarea:focus {
   opacity: 0.9;
 }
 
-.submit-container {
+.submitContainer {
   text-align: right;
   margin-top: 25px;
 }
 
-.btn-submit {
+.btnSubmit {
   background: var(--primary);
   padding: 12px 24px;
   border-radius: var(--radius);
@@ -236,11 +236,11 @@ textarea:focus {
   transition: background 0.3s;
 }
 
-.btn-submit:hover {
+.btnSubmit:hover {
   background: #1e56b3;
 }
 @media (max-width: 600px) {
-  .form-grid {
+  .formGrid {
     grid-template-columns: 1fr;
   }
 
@@ -260,7 +260,7 @@ textarea:focus {
 }
 
 @media (max-width: 1100px) and (min-width: 601px) {
-  .form-grid {
+  .formGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 

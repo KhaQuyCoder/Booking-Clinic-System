@@ -1,0 +1,26 @@
+.pageClinics {
+    width: 1136px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+}
+.iconpage {
+    width: 30px;
+    height: 40px;
+    border-radius:10px;
+    border: none;
+    color: #6C757D;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #D9D9D9;
+    }
+
+    &:focus-within {
+        background-color: #D9D9D9;
+    }
+}

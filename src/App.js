@@ -1,8 +1,9 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import "./App.css";
-//Quý/ UserPage
+// User
 import Home from "./page/User/HomePage/Home";
 import { State } from "./state/context";
 import Docter from "./page/Doctor/DocterPage/pagination/Docter";
@@ -24,7 +25,7 @@ import CreateClinic from "./page/User/SigupClinicPage/CreateClinic";
 import CallDocter from "./page/User/CallDocterPage/CallDocter";
 import DetailDocter from "./page/User/DetailPage/DetailDocter";
 
-//Đức/ DoctorPage
+// Doctor
 import Layout from "./layouts/LayoutsDoctor/Layout/Layout";
 import Login from "./page/Doctor/DocterPage/Login/index";
 import PatientManagementv2 from "./page/Doctor/DocterPage/PatientManagementv2/index";
@@ -35,82 +36,133 @@ import ViewMedicalRecords from "./page/Doctor/DocterPage/PatientManagementv2/Vie
 import MedicalHistory from "./page/Doctor/DocterPage/PatientManagementv2/MedicalHistory/index";
 import { PatientProvider } from "./context/patientContext";
 
+// Admin
+import { Routing } from "./Routing/Routing";
+import { Header } from "./layouts/header/Header";
+import { Sidebar } from "./layouts/Sidebar/Sidebar";
+import { CommonProvider } from "./components/CommonContext";
+
 function App() {
-  const { valueText } = useContext(State);
-  const [role, setRole] = useState("doctor");
-
+  const { valueText, roleLocal } = useContext(State);
+  const [role, setRole] = useState(roleLocal);
   useEffect(() => {
-    const savedRole = JSON.parse(localStorage.getItem("role")) || "user";
-    console.log(savedRole);
-
+    const savedRole = roleLocal || JSON.parse(localStorage.getItem("role"));
     setRole(savedRole);
-  });
+    if (savedRole === "user") {
+      import("./userOnly.css");
+    }
+  }, [roleLocal, role]);
 
+  if (!role) return null;
   return (
     <>
-      {valueText.length > 0 && <Opacity />}
-      <PatientProvider>
-        <Routes>
-          {/* User routes */}
-          <Route path="/" element={<Home />} />
-          <Route path="/bac-si" element={<Docter />} />
-          <Route path="/bac-si/page/:page" element={<Docter />} />
-          <Route path="/phong-kham" element={<Clinic />} />
-          <Route path="/phong-kham/page/:page" element={<Clinic />} />
-          <Route path="/tu-van" element={<Question />} />
-          <Route path="/tu-van/page/:page" element={<Question />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/chinh-sach-bao-mat" element={<Security />} />
-          <Route path="/confirm" element={<Confirm />} />
-          <Route path="/dang-ky-phong-kham" element={<CreateClinic />} />
-          <Route path="/chi-tiet-phong-kham/:slug" element={<DetailClinic />} />
-          <Route path="/:slug/dat-lich-kham" element={<Booking />} />
-          <Route path="/lich-su-kham-benh" element={<HistoryBooking />} />
-          <Route path="/trang-ca-nhan" element={<Profile />} />
-          <Route path="/xem-lich-kham" element={<AppointmentList />} />
-          <Route path="/tim-kiem" element={<SearchClinic />} />
-          <Route path="/kham-lam-san" element={<CallDocter />} />
-          <Route path="/xem-chi-tiet-bac-si/:slug" element={<DetailDocter />} />
+      <CommonProvider>
+        <PatientProvider>
+          {valueText.length > 0 && <Opacity />}
 
-          {/* Login */}
-          <Route path="/login" element={<Login />} />
+          <Routes>
+            {/* User */}
+            {role === "user" && (
+              <>
+                <Route path="/" element={<Home />} />
+                <Route path="/bac-si" element={<Docter />} />
+                <Route path="/bac-si/page/:page" element={<Docter />} />
+                <Route path="/phong-kham" element={<Clinic />} />
+                <Route path="/phong-kham/page/:page" element={<Clinic />} />
+                <Route path="/tu-van" element={<Question />} />
+                <Route path="/tu-van/page/:page" element={<Question />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/chinh-sach-bao-mat" element={<Security />} />
+                <Route path="/confirm" element={<Confirm />} />
+                <Route path="/dang-ky-phong-kham" element={<CreateClinic />} />
+                <Route
+                  path="/chi-tiet-phong-kham/:slug"
+                  element={<DetailClinic />}
+                />
+                <Route path="/:slug/dat-lich-kham" element={<Booking />} />
+                <Route path="/lich-su-kham-benh" element={<HistoryBooking />} />
+                <Route path="/trang-ca-nhan" element={<Profile />} />
+                <Route path="/xem-lich-kham" element={<AppointmentList />} />
+                <Route path="/tim-kiem" element={<SearchClinic />} />
+                <Route path="/kham-lam-san" element={<CallDocter />} />
+                <Route
+                  path="/xem-chi-tiet-bac-si/:slug"
+                  element={<DetailDocter />}
+                />
+                <Route path="/*" element={<Navigate to="/" />} />
+              </>
+            )}
+            {/* Doctor */}
+            {role === "doctor" && (
+              <>
+                <Route path="/doctor" element={<Layout />}>
+                  <Route
+                    path="/doctor/schedule"
+                    element={<ScheduleAppointment />}
+                  />
+                  <Route
+                    path="/doctor/Patients"
+                    element={<PatientManagementv2 />}
+                  />
+                  <Route
+                    path="/doctor/detail"
+                    element={<PatientManagementv2 />}
+                  />
+                  <Route
+                    path="/doctor/detail/:id"
+                    element={<PatientDetail />}
+                  />
+                  <Route path="/doctor/PatientEdit" element={<PatientEdit />} />
+                  <Route
+                    path="/doctor/PatientEdit/:id"
+                    element={<PatientEdit />}
+                  />
+                  <Route
+                    path="/doctor/ViewMR"
+                    element={<ViewMedicalRecords />}
+                  />
+                  <Route
+                    path="/doctor/ViewMR/:id"
+                    element={<ViewMedicalRecords />}
+                  />
+                  <Route
+                    path="/doctor/MedicalHistory"
+                    element={<MedicalHistory />}
+                  />
+                  <Route
+                    path="/doctor/MedicalHistory/:id"
+                    element={<MedicalHistory />}
+                  />
+                </Route>
 
-          {/* Doctor routes (chỉ khi role = docter) */}
-          {role === "doctor" && (
-            <Route path="/doctor" element={<Layout />}>
-              <Route
-                path="/doctor/schedule"
-                element={<ScheduleAppointment />}
-              />
-              <Route
-                path="/doctor/Patients"
-                element={<PatientManagementv2 />}
-              />
-              <Route path="/doctor/detail" element={<PatientManagementv2 />} />
-              <Route path="/doctor/detail/:id" element={<PatientDetail />} />
-              <Route path="/doctor/PatientEdit" element={<PatientEdit />} />
-              <Route path="/doctor/PatientEdit/:id" element={<PatientEdit />} />
-              <Route path="/doctor/ViewMR" element={<ViewMedicalRecords />} />
-              <Route
-                path="/doctor/ViewMR/:id"
-                element={<ViewMedicalRecords />}
-              />
-              <Route
-                path="/doctor/MedicalHistory"
-                element={<MedicalHistory />}
-              />
-              <Route
-                path="/doctor/MedicalHistory/:id"
-                element={<MedicalHistory />}
-              />
-            </Route>
-          )}
+                <Route path="/*" element={<Navigate to="/doctor" />} />
+              </>
+            )}
+            {/* Admin */}
+            {role === "admin" && (
+              <>
+                <Route
+                  path="/*"
+                  element={
+                    <div className="App">
+                      <Sidebar />
+                      <div className="main-layout">
+                        <Header />
+                        <div className="content">
+                          <Routing />
+                        </div>
+                      </div>
+                    </div>
+                  }
+                />
+              </>
+            )}
+            <Route path="/login" element={<Login />} />
+          </Routes>
 
-          {/* Not found */}
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-        <ToastContainer />
-      </PatientProvider>
+          <ToastContainer />
+        </PatientProvider>
+      </CommonProvider>
     </>
   );
 }

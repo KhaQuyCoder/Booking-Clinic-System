@@ -1,0 +1,7 @@
+.clinicbrowses {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    gap: 10px;
+}

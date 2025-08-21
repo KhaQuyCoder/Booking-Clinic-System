@@ -8,6 +8,8 @@ const Context = ({ children }) => {
   const [resetPage, setResetPage] = useState(true);
   const [valueText, setValueText] = useState("");
   const [searchSpecialty, setSearchSpecialty] = useState("");
+  const [roleLocal, setRole] = useState("");
+
   const [phone, setPhone] = useState("0944364324");
   const [avatar, setAvatar] = useState(
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeMDKbB1z_3RjaG4elUPjtTa-zd9OFxSpaA&s"
@@ -29,6 +31,8 @@ const Context = ({ children }) => {
         messageRef,
         phone,
         setPhone,
+        roleLocal,
+        setRole,
       }}
     >
       {children}

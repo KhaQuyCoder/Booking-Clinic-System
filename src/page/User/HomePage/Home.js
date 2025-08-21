@@ -8,7 +8,6 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo({ top: true, behavior: "instant" });
   }, []);
-
   return (
     <>
       <Header />

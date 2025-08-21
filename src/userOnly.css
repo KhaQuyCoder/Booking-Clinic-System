@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.wrapper-container{
+    column-gap: 0;
+}

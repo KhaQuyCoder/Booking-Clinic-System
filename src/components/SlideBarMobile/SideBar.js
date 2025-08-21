@@ -14,8 +14,8 @@ const SideBar = ({ mobileRef }) => {
     { name: "Lịch sử khám bệnh", path: "/lich-su-kham-benh", id: 8 },
     { name: "Lịch khám của tôi", path: "/xem-lich-kham", id: 9 },
     { name: "Khám lâm sàn - online", path: "/kham-lam-san", id: 10 },
-    { name: "Đăng nhập - online", path: "/confirm", id: 11 },
-    { name: "Đăng xuất - online", path: "/confirm", id: 12 },
+    { name: "Đăng nhập - online", path: "/login", id: 11 },
+    { name: "Đăng xuất - online", path: "/login", id: 12 },
     { name: "Cài đặt - online", path: "/confirm", id: 13 },
   ];
   return (

@@ -1,17 +1,17 @@
 [
   {
-    "phone": "0987654321",
-    "password": "password123",
+    "phone": "1",
+    "password": "1",
     "role": "doctor"
   },
   {
-    "phone": "0912345678",
-    "password": "abc123",
+    "phone": "2",
+    "password": "2",
     "role": "user"
   },
   {
-    "phone": "0909090909",
-    "password": "mySecretPass",
+    "phone": "3",
+    "password": "3",
     "role": "admin"
   }
 ]

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import iconLogin from "../../../../assets/image/login.png";
 import iconLogo from "../../../../assets/image/logo.png";
 import accounts from "../../../../data/account.json"; // import dữ liệu account
@@ -7,31 +7,50 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import bcg from "../../../../assets//image/backgroundBody.webp";
+import { State } from "../../../../state/context";
 const Login = () => {
-  const navigate = useNavigate(); // dùng để điều hướng
+  const navigate = useNavigate();
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-
+  const { setRole } = useContext(State);
   const handleLogin = () => {
-    // kiểm tra trong file accounts.json
     const foundAccount = accounts.find(
       (acc) => acc.phone === phone && acc.password === password
     );
 
     if (foundAccount) {
       localStorage.setItem("role", JSON.stringify(foundAccount.role));
-      toast.success("Đăng nhập thành công!", {
-        position: "top-center",
-        autoClose: 2000,
-      });
-
-      navigate(foundAccount.role === "doctor" ? "/doctor" : "/");
+      switch (foundAccount.role) {
+        case "doctor":
+          setRole("doctor");
+          setTimeout(() => {
+            navigate("/doctor");
+          }, 200);
+          break;
+        case "admin":
+          setRole("admin");
+          navigate("/");
+          setTimeout(() => {
+            navigate("/admin");
+          }, 200);
+          break;
+        case "user":
+          setRole("user");
+          setTimeout(() => {
+            navigate("/");
+          }, 200);
+          break;
+      }
     } else {
       toast.error("Sai số điện thoại hoặc mật khẩu!", {
         position: "top-center",
         autoClose: 2000,
+        style: { marginBottom: "400px" },
       });
     }
+    setTimeout(() => {
+      window.location.reload();
+    }, 200);
   };
 
   return (

@@ -1,15 +1,15 @@
-import "./CreateClinic.css";
+import styles from "./CreateClinic.module.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import Footer from "../../../components/FooterComponent/Footer";
 const CreateClinic = () => {
   return (
     <>
       <Header />
-      <div className="clinic-container">
-        <h3 className="section-title">Thông tin phòng khám</h3>
-        <form className="clinic-form">
-          <div className="form-grid">
-            <div className="form-group div1">
+      <div className={styles.cliniContainer}>
+        <h3 className={styles.sectionTitle}>Thông tin phòng khám</h3>
+        <form className={styles.clinicForm}>
+          <div className={styles.formGrid}>
+            <div className={`${styles.formGroup} ${styles.div1}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Tên phòng khám</span>
@@ -17,7 +17,7 @@ const CreateClinic = () => {
               </label>
               <input type="text" placeholder="Nhập tên phòng khám" />
             </div>
-            <div className="form-group div2">
+            <div className={`${styles.formGroup} ${styles.div2}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Địa chỉ</span>
@@ -25,7 +25,7 @@ const CreateClinic = () => {
               </label>
               <input type="text" placeholder="Nhập địa chỉ" />
             </div>
-            <div className="form-group div3">
+            <div className={`${styles.formGroup} ${styles.div3}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *{" "}
@@ -34,7 +34,7 @@ const CreateClinic = () => {
               </label>
               <input type="text" placeholder="Nhập số điện thoại" />
             </div>
-            <div className="form-group div4">
+            <div className={`${styles.formGroup} ${styles.div4}`}>
               <label>
                 {" "}
                 <span style={{ color: "red" }}>
@@ -43,7 +43,7 @@ const CreateClinic = () => {
               </label>
               <input type="email" placeholder="Nhập email" />
             </div>
-            <div className="form-group div5">
+            <div className={`${styles.formGroup} ${styles.div5}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Loại hình phòng khám</span>
@@ -51,7 +51,7 @@ const CreateClinic = () => {
               </label>
               <input type="text" placeholder="Ví dụ: Đa khoa, Nhi khoa..." />
             </div>
-            <div className="form-group div6">
+            <div className={`${styles.formGroup} ${styles.div6}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *
@@ -62,7 +62,7 @@ const CreateClinic = () => {
               </label>
               <input type="text" placeholder="Họ và tên" />
             </div>
-            <div className="form-group div7">
+            <div className={`${styles.formGroup} ${styles.div7}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Ngày thành lập</span>
@@ -70,7 +70,7 @@ const CreateClinic = () => {
               </label>
               <input type="date" />
             </div>
-            <div className="form-group div8">
+            <div className={`${styles.formGroup} ${styles.div8}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Giấy phép hoạt động</span>
@@ -78,7 +78,7 @@ const CreateClinic = () => {
               </label>
               <input type="file" />
             </div>
-            <div className="form-group div9">
+            <div className={`${styles.formGroup} ${styles.div9}`}>
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Logo phòng khám</span>
@@ -86,7 +86,9 @@ const CreateClinic = () => {
               </label>
               <input type="file" />
             </div>
-            <div className="form-group div10 full-width">
+            <div
+              className={`${styles.formGroup} ${styles.div10} ${styles.fullWidth}`}
+            >
               <label>
                 <span style={{ color: "red" }}>
                   *<span style={{ color: "black" }}>Miêu tả phòng khám</span>
@@ -97,9 +99,9 @@ const CreateClinic = () => {
           </div>
         </form>
 
-        <h3 className="section-title">*Chọn gói đăng ký</h3>
-        <div className="plan-container">
-          <div className="plan free">
+        <h3 className={styles.sectionTitle}>*Chọn gói đăng ký</h3>
+        <div className={styles.planContainer}>
+          <div className={`${styles.plan} ${styles.free}`}>
             <h4>Free</h4>
             <p>Gói dùng thử</p>
             <ul>
@@ -109,10 +111,12 @@ const CreateClinic = () => {
               <li>Không hỗ trợ quản lý bệnh án, hóa đơn</li>
               <li>Không hỗ trợ SMS, thông báo chat</li>
             </ul>
-            <button className="btn btn-free">Dùng miễn phí</button>
+            <button className={`${styles.btn} ${styles.btnFree}`}>
+              Dùng miễn phí
+            </button>
           </div>
 
-          <div className="plan standard">
+          <div className={`${styles.plan} ${styles.standard}`}>
             <h4>Tiêu chuẩn</h4>
             <p>499.000 VND/tháng</p>
             <ul>
@@ -123,10 +127,12 @@ const CreateClinic = () => {
               <li>Hỗ trợ giờ hành chính.</li>
               <li>Thống kê doanh thu.</li>
             </ul>
-            <button className="btn btn-standard">Mua gói</button>
+            <button className={`${styles.btn} ${styles.btnStandard}`}>
+              Mua gói
+            </button>
           </div>
 
-          <div className="plan premium">
+          <div className={`${styles.plan} ${styles.premium}`}>
             <h4>Chuyên nghiệp</h4>
             <p>999.000 VND/tháng</p>
             <ul>
@@ -137,12 +143,14 @@ const CreateClinic = () => {
               <li>24/7 hỗ trợ</li>
               <li>Tùy chỉnh giao diện phòng khám</li>
             </ul>
-            <button className="btn btn-premium">Mua gói</button>
+            <button className={`${styles.btn} ${styles.btnPremium}`}>
+              Mua gói
+            </button>
           </div>
         </div>
 
-        <div className="submit-container">
-          <button className="btn-submit">Gửi yêu cầu</button>
+        <div className={styles.submitContainer}>
+          <button className={styles.btnSubmit}>Gửi yêu cầu</button>
         </div>
       </div>
       <Footer />

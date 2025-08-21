@@ -13,7 +13,7 @@ const menuItems = [
   { icon: "🔑", label: "Đổi mật khẩu" },
   { icon: "🔐", label: "Đăng nhập" },
   { icon: "👤", label: "Profile" },
-  { icon: "↩️", label: "Đăng xuất", path: "/doctor/login" },
+  { icon: "↩️", label: "Đăng xuất", path: "/login" },
 ];
 const Sidebar = () => {
   return (
