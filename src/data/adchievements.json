@@ -1,0 +1,320 @@
+[
+  {
+    "id": 0,
+    "title": "Mắt mờ khám phát hiện thiếu máu nuôi tim, nguy cơ đột tử",
+    "content":
+      "Cụ ông được chẩn đoán thiếu máu cơ tim khi đi khám mắt, nguyên nhân do tắc hẹp mạch vành nặng cần đặt stent ngay để tránh đột tử.Trở về phòng nội trú sau khi được đưa đi siêu âm tim, đo điện tâm đồ, ông Vũ (73 tuổi, ngụ Lâm Đồng) hào hứng khoe tình trạng thiếu máu cơ tim đã được cải thiện, chức năng gan thận ổn định, chức năng tim trên đà hồi phục tốt. Tinh thần ông thoải mái, nhẹ nhõm vì đã may mắn phát hiện bệnh mạch vành và được can thiệp kịp thời, tránh nguy cơ đột tử. Chiều cùng ngày, ông đủ điều kiện xuất viện với tổng thời gian khám, can thiệp và hồi sức chỉ vỏn vẹn 3 ngày.",
+    "author": "Minh Thành",
+    "publishedAt": "2025-08-06T10:30:00Z",
+    "image": [
+      "https://example.com/images/vietnam-win.jpg",
+      "https://example.com/images/vietnam-win.jpg",
+      "https://example.com/images/vietnam-win.jpg"
+    ],
+    "category": "Y tế",
+    "views": 12500,
+    "clinic": "Phòng khám Hòa Bình"
+  },
+  {
+    "id": 1,
+    "title": "Phát hiện phương pháp mới điều trị ung thư không cần hóa chất",
+    "content":
+      "Các nhà khoa học Việt Nam vừa công bố nghiên cứu đột phá sử dụng liệu pháp miễn dịch tự thân cho bệnh nhân ung thư giai đoạn muộn. Phương pháp này tận dụng chính tế bào NK (Natural Killer) trong cơ thể bệnh nhân, nuôi cấy và nhân bản trong phòng thí nghiệm trước khi truyền lại cơ thể. Sau 6 tháng thử nghiệm trên 120 bệnh nhân ung thư phổi và gan, 65% trường hợp cho thấy khối u thu nhỏ đáng kể mà không cần hóa trị. GS. Trần Minh Đức - trưởng nhóm nghiên cứu cho biết: 'Liệu pháp này giảm 80% tác dụng phụ so với phương pháp truyền thống, đồng thời nâng cao chất lượng sống cho người bệnh'. Dự kiến công nghệ sẽ được ứng dụng rộng rãi tại 5 bệnh viện lớn từ quý IV/2025.",
+    "author": "Lan Anh",
+    "publishedAt": "2025-09-12T14:20:00Z",
+    "image": [
+      "https://tamanhhospital.vn/wp-content/uploads/2023/05/cuu-song-be-6-ngay-tuoi.jpg",
+      "https://example.com/medical/immunotherapy.jpg",
+      "https://example.com/medical/immunotherapy.jpg"
+    ],
+    "category": "Y tế",
+    "views": 18700,
+    "clinic": "Phòng khám An Tâm"
+  },
+  {
+    "id": 2,
+    "title":
+      "Việt Nam sản xuất thành công máy thở cá nhân giá chỉ 1,5 triệu đồng",
+    "content":
+      "Sau 2 năm nghiên cứu, nhóm kỹ sư Bách Khoa Hà Nội đã chế tạo thành công máy thở mini cầm tay dành cho bệnh nhân suy hô hấp mãn tính. Thiết bị nặng chỉ 350g, hoạt động bằng pin sạc với thời gian sử dụng liên tục 8 giờ. Điểm đột phá nằm ở hệ thống cảm biến thông minh tự động điều chỉnh áp lực khí theo nhịp thở của người dùng. Sản phẩm đã được thử nghiệm lâm sàng tại Bệnh viện Phổi Trung ương cho 200 bệnh nhân COPD, kết quả cho thấy 94% trường hợp cải thiện rõ rệt khả năng hô hấp. TS. Nguyễn Quang Huy - chủ nhiệm đề tài chia sẻ: 'Chúng tôi hướng tới phiên bản kết hợp trí tuệ nhân tạo có thể cảnh báo sớm cơn khó thở 30 phút trước khi xảy ra'. Dự kiến máy sẽ được cấp phép đại trà vào đầu năm 2026.",
+    "author": "Trung Kiên",
+    "publishedAt": "2025-08-30T09:15:00Z",
+    "image": [
+      "https://example.com/medical/ventilator.jpg",
+      "https://example.com/medical/ventilator.jpg",
+      "https://example.com/medical/ventilator.jpg"
+    ],
+    "category": "Y tế",
+    "views": 23400,
+    "clinic": "Phòng khám Tâm Đức"
+  },
+  {
+    "id": 3,
+    "title": "Bệnh viện đầu tiên áp dụng robot phẫu thuật chỉ 1cm",
+    "content":
+      "Bệnh viện Trung ương Huế vừa chính thức đưa vào vận hành hệ thống robot phẫu thuật thế hệ mới có khả năng thực hiện các thao tác chính xác đến 0.1mm thông qua vết mổ chỉ 1cm. Trong lần đầu triển khai, robot đã thực hiện thành công 12 ca cắt bỏ u xơ tử cung với thời gian phẫu thuật rút ngắn còn 45 phút thay vì 2 giờ như phương pháp truyền thống. Bác sĩ Nguyễn Thị Mỹ Linh - trưởng khoa Sản cho biết: 'Bệnh nhân có thể đi lại sau 6 giờ, thời gian nằm viện giảm từ 7 ngày xuống còn 24 giờ'. Hệ thống này đặc biệt hiệu quả với các phẫu thuật thần kinh và ung bướu đòi hỏi độ chính xác cực cao. Dự kiến sẽ có thêm 8 bệnh viện tuyến trung ương được trang bị công nghệ này trong năm 2026.",
+    "author": "Hồng Vân",
+    "publishedAt": "2025-10-05T11:40:00Z",
+    "image": [
+      "https://example.com/medical/surgery_robot.jpg",
+      "https://example.com/medical/surgery_robot.jpg",
+      "https://example.com/medical/surgery_robot.jpg"
+    ],
+    "category": "Y tế",
+    "views": 31200,
+    "clinic": "Phòng khám Nhân Ái"
+  },
+  {
+    "id": 4,
+    "title":
+      "Vắc xin sốt xuất huyết nội địa chính thức lưu hành sau 10 năm nghiên cứu",
+    "content":
+      "Viện Vắc xin và Sinh phẩm Y tế Nha Trang vừa công bố sản xuất thành công vắc xin sốt xuất huyết đầu tiên của Việt Nam với hiệu quả bảo vệ lên đến 92.5% trước cả 4 chủng virus. Sau 3 giai đoạn thử nghiệm lâm sàng trên 10.000 tình nguyện viên, vắc xin đã được Bộ Y tế cấp phép sử dụng đại trà từ tháng 11/2025. Vắc xin được chỉ định tiêm 2 mũi cách nhau 3 tháng cho trẻ từ 9 tuổi trở lên, giá bán dự kiến chỉ bằng 1/3 sản phẩm nhập ngoại. PGS.TS Lê Văn Dũng - Viện trưởng cho biết: 'Đây là thành quả sau 10 năm nghiên cứu với 85% nguyên liệu sản xuất trong nước'. Dự án nhận đầu tư 1.200 tỷ đồng từ ngân sách nhà nước, dự kiến cung cấp 50 triệu liều/năm, giảm đáng kể gánh nặng bệnh dịch tại các tỉnh phía Nam.",
+    "author": "Quốc Bảo",
+    "publishedAt": "2025-07-22T16:10:00Z",
+    "image": [
+      "https://example.com/medical/vaccine.jpg",
+      "https://example.com/medical/vaccine.jpg",
+      "https://example.com/medical/vaccine.jpg"
+    ],
+    "category": "Y tế",
+    "views": 28900,
+    "clinic": "Phòng khám Hi Vọng"
+  },
+  {
+    "id": 5,
+    "title": "Ứng dụng AI chẩn đoán đột quỵ sớm qua giọng nói",
+    "content":
+      "Các nhà nghiên cứu Đại học Y Hà Nội đã phát triển thành công ứng dụng di động sử dụng trí tuệ nhân tạo có khả năng phát hiện dấu hiệu đột quỵ sớm qua phân tích giọng nói với độ chính xác 89%. Chỉ cần ghi âm 30 giây đọc một câu đơn giản, hệ thống sẽ phân tích 18 thông số âm thanh để phát hiện bất thường về ngữ điệu, tốc độ nói và độ rõ âm - những dấu hiệu cảnh báo sớm thiếu máu não thoáng qua. TS. Phạm Thị Hương - chủ nhiệm đề tài giải thích: 'Ứng dụng đặc biệt hữu ích cho người cao tuổi sống một mình, có thể gửi cảnh báo tới người thân và trung tâm cấp cứu khi phát hiện nguy cơ'. Sau 6 tháng thử nghiệm tại 3 bệnh viện lớn, công nghệ đã giúp phát hiện sớm 120 ca đột quỵ tiềm ẩn. Phiên bản thương mại dự kiến ra mắt miễn phí trên App Store và CH Play từ tháng 12/2025.",
+    "author": "Minh Tuấn",
+    "publishedAt": "2025-11-18T13:25:00Z",
+    "image": [
+      "https://example.com/medical/ai_app.jpg",
+      "https://example.com/medical/ai_app.jpg",
+      "https://example.com/medical/ai_app.jpg"
+    ],
+    "category": "Y tế",
+    "views": 26700,
+    "clinic": "Phòng khám Thiện Tâm"
+  },
+  {
+    "id": 6,
+    "title": "Cấy ghép thành công van tim sinh học từ tế bào gốc",
+    "content":
+      "Lần đầu tiên tại Đông Nam Á, các bác sĩ Bệnh viện Chợ Rẫy đã thực hiện thành công ca ghép van tim sinh học nuôi cấy từ tế bào gốc tự thân cho bệnh nhân 47 tuổi. Van tim được tạo hình bằng công nghệ in 3D sinh học, sau đó nuôi dưỡng trong môi trường đặc biệt để tế bào gốc phát triển thành mô van hoàn chỉnh trong 6 tuần. GS. Nguyễn Văn Thành - trưởng ê-kíp phẫu thuật cho biết: 'Khác với van tim nhân tạo, van sinh học không gây đông máu, không cần dùng thuốc chống đông suốt đời và có tuổi thọ trên 20 năm'. Công nghệ này mở ra hy vọng cho 50.000 bệnh nhân hẹp van tim tại Việt Nam, đặc biệt là trẻ em không phải thay van nhiều lần khi lớn lên. Dự kiến chi phí sẽ giảm 60% so với nhập khẩu khi sản xuất đại trà tại Việt Nam từ năm 2026.",
+    "author": "Thanh Hải",
+    "publishedAt": "2025-10-30T08:45:00Z",
+    "image": [
+      "https://example.com/medical/heart_valve.jpg",
+      "https://example.com/medical/heart_valve.jpg",
+      "https://example.com/medical/heart_valve.jpg"
+    ],
+    "category": "Y tế",
+    "views": 32400,
+    "clinic": "Phòng khám Tân Tiến"
+  },
+  {
+    "id": 7,
+    "title": "Thiết bị đeo phát hiện sớm ung thư da qua thay đổi nốt ruồi",
+    "content":
+      "Công ty khởi nghiệp y tế MedTech Việt Nam vừa giới thiệu thiết bị đeo tay thông minh có khả năng phát hiện sớm ung thư da qua theo dõi những thay đổi vi mô của nốt ruồi. Thiết bị sử dụng camera độ phân giải 100MP kết hợp cảm biến quang phổ, quét và phân tích hình ảnh nốt ruồi hàng ngày với độ chính xác đến 0.01mm. Khi phát hiện bất thường về đường viền, màu sắc hoặc kích thước, hệ thống sẽ cảnh báo ngay qua ứng dụng điện thoại. TS. Lê Minh Hoàng - giám đốc công nghệ cho biết: 'Sau 2 năm thử nghiệm trên 3.000 người, thiết bị phát hiện chính xác 97% trường hợp ung thư da giai đoạn 0-1'. Sản phẩm đặc biệt hữu ích cho người làm việc ngoài trời, người có nhiều nốt ruồi bất thường hoặc tiền sử gia đình ung thư da. Giá bán dự kiến 2,9 triệu đồng, ra mắt thị trường vào quý I/2026.",
+    "author": "Kim Ngân",
+    "publishedAt": "2025-09-05T10:50:00Z",
+    "image": [
+      "https://example.com/medical/skin_scanner.jpg",
+      "https://example.com/medical/skin_scanner.jpg",
+      "https://example.com/medical/skin_scanner.jpg"
+    ],
+    "category": "Y tế",
+    "views": 19800,
+    "clinic": "Phòng khám Sức Khỏe Vàng"
+  },
+  {
+    "id": 8,
+    "title": "Thử nghiệm thành công thuốc xịt mũi ngăn lây nhiễm Covid-19",
+    "content":
+      "Viện Pasteur TP.HCM công bố thử nghiệm lâm sàng thành công loại thuốc xịt mũi có khả năng ngăn chặn 99.7% sự lây nhiễm virus SARS-CoV-2. Thuốc chứa hợp chất nano bạc kết hợp kháng thể đơn dòng chiết xuất từ máu người khỏi bệnh, tạo lớp màng bảo vệ niêm mạc mũi trong 8 giờ sau khi xịt. Thử nghiệm trên 5.000 nhân viên y tế tuyến đầu cho thấy nhóm sử dụng thuốc có tỷ lệ nhiễm bệnh thấp hơn 12 lần so với nhóm không dùng. PGS.TS Nguyễn Văn Hùng - chủ nhiệm đề tài cho biết: 'Mỗi lần xịt chỉ tốn 2.000 đồng nhưng hiệu quả bảo vệ tương đương vaccine, đặc biệt hữu ích khi xuất hiện biến chủng mới'. Thuốc đã được Bộ Y tế cấp phép khẩn cấp, dự kiến phân phối rộng rãi từ tháng 1/2026, ưu tiên cho người cao tuổi và người suy giảm miễn dịch.",
+    "author": "Hải Đăng",
+    "publishedAt": "2025-08-14T15:30:00Z",
+    "image": [
+      "https://tamanhhospital.vn/wp-content/uploads/2023/05/giai-cuu-trai-tim-bi-bo-chat.jpg",
+      "https://example.com/medical/nasal_spray.jpg",
+      "https://example.com/medical/nasal_spray.jpg"
+    ],
+    "category": "Y tế",
+    "views": 41200,
+    "clinic": "Phòng khám An Tâm"
+  },
+  {
+    "id": 9,
+    "title": "Máy chẩn đoán nhanh đa bệnh từ một giọt máu",
+    "content":
+      "Trung tâm Công nghệ Y sinh TPHCM vừa giới thiệu thiết bị xét nghiệm cầm tay có khả năng phát hiện đồng thời 12 chỉ số sức khỏe quan trọng chỉ từ một giọt máu trong 5 phút. Máy sử dụng công nghệ vi lưu kết hợp cảm biến sinh học, cho kết quả chính xác tương đương phòng lab với chi phí chỉ bằng 1/10. Thiết bị đặc biệt hữu ích tại vùng sâu vùng xa, giúp phát hiện sớm bệnh tiểu đường, tim mạch, men gan cao và rối loạn mỡ máu. Kỹ sư Vũ Minh Trí - trưởng nhóm phát triển chia sẻ: 'Chúng tôi tích hợp AI để phân tích xu hướng sức khỏe và đưa ra cảnh báo sớm trước 6 tháng'. Sản phẩm đã được cấp chứng nhận CE (Châu Âu), dự kiến trang bị cho 700 trạm y tế xã tại 12 tỉnh Đồng bằng sông Cửu Long trong năm 2026. Giá bán lẻ ước tính 18 triệu đồng/máy.",
+    "author": "Phương Thảo",
+    "publishedAt": "2025-12-03T11:20:00Z",
+    "image": [
+      "https://example.com/medical/blood_test.jpg",
+      "https://example.com/medical/blood_test.jpg",
+      "https://example.com/medical/blood_test.jpg"
+    ],
+    "category": "Y tế",
+    "views": 27500,
+    "clinic": "Phòng khám Tâm Đức"
+  },
+  {
+    "id": 10,
+    "title": "Phát hiện hoạt chất chống lão hóa từ cây dược liệu Việt",
+    "content":
+      "Sau 7 năm nghiên cứu, nhóm nhà khoa học Viện Dược liệu Trung ương đã chiết xuất thành công hợp chất chống lão hóa mạnh gấp 120 lần vitamin E từ cây Ba kích tím - loại dược liệu đặc hữu của Việt Nam. Hoạt chất có tên BK-7 được chứng minh kích hoạt telomerase, làm chậm quá trình rút ngắn telomere - nguyên nhân chính gây lão hóa tế bào. Thử nghiệm trên chuột cho thấy tuổi thọ tăng 35% và khả năng nhận thức được cải thiện rõ rệt. PGS.TS Nguyễn Thị Lan - trưởng nhóm nghiên cứu cho biết: 'BK-7 có tiềm năng ứng dụng trong điều trị các bệnh liên quan đến lão hóa như Alzheimer, Parkinson và thoái hóa khớp'. Hợp chất đã được cấp bằng sáng chế tại Mỹ và Nhật Bản, dự kiến đưa vào sản xuất dược phẩm cao cấp từ năm 2027. Phát hiện này mở ra triển vọng phát triển ngành dược liệu Việt Nam thành ngành kinh tế mũi nhọn.",
+    "author": "Bảo Trâm",
+    "publishedAt": "2025-07-29T14:45:00Z",
+    "image": [
+      "https://example.com/medical/anti_aging.jpg",
+      "https://example.com/medical/anti_aging.jpg",
+      "https://example.com/medical/anti_aging.jpg"
+    ],
+    "category": "Y tế",
+    "views": 32600,
+    "clinic": "Phòng khám Việt Nhật"
+  },
+  {
+    "id": 11,
+    "title": "Ghép giác mạc nhân tạo in 3D đầu tiên tại Việt Nam",
+    "content":
+      "Bệnh viện Mắt Trung ương vừa thực hiện thành công ca ghép giác mạc nhân tạo in 3D đầu tiên tại Đông Nam Á cho bệnh nhân 32 tuổi bị mù do bỏng axit. Giác mạc sinh học được tạo ra từ tế bào gốc tự thân kết hợp vật liệu polymer đặc biệt, có độ trong suốt và đàn hồi tương tự giác mạc tự nhiên. GS. Phạm Minh Khôi - trưởng khoa Giác mạc cho biết: 'Khác với giác mạc hiến tặng, giác mạc nhân tạo không bị đào thải, không cần dùng thuốc ức chế miễn dịch và tỷ lệ thành công lên đến 98%'. Công nghệ này giải quyết tình trạng thiếu giác mạc hiến tặng trầm trọng, giúp 50.000 bệnh nhân mù giác mạc tại Việt Nam có cơ hội phục hồi thị lực. Chi phí sản xuất một giác mạc nhân tạo khoảng 15 triệu đồng, chỉ bằng 1/5 so với nhập ngoại. Dự kiến sản xuất đại trà từ quý II/2026.",
+    "author": "Ngọc Anh",
+    "publishedAt": "2025-11-22T09:30:00Z",
+    "image": [
+      "https://example.com/medical/cornea.jpg",
+      "https://example.com/medical/cornea.jpg",
+      "https://example.com/medical/cornea.jpg"
+    ],
+    "category": "Y tế",
+    "views": 28900,
+    "clinic": "Phòng khám Việt Nhật"
+  },
+  {
+    "id": 12,
+    "title": "Công nghệ đông lạnh tế bào gốc dây rốn bằng nitơ lỏng -196°C",
+    "content":
+      "Ngân hàng tế bào gốc FSCB vừa giới thiệu công nghệ đông lạnh nhanh bằng nitơ lỏng ở nhiệt độ -196°C giúp bảo quản tế bào gốc dây rốn với tỷ lệ sống sót sau rã đông lên đến 99.8%. Công nghệ mới khắc phục hoàn toàn nhược điểm của phương pháp đông lạnh chậm truyền thống, giảm thiểu tổn thương tế bào do hình thành tinh thể đá. TS. Vũ Thị Hồng Nhung - giám đốc kỹ thuật cho biết: 'Tế bào sau 20 năm bảo quản vẫn giữ nguyên tiềm năng trị liệu, mở ra cơ hội chữa bệnh suốt đời cho trẻ'. Dịch vụ này đặc biệt ý nghĩa với các gia đình có tiền sử bệnh ung thư máu, tiểu đường và bại não. Chi phí lưu trữ 20 năm là 60 triệu đồng, bao gồm bảo hiểm trị giá 1 tỷ đồng. Dự kiến công nghệ sẽ được chuyển giao cho 5 bệnh viện phụ sản lớn vào cuối năm 2025.",
+    "author": "Minh Trang",
+    "publishedAt": "2025-10-08T16:15:00Z",
+    "image": [
+      "https://example.com/medical/stem_cell.jpg",
+      "https://example.com/medical/stem_cell.jpg",
+      "https://example.com/medical/stem_cell.jpg"
+    ],
+    "category": "Y tế",
+    "views": 21500,
+    "clinic": "Phòng khám Việt Nhật"
+  },
+  {
+    "id": 13,
+    "title": "Thiết bị giảm đau không dùng thuốc cho bệnh nhân ung thư",
+    "content":
+      "Bệnh viện K vừa đưa vào ứng dụng thiết bị kích thích tủy sống bằng xung điện giúp giảm 85% cơn đau cho bệnh nhân ung thư giai đoạn cuối mà không cần dùng morphine. Thiết bị nhỏ bằng hạt đậu được cấy dưới da vùng thắt lưng, phát xung điện ngăn chặn tín hiệu đau truyền lên não. Sau 3 tháng thử nghiệm trên 50 bệnh nhân, 100% báo cáo giảm đau rõ rệt, cải thiện chất lượng giấc ngủ và khả năng vận động. BS. Nguyễn Văn Tú - trưởng đơn vị điều trị đau cho biết: 'Đây là giải pháp thay thế an toàn cho bệnh nhân không đáp ứng với thuốc giảm đau thông thường hoặc gặp tác dụng phụ nghiêm trọng'. Thiết bị hoạt động bằng pin với tuổi thọ 5 năm, chi phí cấy ghép khoảng 70 triệu đồng, được BHYT chi trả 50% từ năm 2026. Dự kiến sẽ nhân rộng mô hình này tại 10 bệnh viện chuyên khoa ung bướu.",
+    "author": "Quang Huy",
+    "publishedAt": "2025-09-17T10:05:00Z",
+    "image": [
+      "https://example.com/medical/pain_relief.jpg",
+      "https://example.com/medical/pain_relief.jpg",
+      "https://example.com/medical/pain_relief.jpg"
+    ],
+    "category": "Y tế",
+    "views": 19800,
+    "clinic": "Phòng khám Tân Tiến"
+  },
+  {
+    "id": 14,
+    "title": "Phát minh võng mạc nhân tạo cho người mù",
+    "content":
+      "Nhóm nghiên cứu Đại học Quốc gia Hà Nội vừa chế tạo thành công võng mạc nhân tạo bằng vật liệu graphene giúp khôi phục thị lực cho người mù do thoái hóa võng mạc. Thiết bị gồm 10.000 điện cực siêu nhỏ thay thế tế bào cảm quang, kết nối không dây với camera mini gắn trên kính. Thử nghiệm trên thỏ cho thấy khả năng nhận biết hình ảnh cơ bản với độ phân giải 128px. GS. Trần Văn Tạo - chủ nhiệm đề tài cho biết: 'Đây là bước đột phá trong công nghệ thần kinh thị giác, dự kiến sau 2 năm nữa sẽ thử nghiệm trên người'. Công nghệ hứa hẹn mang lại ánh sáng cho 200.000 người mù võng mạc tại Việt Nam, với chi phí chỉ bằng 1/10 so với sản phẩm nhập ngoại (ước tính 300 triệu đồng). Sản phẩm đã được 5 tập đoàn công nghệ lớn tại Mỹ và Nhật đặt vấn đề chuyển giao công nghệ.",
+    "author": "Tuấn Anh",
+    "publishedAt": "2025-08-25T13:50:00Z",
+    "image": [
+      "https://example.com/medical/retina.jpg",
+      "https://example.com/medical/retina.jpg",
+      "https://example.com/medical/retina.jpg"
+    ],
+    "category": "Y tế",
+    "views": 36700,
+    "clinic": "Phòng khám Nhân Ái"
+  },
+  {
+    "id": 15,
+    "title": "Hệ thống cảnh báo sớm động kinh qua smartwatch",
+    "content":
+      "Công ty công nghệ y tế MedAlert vừa ra mắt đồng hồ thông minh tích hợp trí tuệ nhân tạo có khả năng dự báo cơn động kinh trước 5 phút với độ chính xác 91%. Thiết bị theo dõi liên tục 6 chỉ số sinh tồn gồm nhịp tim, huyết áp, nồng độ oxy máu, nhiệt độ da, độ dẫn điện da và chuyển động cơ. Khi phát hiện dấu hiệu bất thường, đồng hồ sẽ rung mạnh cảnh báo, đồng thời gửi tin nhắn khẩn đến người thân và bác sĩ điều trị. TS. Nguyễn Hoàng Nam - giám đốc sản phẩm chia sẻ: 'Chúng tôi phát triển thuật toán dựa trên dữ liệu 50.000 cơn động kinh thực tế, giúp bệnh nhân kịp thời tìm vị trí an toàn hoặc dùng thuốc cắt cơn'. Sản phẩm đạt chứng nhận FDA (Mỹ), giá bán 8,7 triệu đồng, kèm theo gói bảo hiểm y tế đặc biệt cho bệnh nhân động kinh. Dự kiến phân phối tại nhà thuốc lớn từ tháng 12/2025.",
+    "author": "Thanh Tùng",
+    "publishedAt": "2025-12-15T14:35:00Z",
+    "image": [
+      "https://example.com/medical/epilepsy_watch.jpg",
+      "https://example.com/medical/epilepsy_watch.jpg",
+      "https://example.com/medical/epilepsy_watch.jpg"
+    ],
+    "category": "Y tế",
+    "views": 24100,
+    "clinic": "Phòng khám Nhân Ái"
+  },
+  {
+    "id": 16,
+    "title": "Bệnh nhân đầu tiên được ghép tim tại bệnh viện tuyến tỉnh",
+    "content":
+      "Một bệnh viện tuyến tỉnh tại miền Trung đã thực hiện thành công ca ghép tim đầu tiên, đánh dấu bước tiến lớn trong ngành y tế địa phương. Bệnh nhân là nam giới 45 tuổi, mắc suy tim giai đoạn cuối, không thể điều trị bằng các phương pháp thông thường. Sau khi được đưa vào danh sách chờ hiến tạng, anh may mắn nhận được quả tim phù hợp từ một người hiến tại TP.HCM. Ca phẫu thuật kéo dài 8 giờ do ê-kíp gần 30 bác sĩ thực hiện. Sau 10 ngày hậu phẫu, bệnh nhân đã tự thở, phục hồi tốt và đang tập vật lý trị liệu nhẹ. Đây là lần đầu tiên một ca ghép tim được thực hiện ngoài các bệnh viện tuyến trung ương. Thành công này mở ra hy vọng cho nhiều bệnh nhân mắc bệnh tim nặng không có điều kiện chuyển viện xa. Bệnh viện cũng cho biết đã hoàn tất quy trình đào tạo nội bộ và sẵn sàng tiếp nhận nhiều ca tương tự trong tương lai gần.",
+    "author": "Bích Vân",
+    "publishedAt": "2025-08-06T09:00:00Z",
+    "image": [
+      "https://example.com/images/heart-transplant1.jpg",
+      "https://example.com/images/heart-transplant2.jpg"
+    ],
+    "category": "Y tế",
+    "views": 15800,
+    "clinic": "Phòng khám Thiện Tâm"
+  },
+  {
+    "id": 17,
+    "title": "Tăng đột biến bệnh tay chân miệng ở trẻ em đầu mùa tựu trường",
+    "content":
+      "Các bệnh viện nhi trên cả nước ghi nhận sự gia tăng nhanh chóng các ca tay chân miệng ngay từ những ngày đầu tháng 8, trùng thời điểm trẻ em chuẩn bị quay lại trường học. Riêng tại TP.HCM, số ca nhập viện vì bệnh này đã tăng gấp đôi so với tháng trước. Theo các chuyên gia, nguyên nhân có thể do thời tiết nóng ẩm kết hợp với môi trường lớp học đông đúc, dễ lây lan virus. Bệnh tay chân miệng chủ yếu do virus Coxsackie gây ra, lây truyền qua đường tiêu hóa, nước bọt và tiếp xúc trực tiếp. Trẻ bị bệnh có biểu hiện sốt nhẹ, nổi bóng nước ở tay, chân, miệng. Trong một số trường hợp nặng, trẻ có thể bị biến chứng thần kinh như co giật, viêm não, cần nhập viện gấp. Bộ Y tế khuyến cáo phụ huynh nên giữ gìn vệ sinh tay cho trẻ, thường xuyên rửa đồ chơi, không cho trẻ bị bệnh đến lớp để hạn chế lây lan.",
+    "author": "Minh Hằng",
+    "publishedAt": "2025-08-06T08:30:00Z",
+    "image": [
+      "https://example.com/images/hand-foot-mouth1.jpg",
+      "https://example.com/images/hand-foot-mouth2.jpg"
+    ],
+    "category": "Y tế",
+    "views": 9700,
+    "clinic": "Phòng khám Hy Vọng"
+  },
+  {
+    "id": 18,
+    "title": "Phát hiện sớm ung thư phổi bằng xét nghiệm máu",
+    "content":
+      "Một nghiên cứu mới tại Nhật Bản đã phát triển thành công xét nghiệm máu có thể phát hiện ung thư phổi giai đoạn sớm với độ chính xác lên đến 90%. Xét nghiệm này dựa trên việc phân tích dấu ấn sinh học từ tế bào ung thư lưu thông trong máu, thay vì chụp X-quang hay CT như truyền thống. Đây là bước tiến đột phá vì ung thư phổi thường phát hiện muộn, khi đã di căn. Trong quá trình thử nghiệm, hơn 1.000 bệnh nhân được tầm soát và 87% trong số đó được chẩn đoán chính xác, giúp can thiệp sớm. Xét nghiệm dự kiến được triển khai rộng rãi tại các cơ sở y tế Nhật Bản vào đầu năm 2026 và đang được các nước khác quan tâm áp dụng. Việt Nam cũng đang đàm phán để thử nghiệm công nghệ này tại một số bệnh viện lớn như Bạch Mai, Chợ Rẫy. Việc phát hiện sớm ung thư không chỉ cứu sống người bệnh mà còn giảm gánh nặng chi phí điều trị và cải thiện chất lượng cuộc sống.",
+    "author": "Hoàng Đức",
+    "publishedAt": "2025-08-06T07:45:00Z",
+    "image": [
+      "https://example.com/images/lung-cancer-test.jpg",
+      "https://example.com/images/blood-sample.jpg"
+    ],
+    "category": "Y tế",
+    "views": 18400,
+    "clinic": "Phòng khám Hòa Bình"
+  },
+  {
+    "id": 19,
+    "title": "Thêm một loại vaccine phòng sốt xuất huyết được WHO phê duyệt",
+    "content":
+      "Tổ chức Y tế Thế giới (WHO) vừa chính thức phê duyệt sử dụng khẩn cấp loại vaccine mới phòng sốt xuất huyết do một công ty dược phẩm của Brazil sản xuất. Vaccine này được đánh giá có hiệu quả phòng ngừa lên đến 80% với 4 chủng virus dengue sau 2 liều tiêm cách nhau 3 tháng. Việc phê duyệt này được xem là giải pháp cần thiết trong bối cảnh sốt xuất huyết đang bùng phát mạnh tại nhiều quốc gia châu Á, trong đó có Việt Nam. Bộ Y tế Việt Nam cho biết đang làm việc với nhà sản xuất để nhanh chóng đưa vaccine về trong năm 2026. Dự kiến chương trình tiêm chủng mở rộng sẽ ưu tiên nhóm học sinh từ 6-15 tuổi ở vùng dịch trọng điểm. Trước đây, Việt Nam đã triển khai thử nghiệm vaccine Dengvaxia nhưng gặp nhiều hạn chế. Vaccine mới được kỳ vọng sẽ là “vũ khí chiến lược” giúp đẩy lùi dịch bệnh nguy hiểm này.",
+    "author": "Phương Anh",
+    "publishedAt": "2025-08-05T16:15:00Z",
+    "image": [
+      "https://example.com/images/dengue-vaccine.jpg",
+      "https://example.com/images/vaccine-child.jpg"
+    ],
+    "category": "Y tế",
+    "views": 13500,
+    "clinic": "Phòng khám Tâm Đức"
+  }
+]

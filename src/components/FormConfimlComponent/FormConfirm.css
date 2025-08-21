@@ -1,0 +1,53 @@
+.container-formConfirm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    border-radius: 10px;
+    background-color: #ffff;
+    z-index: 99999999;
+    width: 80%;
+    max-width: max-content;
+    padding: 40px;
+}
+.confirm-table-wrapper {
+  overflow-x: auto;
+}
+.confirm-table-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.confirm-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2d4fd1;
+  overflow-x: auto;
+}
+
+.confirm-table {
+  border-collapse: collapse;
+}
+
+.confirm-table th,
+.confirm-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.confirm-table thead th {
+  background: #2d4fd1;
+  color: white;
+}
+
+.confirm-table tbody tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+
+.confirm-table tbody tr:hover {
+  background-color: #eaf6ff;
+}
+

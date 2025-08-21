@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "clinic": "Phòng khám An Khang",
+        "doctor": "BS. Nguyễn Văn A",
+        "address": "123 Lê Lợi, Hà Nội",
+        "symptoms": "Đau đầu, chóng mặt",
+        "invoice": {
+            "medicine": [
+                {
+                    "name": "Paracetamol",
+                    "qty": "10 viên",
+                    "usage": "Uống 2 viên/ngày"
+                },
+                {
+                    "name": "Vitamin C",
+                    "qty": "5 viên",
+                    "usage": "Uống 1 viên/ngày"
+                }
+            ],
+            "total": "150.000đ"
+        },
+        "date": "12/08/2025",
+        "specialty": "Nội tổng quát",
+        "status": "Hoàn thành"
+    },
+    {
+        "id": 2,
+        "clinic": "Phòng khám Hồng Ngọc",
+        "doctor": "BS. Trần Thị B",
+        "address": "456 Nguyễn Huệ, TP.HCM",
+        "symptoms": "Ho, sốt",
+        "invoice": {
+            "medicine": [
+                {
+                    "name": "Amoxicillin",
+                    "qty": "14 viên",
+                    "usage": "Uống 2 viên/ngày"
+                }
+            ],
+            "total": "200.000đ"
+        },
+        "date": "05/08/2025",
+        "specialty": "Tai Mũi Họng",
+        "status": "Đang xử lý"
+    },
+    {
+        "id": 3,
+        "clinic": "Phòng khám Hồng Ngọc",
+        "doctor": "BS. Trần Thị B",
+        "address": "456 Nguyễn Huệ, TP.HCM",
+        "symptoms": "Ho, sốt",
+        "invoice": {
+            "medicine": [
+                {
+                    "name": "Amoxicillin",
+                    "qty": "14 viên",
+                    "usage": "Uống 2 viên/ngày"
+                }
+            ],
+            "total": "200.000đ"
+        },
+        "date": "05/08/2025",
+        "specialty": "Tai Mũi Họng",
+        "status": "Đang xử lý"
+    },
+    {
+        "id": 4,
+        "clinic": "Phòng khám Hồng Ngọc",
+        "doctor": "BS. Trần Thị B",
+        "address": "456 Nguyễn Huệ, TP.HCM",
+        "symptoms": "Ho, sốt",
+        "invoice": {
+            "medicine": [
+                {
+                    "name": "Amoxicillin",
+                    "qty": "14 viên",
+                    "usage": "Uống 2 viên/ngày"
+                }
+            ],
+            "total": "200.000đ"
+        },
+        "date": "05/08/2025",
+        "specialty": "Tai Mũi Họng",
+        "status": "Đang xử lý"
+    }
+]
