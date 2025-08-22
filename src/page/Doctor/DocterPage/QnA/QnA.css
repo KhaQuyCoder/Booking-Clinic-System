@@ -1,0 +1,189 @@
+.qa-container {
+  display: flex;
+  height: 80vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+/* Bọc 2 cột */
+.qa-box {
+  display: flex;
+  flex: 1;
+  background-color: #ffffff;  /* nền trắng */
+  border-radius: 12px;        /* bo góc */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* đổ bóng */
+  overflow: hidden;           /* tránh chat/sidebar tràn bo góc */
+}
+
+
+/* Sidebar */
+.qa-sidebar {
+  width: 30%;
+  min-width: 220px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* .qa-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px; */
+/* } */
+.qa-item:hover,
+.qa-item.active {
+  background: #f0f8ff;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Chat */
+.qa-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-chat-window {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Người hỏi */
+.qa-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.asker-bubble {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Tin nhắn trạng thái */
+.asker-bubble.unanswered {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+.asker-bubble.answered {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.asker-bubble.replying {
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+/* Bác sĩ trả lời */
+.qa-answer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.doctor-bubble {
+  background: #d1f0d1;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.like-btn {
+  margin-top: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0077cc;
+}
+
+/* Reply box */
+.qa-reply-box {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.qa-reply-box input[type="text"] {
+  flex: 1;
+  padding: 8px;
+}
+
+.file-icon {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.qa-reply-box button {
+  padding: 8px 12px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.status-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-top: 4px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Sidebar item mặc định */
+.qa-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #fff; /* nền trắng bình thường */
+  border: 1px solid transparent; /* viền mặc định */
+}
+
+/* Trạng thái viền */
+.qa-item.unanswered {
+  border-color: #dc3545; /* đỏ nhạt - chưa trả lời */
+}
+.qa-item.answered {
+  border-color: #28a745; /* xanh nhạt - đang trả lời */
+}
+.qa-item.replying {
+  border-color: #ffc107; /* vàng nhạt - đã trả lời */
+  
+}
+
+
+/* Các bubble chat giữ nguyên màu như cũ */
+.asker-bubble.unanswered { background: #fff3cd; border: 1px solid #f5c6cb; }
+.asker-bubble.answered { background: #d4edda; border: 1px solid #c3e6cb; }
+.asker-bubble.replying { background: #cce5ff; border: 1px solid #b8daff; }
+
+/* Tin nhắn mặc định bác sĩ */
+.default-answer .doctor-bubble { background: #e2e3e5; }

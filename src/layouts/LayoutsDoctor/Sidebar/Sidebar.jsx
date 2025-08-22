@@ -1,52 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './Sidebar.css';
 
 const menuItems = [
   { icon: "👥", label: "Quản lý bệnh nhân" ,path: "/Patients"},
   { icon: "📅", label: "Lập lịch khám" , path: "/schedule"},
-  { icon: "📅", label: "Xem lịch khám" },
-  { icon: "✔️", label: "Duyệt yêu cầu khám" },
-  { icon: "💬", label: "Trả lời hỏi đáp"},
-  { icon: "💻", label: "Khám online" },
-  { icon: "🧾", label: "Lập hóa đơn thuốc" },
-  { icon: "📊", label: "Thống kê báo cáo" },
-  { icon: "🔑", label: "Đổi mật khẩu" },
-  { icon: "🔐", label: "Đăng nhập" },
-  { icon: "👤", label: "Profile" },
+  { icon: "📅", label: "Xem lịch khám" , path: "/View"},
+  { icon: "✔️", label: "Duyệt yêu cầu khám",path: "/Accept" },
+  { icon: "💬", label: "Trả lời hỏi đáp",path: "/QnA"},
+  { icon: "💻", label: "Khám online" ,path: "/OnlineConsult"},
+  { icon: "🧾", label: "Lập hóa đơn thuốc",path: "/3" },
+  { icon: "📊", label: "Thống kê báo cáo",path: "/DoctorStatistics" },
+  { icon: "👤", label: "Profile" ,path: "/Profile"},
+  { icon: "🔑", label: "Đổi mật khẩu",path: "/ChangePassword" },
+  { icon: "🔐", label: "Đăng nhập" ,path: "/3"},
   { icon: "↩️", label: "Đăng xuất" , path:"/login"},
 ];
+
 const Sidebar = () => {
   return (
-    <aside style={{
-      width: 250,
-      backgroundColor: '#2469DF',
-      // height: '100vh',
-      color: '#212529 ',
-      padding: '20px',
-      boxSizing: 'border-box',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-    }}>
+    <aside
+      style={{
+        width: 250,
+        backgroundColor: '#1759ca',
+        color: '#212529',
+        padding: '20px',
+        boxSizing: 'border-box',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}
+    >
       <div>
-        <div style={{ marginBottom: 20, fontWeight: 'bold', fontSize: 18, color: '#212529 ' }}>
+        <div style={{ marginBottom: 20, fontWeight: 'bold', fontSize: 18, color: '#212529' }}>
           <div style={{ marginBottom: 10 }}>
-            {/* Logo */}
             <img src="/logo.svg" alt="Logo" width={100} />
           </div>
-          <div style = {{display:'flex',alignItems: 'center',gap: 12}}>
-            {/* avatar bác sĩ */}
-            <img src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg" alt="avatar doctor" 
-                 width={80}
-                 height={80}
-                 style={{ borderRadius: '50%', objectFit: 'cover' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <img
+              src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
+              alt="avatar doctor"
+              width={80}
+              height={80}
+              style={{ borderRadius: '50%', objectFit: 'cover' }}
+            />
             <div>
-                <div style={{fontWeight: 'bold',fontSize: 18,color: '#212529 '}}>
-                    Hoàng Việt Thắng
-                </div>
-                <div style ={{ fontSize: 14, opacity: 0.7}}>
-                    Bác sĩ
-                </div>
+              <div style={{ fontWeight: 'bold', fontSize: 18, color: '#212529' }}>
+                Hoàng Việt Thắng
+              </div>
+              <div style={{ fontSize: 14, opacity: 0.7 }}>Bác sĩ</div>
             </div>
           </div>
         </div>
@@ -54,25 +56,16 @@ const Sidebar = () => {
         {/* Menu */}
         <nav>
           {menuItems.map((item, idx) => (
-            <div
+            <NavLink
               key={idx}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginBottom: 15,
-                cursor: 'pointer',
-                fontSize: 15,
-                opacity: 0.85,
-              }}
+              to={item.path || "#"}
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
             >
-              <Link
-                to={item.path}
-                style={{ color: '#212529', textDecoration: 'none', display: 'flex', alignItems: 'center' }}
-              >
-                 <span style={{ marginRight: 10 }}>{item.icon}</span>
-                 <span style={{color:"white"}}>{item.label}</span>
-              </Link>
-            </div>
+              <span className="menu-icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </NavLink>
           ))}
         </nav>
       </div>

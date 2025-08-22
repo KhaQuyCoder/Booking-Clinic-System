@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "Tôi bị đau đầu thường xuyên, có nguy hiểm không?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Nguyễn Văn A",
+      "avatar": "https://i.pravatar.cc/40?img=5"
+    }
+  },
+  {
+    "id": 2,
+    "question": "Trẻ em bị sốt bao nhiêu độ thì nên đưa đi khám?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Trần Thị B",
+      "avatar": "https://i.pravatar.cc/40?img=3"
+    }
+  },
+  {
+    "id": 3,
+    "question": "Làm sao để tăng sức đề kháng cho trẻ nhỏ?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Lê Văn C",
+      "avatar": "https://i.pravatar.cc/40?img=4"
+    }
+  },
+  {
+    "id": 4,
+    "question": "Tôi bị mất ngủ kéo dài, nên làm gì?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Phạm Thị D",
+      "avatar": "https://i.pravatar.cc/40?img=5"
+    }
+  },
+  {
+    "id": 5,
+    "question": "Khi nào nên đi khám tổng quát định kỳ?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": ["không sao bạn nhé, bạn có thể tới trung tâm chúng tôi để khám tổng quát"],
+    "asker": {
+      "name": "Hoàng Văn E",
+      "avatar": "https://i.pravatar.cc/40?img=6"
+    }
+  },
+  {
+    "id": 6,
+    "question": "Người cao huyết áp nên kiêng những gì?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": ["không sao nhé"],
+    "asker": {
+      "name": "Nguyễn Thị F",
+      "avatar": "https://i.pravatar.cc/40?img=7"
+    }
+  },
+  {
+    "id": 7,
+    "question": "Ăn chay có đủ chất không?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Đặng Văn G",
+      "avatar": "https://i.pravatar.cc/40?img=8"
+    }
+  },
+  {
+    "id": 8,
+    "question": "Tôi hay bị đau dạ dày, nên ăn uống thế nào?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Trương Thị H",
+      "avatar": "https://i.pravatar.cc/40?img=9"
+    }
+  },
+  {
+    "id": 9,
+    "question": "Có nên tiêm phòng cúm hàng năm không?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Mai Văn I",
+      "avatar": "https://i.pravatar.cc/40?img=10"
+    }
+  },
+  {
+    "id": 10,
+    "question": "Người tiểu đường nên tập thể dục như thế nào?",
+    "defaultAnswer": "Chúng tôi sẽ trả lời bạn sớm nhất",
+    "answers": [],
+    "asker": {
+      "name": "Vũ Thị J",
+      "avatar": "https://i.pravatar.cc/40?img=11"
+    }
+  }
+]

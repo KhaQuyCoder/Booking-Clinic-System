@@ -1,0 +1,136 @@
+.online-container {
+  display: flex;
+  height: 90vh;
+  width: 90%;
+  max-width: 900px;
+  margin: 10px auto;
+  font-family: sans-serif;
+}
+
+.online-sidebar {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.patient-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+.patient-item {
+  display: flex; 
+  gap: 10px; 
+  padding: 8px; 
+  border-radius: 6px; 
+  cursor: pointer;
+  background: #fff; 
+  border: 1px solid transparent;
+}
+
+.patient-item.active { 
+  border-color: #0077cc; 
+  background: #e6f0ff; 
+}
+
+.avatar { 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+}
+
+.status { 
+  font-size: 0.8rem; 
+  font-weight: bold; 
+  margin-top: 2px; 
+}
+.status.đang-khám { color: green; }
+.status.đã-khám { color: gray; }
+.status.sắp-tới { color: orange; }
+
+/* Cột phải */
+.online-main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 12px;
+  overflow: hidden;
+  
+}
+
+/* Hàng 1: Video */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+
+.video-box {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.video-patient, .video-doctor {
+  flex: 1;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.video-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  /* margin-top vẫn giữ khoảng cách với video */
+  margin-top: 5px;
+
+  border: 1px solid #c0d4e2;
+  border-radius: 5px;
+
+  padding: 4px 6px; /* padding nhỏ vừa đủ cho icon */
+  width: fit-content; /* bọc vừa đủ nội dung */
+  margin-left: auto;  /* căn giữa nếu muốn */
+  margin-right: auto;
+  background-color: #00060a;
+}
+
+.video-controls button {
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #00060a;
+
+}
+
+
+/* Hàng 3: Consultation info */
+.consultation-info {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.consultation-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.status-label {
+  font-weight: bold;
+}
+
+.status-label.Đang-diễn-ra { color: green; }
+.status-label.Đã-khám { color: gray; }
+.status-label.Sắp-tới { color: orange; }

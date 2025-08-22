@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TablePagination } from "@mui/material";
 import { useParams } from "react-router-dom";
-import patients from "../../../../../data/Patient.json";
+import patients from "../../../../../data/detailPatient.json";
 import MedicalRecords from "../../../../../data/medicalRecords.json";
 import "./MedicalHistory.css";
 
@@ -47,25 +47,24 @@ const MedicalHistory = () => {
                     </div>
 
                     {/* Cột con 2 */}
-                    <div className="form-col2">
-                        <div className="form-row-inline">
-                            <label>Giới tính:</label>
-                            <div className="gender-box">
-                                <label>
-                                    <input type="radio" checked={patient.gender === "Nam"} readOnly /> Nam
-                                </label>
-                                <label>
-                                    <input type="radio" checked={patient.gender === "Nữ"} readOnly /> Nữ
-                                </label>
-                            </div>
-                        </div>
-                        <div className="form-row-inline">
-                            <label>Năm sinh:</label>
-                            <input type="date" value={patient.dob} disabled />
+                </div>
+                <div className="form-col2">
+                    <div className="form-row-inline">
+                        <label>Giới tính:</label>
+                        <div className="gender-box">
+                            <label>
+                                <input type="radio" checked={patient.gender === "Nam"} readOnly /> Nam
+                            </label>
+                            <label>
+                                <input type="radio" checked={patient.gender === "Nữ"} readOnly /> Nữ
+                            </label>
                         </div>
                     </div>
+                    <div className="form-row-inline">
+                        <label>Năm sinh:</label>
+                        <input type="date" value={patient.dob} disabled />
+                    </div>
                 </div>
-
                 {/* Cột phải 1/4: avatar */}
                 <div className="col-1-4 avatar-col">
                     <img src={patient.avatar} alt="avatar" className="avatar-square" />

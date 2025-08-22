@@ -11,6 +11,13 @@ import PatientDetail from './page/Doctor/DocterPage/PatientManagementv2/PatientD
 import PatientEdit from './page/Doctor/DocterPage/PatientManagementv2/PatientEdit/index';
 import ViewMedicalRecords from './page/Doctor/DocterPage/PatientManagementv2/ViewMedicalRecords/index';
 import MedicalHistory from './page/Doctor/DocterPage/PatientManagementv2/MedicalHistory/index';
+import ViewMedicalAppointmentSchedule from './page/Doctor/DocterPage/ViewMedicalAppointmentSchedule/index';
+import AcceptMedicalAppointment from './page/Doctor/DocterPage/AcceptMedicalAppointment/index';
+import QnA from './page/Doctor/DocterPage/QnA/index';
+import OnlineConsult from './page/Doctor/DocterPage/OnlineConsult/index';
+import Profile from './page/Doctor/DocterPage/Profile/index';
+import ChangePassword from './page/Doctor/DocterPage/ChangePassword/index';
+import DoctorStatistics from './page/Doctor/DocterPage/DoctorStatistics/index';
 import { PatientProvider } from './context/patientContext';
 
 function App() {
@@ -34,6 +41,13 @@ function App() {
             <Route path="ViewMR/:id" element={<ViewMedicalRecords />} />
             <Route path="MedicalHistory" element={<MedicalHistory />} />
             <Route path="MedicalHistory/:id" element={<MedicalHistory />} />
+            <Route path="View" element={<ViewMedicalAppointmentSchedule />} />
+            <Route path="Accept" element={<AcceptMedicalAppointment />} />
+            <Route path="QnA" element={<QnA />} />
+            <Route path="OnlineConsult" element={<OnlineConsult />} />
+            <Route path="Profile" element={<Profile />} />
+            <Route path="ChangePassword" element={<ChangePassword />} />
+            <Route path="DoctorStatistics" element={<DoctorStatistics />} />
           </Route>
         </Routes>
 

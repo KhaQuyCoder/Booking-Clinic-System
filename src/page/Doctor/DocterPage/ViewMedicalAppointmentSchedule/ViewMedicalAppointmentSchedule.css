@@ -1,0 +1,23 @@
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: #020000;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.link-exam {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 13px;
+}
+.link-exam:hover {
+  text-decoration: underline;
+}

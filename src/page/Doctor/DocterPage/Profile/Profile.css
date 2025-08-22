@@ -1,0 +1,246 @@
+/* Container chính sử dụng CSS Grid */
+.profile-container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  max-width: 900px;
+  max-height: none;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 5px;
+  overflow-y: auto;
+  /* Ngăn cuộn toàn bộ */
+}
+.profile-right-column::-webkit-scrollbar {
+  display: none;
+}
+.profile-right-column {
+  scrollbar-width: none;
+}
+/* Cột trái (35%) */
+.profile-left-column {
+  background-color: #1B7EEE;
+  width: 30%;
+  height: auto;
+  color: #080000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* Sắp xếp các hàng theo chiều dọc */
+  gap: 10px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+.avatar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.doctor-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 0.25px solid #0c0000;
+  object-fit: cover;
+}
+
+.info-section {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  gap: 20px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.info-section h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0a0000;
+}
+
+.contact-info ul,
+.career-objective ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-info li i {
+  color: #080000;
+  width: 20px;
+  text-align: center;
+}
+
+.career-objective ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.rating-section .stars {
+  font-size: 16px;
+  color: #ffd700;
+  /* Màu vàng */
+}
+
+/* Cột phải (65%) */
+.profile-right-column {
+  background-color: #f0f2f5;
+  width: 70%;
+  background: #f0f2f5;
+  padding: 120px 10px 10px 30px;
+  /* chừa header */
+}
+
+/* Header nối với avatar */
+.right-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;/* căn tất cả về trái */
+  justify-content: center;
+  text-align: left;/* text nằm về trái */
+  padding: 14px 20px;
+  position: absolute;
+  top: 10px;
+  left: -15px;/* Đè sang cột trái */
+  width: calc(90% + 30px);/* Kéo dài thêm đúng khoảng left */
+  background: #93A2AA;
+  padding: 14px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .40);
+  z-index: 5;/* Đè lên tất cả */
+  border: 1px solid#6f787c;
+}
+
+.profile-right-column {
+  background: #f0f2f5;
+  position: relative;/* Làm gốc cho header overlay */
+  width: 70%;
+  padding: 120px 10px 10px 30px;  /* Chừa chỗ header */
+}
+
+.right-header h2,
+.right-header p {
+  margin-left: 0 !important;
+  /* bỏ thụt vào */
+  text-align: left !important;
+  background: none !important;
+  width: 100%;
+}
+
+.right-header h2 {
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.right-header p {
+  margin: 0;
+  color: #0c0b0b;
+  text-transform: uppercase;
+
+  font-size: 0.9rem;
+}
+
+/* .right-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+/* } */
+
+.right-section h3 {
+  color: #2e5cb8;
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-section ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.right-section ul li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.right-section ul li span:first-child {
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.timeline-container {
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.timeline-item::before {
+  display: flex;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #2e5cb8;
+  border-radius: 50%;
+  left: -6px;
+  top: 4px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timeline-content {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.timeline-content img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-images {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* .activity-images img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */

@@ -1,106 +1,45 @@
+/* ===================== Thông tin bệnh nhân ===================== */
 .section-title {
   color: #1976d2;
   margin-bottom: 16px;
   font-weight: 600;
 }
-.patient-info-inline {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 24px;
-}
+
 .patient-info {
   display: flex;
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.col-3-4 { flex: 3; }
-.col-1-4 { flex: 1; }
+.col-3-4 { flex: 3; min-width: 250px; }
+.col-1-4 { flex: 1; min-width: 120px; display: flex; justify-content: center; }
 
 .grid-2col {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
+
 .form-col1, .form-col2 {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .form-row-inline {
-  width: 500px;
   display: flex;
   align-items: center;
-  gap: 30px;
-}
-.form-row-inline input {
-  width: 100px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.form-row-inline label {
-  width: 100px; /* fix width để đều nhau */
-  font-weight: 500;
-}
-.form-row-inline label {
-  width: 100px; /* fix width để đều nhau */
-  font-weight: 500;
-}
-
-.grid-2col div label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
-}
-
-.grid-2col div input {
+  gap: 20px;
   width: 100%;
-  padding: 6px 10px;
-  margin-bottom: 12px;
-  border: 1px solid #0f0101;
-  border-radius: 6px;
-  font-size: 14px;
 }
 
-/* .gender-box label {
-  margin-right: 16px;
+.form-row-inline label {
+  width: 100px;
   font-weight: 500;
-} */
-
-.avatar-square {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-}
-.col-1-4 {
-  flex: 1;
 }
 
-.info-left {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.info-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.info-row label {
-  font-weight: 500;
-  min-width: 80px; /* đảm bảo label đều hàng */
-}
-
-.info-row input[type="text"],
-.info-row input[type="date"] {
+.form-row-inline input {
   flex: 1;
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -112,35 +51,118 @@
   margin-right: 16px;
   font-weight: 500;
 }
-
-.info-right {
-  flex: 1;
+.avatar-square {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ccc;
 }
+.avatar-col{
+  padding: 0;
+}
+
+/* ===================== Divider ===================== */
 .divider {
   margin: 32px 0;
   border: none;
   border-top: 1px solid #ccc;
 }
 
-/* Trạng thái xử lý */
+/* ===================== Trạng thái xử lý ===================== */
 .status-chip {
-  color: #000000;
+  color: #000;
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 500;
   display: inline-block;
-  border: 1px solid rgb(8, 1, 1);
+  border: 1px solid #080101;
   text-align: center;
   min-width: 90px;
   min-height: 15px;
 }
 
-/* Table hover & cân đối */
+/* ===================== Table ===================== */
 .MuiTableCell-root {
   font-size: 14px;
   padding: 8px 12px;
 }
+
 .MuiTableHead-root .MuiTableCell-root {
   font-weight: 600;
   background-color: #2a80befd;
+}
+
+.TableContainer {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* ===================== Responsive ===================== */
+@media screen and (max-width: 1024px) {
+  .patient-info {
+    flex-direction: column;
+  }
+
+  .grid-2col {
+    flex-direction: column;
+  }
+
+  .form-row-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .form-row-inline label {
+    width: auto;
+  }
+
+  .form-row-inline input {
+    width: 100%;
+  }
+
+  .avatar-square {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MuiTableCell-root {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .status-chip {
+    min-width: 60px;
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .avatar-square {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ .avatar-square {
+    width: 80px;
+    height: 80px;
+  }
+
+  .col-3-4, .col-1-4 {
+    flex: 1 1 100%;
+  }
+
+  .avatar-square {
+    width: 80px;
+    height: 80px;
+  }
 }

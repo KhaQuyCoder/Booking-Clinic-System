@@ -1,98 +1,150 @@
-.view-records-container {
+/* Container chính */
+.patient-edit-container {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 25px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-.section {
-  margin-bottom: 20px;
-}
-
-.section h3 {
-  margin-bottom: 10px;
+/* Tiêu đề */
+.patient-edit-container h2 {
+  text-align: center;
   color: #0066cc;
+  margin-bottom: 30px;
 }
 
+/* Form box */
+.form-box {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+}
+.patient-info{
+  display: flex;
+}
+.form-box h3 {
+  margin-bottom: 15px;
+  color: #004a99;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Grid 2 cột */
 .grid-2col {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
+  display: flex;
+  gap: 100px;
 }
 
-.grid-3col {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.col-2-3 {
-  grid-column: span 1;
-}
-
-.col-1-3 {
-  grid-column: span 1;
-}
-
-.form-col1 {
+/* Cột form */
+.form-col {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  gap: 5px;
+  gap: 12px;
 }
 
 label {
-  font-weight: 500;
   display: flex;
   flex-direction: column;
+  font-weight: bold;
   gap: 5px;
 }
 
 input, textarea {
-  padding: 6px;
-  border: 1px solid #ccc;
+  padding: 8px 10px;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
 }
-
+.N{
+  width:120px;
+}
 textarea {
   resize: none;
 }
-.form-row input {
-  flex: 1;
-  padding: 8px;
-}
+
+/* Checkbox/Radio gender */
 .gender-box {
   display: flex;
-  gap: 25px;
+  gap: 20px;
+  margin-top: 5px;
 }
+
+.gender-box input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Avatar */
 .avatar-col {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 250px;
 }
 
 .avatar-square {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+}
+.avatar-col{
+  padding: 0;
 }
 
+/* File box */
 .file-box {
   border: 1px dashed #ccc;
-  padding: 15px;
+  padding: 12px;
   text-align: center;
-  background: #f9f9f9;
+  background: #f2f8ff;
   border-radius: 6px;
+  font-size: 14px;
 }
 
-hr {
-  margin: 25px 0;
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
+/* Button */
 .button-group {
   text-align: right;
   margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn-gray {
+  background-color: #ddd;
+  color: #333;
+}
+
+.btn-gray:hover {
+  background-color: #ccc;
+}
+
+/* Disabled input */
+input[disabled], textarea[disabled] {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar-col {
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
 }
