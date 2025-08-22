@@ -1,0 +1,104 @@
+.page {
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldWide {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+  color: #334155;
+}
+
+input, select, textarea {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.uploads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fileHint {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.errorMsg {
+  font-size: 13px;
+  color: #ef4444;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  padding: 12px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #2563eb;
+}

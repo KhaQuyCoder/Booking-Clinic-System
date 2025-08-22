@@ -111,11 +111,11 @@ const Header = () => {
                 className="logo-header"
                 src={logo}
                 alt="logo"
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/trang-chu")}
               />
               <div className="Wrapper-Header">
                 <ul className="Option-Header">
-                  <li onClick={() => navigate("/")}>Trang chủ</li>
+                  <li onClick={() => navigate("/trang-chu")}>Trang chủ</li>
                   <li onClick={() => navigate("/bac-si")}>Bác sĩ</li>
                   <li onClick={() => navigate("/phong-kham")}>Phòng khám</li>
                   <li onClick={() => navigate("/tu-van")}>Tư vấn</li>

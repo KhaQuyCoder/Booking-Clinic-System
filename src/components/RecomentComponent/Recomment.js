@@ -19,6 +19,11 @@ const Recomment = () => {
     setValueText("");
     navigate(`/chi-tiet-phong-kham/${slug}`);
   };
+  const handelSearchDoctor = (slug, id) => {
+    setValueText("");
+    localStorage.setItem("idDocter", JSON.stringify(id));
+    navigate(`/xem-chi-tiet-bac-si/${slug}`);
+  };
   return (
     <>
       <div className="content-recomment">
@@ -37,7 +42,13 @@ const Recomment = () => {
           </div>
         ))}
         {filteredDocters.map((docter, index) => (
-          <div className="wrapper-content-recomment" key={index}>
+          <div
+            className="wrapper-content-recomment"
+            key={index}
+            onClick={() =>
+              handelSearchDoctor(docter.slugDocter, docter.idDocter)
+            }
+          >
             <img
               src={docter.image}
               alt={docter.name}

@@ -82,7 +82,6 @@
 @media (max-width: 800px) {
     .item-feedBack{
         min-width:290px ;
-        height: 540px;
     }
     .wrapper-feedBack{
         margin: 0;

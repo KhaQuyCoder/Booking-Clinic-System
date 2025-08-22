@@ -1,30 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const menuItems = [
-  { icon: "👥", label: "Quản lý bệnh nhân", path: "/doctor/Patients" },
-  { icon: "📅", label: "Lập lịch khám", path: "/doctor/schedule" },
-  { icon: "📅", label: "Xem lịch khám" },
-  { icon: "✔️", label: "Duyệt yêu cầu khám" },
-  { icon: "💬", label: "Trả lời hỏi đáp" },
-  { icon: "💻", label: "Khám online" },
-  { icon: "🧾", label: "Lập hóa đơn thuốc" },
-  { icon: "📊", label: "Thống kê báo cáo" },
-  { icon: "🔑", label: "Đổi mật khẩu" },
-  { icon: "🔐", label: "Đăng nhập" },
-  { icon: "👤", label: "Profile" },
-  { icon: "↩️", label: "Đăng xuất", path: "/login" },
-];
-const Sidebar = () => {
+const Sidebar = ({ menuItems, name }) => {
   return (
     <aside
       style={{
-        width: 250,
+        width: 260,
         backgroundColor: "#2469DF",
-        // position: "fixed",
-        // left: 0,
-        // top: 0,
-        // bottom: 0,
+        position: "fixed",
+        left: 0,
+        top: 0,
+        bottom: 0,
         height: "100vh",
         color: "#212529 ",
         padding: "20px",
@@ -59,7 +45,7 @@ const Sidebar = () => {
               >
                 Hoàng Việt Thắng
               </div>
-              <div style={{ fontSize: 14, opacity: 0.7 }}>Bác sĩ</div>
+              <div style={{ fontSize: 14, opacity: 0.7 }}>{name}</div>
             </div>
           </div>
         </div>

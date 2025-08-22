@@ -41,6 +41,17 @@ import { Routing } from "./Routing/Routing";
 import { Header } from "./layouts/header/Header";
 import { Sidebar } from "./layouts/Sidebar/Sidebar";
 import { CommonProvider } from "./components/CommonContext";
+import SidebarClinic from "./layouts/LayoutClinic/SidebarClinic";
+import CreateDoctor from "./page/Clinic/CreateDoctorPage/CreateDoctor";
+import MNDoctorAll from "./page/Clinic/DoctorAllPage/MNDoctorAll";
+import DoctorView from "./page/Clinic/DoctorViewPage/DoctorView.js";
+import NotificationEditor from "./page/Clinic/NotificationPage/NotificationEditer.js";
+import NewsEditor from "./page/Clinic/NewEditerPage/NewsEditor.js";
+import UpdateClinic from "./page/Clinic/UpdateClinicPage/UpdateClinic.js";
+import Statistics from "./page/Clinic/StatisticalPage/Statistical.js";
+import { Changepassword } from "./page/Changepassword/Changepassword.jsx";
+import MNSpecialty from "./page/Clinic/MNSpecialtyPage/MNSpecialty.js";
+import ClinicView from "./page/Clinic/ProfileClinicPage/ClinicView.js";
 
 function App() {
   const { valueText, roleLocal } = useContext(State);
@@ -59,12 +70,13 @@ function App() {
       <CommonProvider>
         <PatientProvider>
           {valueText.length > 0 && <Opacity />}
-
           <Routes>
+            <Route path="/" element={<Navigate to="/login" replace />} />
+            <Route path="/login" element={<Login />} />
             {/* User */}
             {role === "user" && (
               <>
-                <Route path="/" element={<Home />} />
+                <Route path="/trang-chu" element={<Home />} />
                 <Route path="/bac-si" element={<Docter />} />
                 <Route path="/bac-si/page/:page" element={<Docter />} />
                 <Route path="/phong-kham" element={<Clinic />} />
@@ -89,7 +101,7 @@ function App() {
                   path="/xem-chi-tiet-bac-si/:slug"
                   element={<DetailDocter />}
                 />
-                <Route path="/*" element={<Navigate to="/" />} />
+                <Route path="/*" element={<NotFound />} />
               </>
             )}
             {/* Doctor */}
@@ -135,7 +147,7 @@ function App() {
                   />
                 </Route>
 
-                <Route path="/*" element={<Navigate to="/doctor" />} />
+                <Route path="/*" element={<NotFound />} />
               </>
             )}
             {/* Admin */}
@@ -157,7 +169,109 @@ function App() {
                 />
               </>
             )}
-            <Route path="/login" element={<Login />} />
+
+            {role === "clinic" && (
+              <>
+                <Route
+                  path="/clinic"
+                  element={
+                    <SidebarClinic>
+                      <Statistics />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/createDoctor"
+                  element={
+                    <SidebarClinic>
+                      <CreateDoctor />
+                    </SidebarClinic>
+                  }
+                />
+
+                <Route
+                  path="/clinic/doctorAll"
+                  element={
+                    <SidebarClinic>
+                      <MNDoctorAll />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/doctorView/:slug"
+                  element={
+                    <SidebarClinic>
+                      <DoctorView />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/createDoctor"
+                  element={
+                    <SidebarClinic>
+                      <CreateDoctor />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/notification"
+                  element={
+                    <SidebarClinic>
+                      <NotificationEditor />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/NewsEditor"
+                  element={
+                    <SidebarClinic>
+                      <NewsEditor />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/updateClinic"
+                  element={
+                    <SidebarClinic>
+                      <UpdateClinic />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/statistical"
+                  element={
+                    <SidebarClinic>
+                      <Statistics />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/doi-mat-khau"
+                  element={
+                    <SidebarClinic>
+                      <Changepassword />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/specialty"
+                  element={
+                    <SidebarClinic>
+                      <MNSpecialty />
+                    </SidebarClinic>
+                  }
+                />
+                <Route
+                  path="/clinic/profile"
+                  element={
+                    <SidebarClinic>
+                      <ClinicView />
+                    </SidebarClinic>
+                  }
+                />
+                <Route path="/*" element={<NotFound />} />
+              </>
+            )}
           </Routes>
 
           <ToastContainer />

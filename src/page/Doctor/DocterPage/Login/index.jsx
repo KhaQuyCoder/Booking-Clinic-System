@@ -37,10 +37,19 @@ const Login = () => {
         case "user":
           setRole("user");
           setTimeout(() => {
-            navigate("/");
+            navigate("/trang-chu");
+          }, 200);
+          break;
+        case "clinic":
+          setRole("clinic");
+          setTimeout(() => {
+            navigate("/clinic");
           }, 200);
           break;
       }
+      setTimeout(() => {
+        window.location.reload();
+      }, 200);
     } else {
       toast.error("Sai số điện thoại hoặc mật khẩu!", {
         position: "top-center",
@@ -48,9 +57,6 @@ const Login = () => {
         style: { marginBottom: "400px" },
       });
     }
-    setTimeout(() => {
-      window.location.reload();
-    }, 200);
   };
 
   return (
