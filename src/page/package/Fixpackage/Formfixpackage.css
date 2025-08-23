@@ -33,8 +33,11 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background-color: #2469DF;
+    color: #FFFFFF;
     &:hover {
-        background-color: #2469DF;
+        background-color: #1250DC;
         cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
 }

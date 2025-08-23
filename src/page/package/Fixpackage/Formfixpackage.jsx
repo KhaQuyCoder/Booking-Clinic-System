@@ -4,6 +4,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import packagesData from '../../../data/Packagelist.json';
 import { BiArrowBack } from "react-icons/bi";
 import { LiaSave } from "react-icons/lia";
+import './Formfixpackage.css';
 
 function Formfixpackage() {
     const location = useLocation();
