@@ -4,6 +4,7 @@ import clinicData from '../../data/Browseclinic.json';
 import { useForm } from "react-hook-form";
 import { LiaSave } from "react-icons/lia";
 import { BiArrowBack } from "react-icons/bi";
+import './Formfixclinic.css';
 
 function Formfixclinic() {
     const location = useLocation();

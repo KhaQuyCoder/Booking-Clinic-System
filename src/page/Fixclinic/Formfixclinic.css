@@ -1,11 +1,11 @@
-.formcreate {
+.groupcreate{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 10px;
     justify-content: center;
 }
-.formgroup {
+.groupform{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,16 +15,16 @@
     font-size: 16px;
     gap: 10px;
 }
-.infortext {
+.formtext{
     width: 70%;
     border-radius: 10px;
     border: none;
     background-color: #F3F6FA;
 }
-.infor {
-    width: 150px;
+.grouptext{
+    width: 300px;
 }
-.inforsubmit {
+.buttonsubmit{
     height: 40px;
     width: 83%;
     border-radius: 10px;

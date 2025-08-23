@@ -12,11 +12,17 @@ import { Fixclinic } from "../page/Fixclinic/Fixclinic";
 import { Detailpackage } from "../page/package/Detailpackage/Detailpackage";
 import { Fixpackage } from "../page/package/Fixpackage/Fixpackage";
 import { Changepassword } from "../page/Changepassword/Changepassword";
+import { UserProfile } from "../page/profile/Userprofile";
+import Statistical from "../page/statistical/Statistical";
 
 function Routing() {
     return (
         <Routes>
-            <Route path="/account/userprofile" element={<div>userprofile</div>} />
+            <Route path="/" element={<Statistical />} />
+            <Route path="/account/userprofile" element={<UserProfile />} />
+            <Route path="/search/thong-tin-phong-kham/:id" element={<Detailmanager />} />
+            <Route path="/search/thong-tin-bac-si/:id" element={<Detaildoctor />} />
+            <Route path="/search/thong-tin-goi/:id" element={<Detailpackage />} />
             <Route path="/duyet-phong-kham" element={<Clinicbrowses />} />
             <Route path="/duyet-phong-kham/thong-tin-phong-kham/:id" element={<Detailclinicbrowse />} />
             <Route path="/duyet-bac-si" element={<Doctorbrowses />} />
@@ -28,7 +34,7 @@ function Routing() {
             <Route path="/quan-ly-goi/danh-sach-goi" element={<Alllistpackages />} />
             <Route path="/quan-ly-goi/danh-sach-goi/thong-tin-goi/:id" element={<Detailpackage />} />
             <Route path="/quan-ly-goi/danh-sach-goi/sua-thong-tin-goi/:id" element={<Fixpackage />} />
-            <Route path="/thong-ke-bao-cao/tong-quan" element={<div>Overview Statistics</div>} />
+            <Route path="/thong-ke-bao-cao/tong-quan" element={<Statistical />} />
             <Route path="/thong-ke-bao-cao/thong-ke-doanh-thu" element={<div>Revenue Statistics</div>} />
             <Route path="/doi-mat-khau" element={<Changepassword />} />
             <Route path="/account/login" element={<div>Login</div>} />
