@@ -1,0 +1,174 @@
+.invoice-container {
+  display: flex;
+  height: 100vh; /* Chiếm full chiều cao màn hình */
+}
+
+.invoice-list {
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow-y: auto; /* Chỉ scroll danh sách nếu nhiều hóa đơn */
+}
+
+.invoice-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-item:hover {
+  background-color: #f5f5f5;
+}
+
+.column-left,
+.column-center {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.invoice-detail {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+/* Chọn hóa đơn chưa chọn */
+.no-invoice {
+  background: none;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+}
+.column-left, .column-center {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.column-left p, .column-center p {
+  margin: 0;
+  padding: 0;
+  background: none; /* Bỏ nền xanh */
+}
+.column-left, .column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.qr-container {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.qr-container img {
+  width: 120px;
+  height: 120px;
+}
+/* Nhóm nút góc phải */
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Đẩy sang góc phải */
+  gap: 8px;
+  margin-bottom: 20px;
+}
+/* Nút */
+.export-btn,
+.save-btn,
+.cancel-btn {
+  padding: 5px 10px; /* nhỏ hơn trước */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.export-btn {
+  background-color: #0088ff;
+  color: #fff;
+}
+
+.export-btn:hover {
+  background-color: #0066cc;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: #fff;
+  height: 40px;
+  width: 50px;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+.invoice-items {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Tổng tiền */
+.total {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.total-export {
+  display: flex;
+  justify-content: flex-start; /* Nút xuất PDF và Lưu đứng cạnh nhau, không góc phải */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.cancel-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+* Nút thêm hóa đơn */
+.add-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover { background-color: #138496; }
+
+/* Nút chỉnh sửa */
+.edit-btn {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn:hover { background-color: #e0a800; }

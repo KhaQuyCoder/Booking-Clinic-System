@@ -1,20 +1,28 @@
 .statistics-container {
   padding: 20px;
-  background: #f8f9fa;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
 }
 
-.statistics-title {
-  font-size: 24px;
-  font-weight: bold;
+.filter-section {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
-  color: #333;
 }
 
-.chart-wrapper {
+.chart {
   background: #fff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px; /* tăng độ rõ */
+  fill: #333; /* màu chữ */
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item {
+  font-size: 12px;
 }

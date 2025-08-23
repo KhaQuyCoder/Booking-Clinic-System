@@ -1,16 +1,14 @@
-/* Container chính sử dụng CSS Grid */
 .profile-container {
   display: flex;
-  height: 100%;
   width: 90%;
   max-width: 900px;
-  max-height: none;
+  min-height: 100vh; /* cho full màn hình */
   margin: 10px auto;
-  position: relative;
   border-radius: 5px;
-  overflow-y: auto;
-  /* Ngăn cuộn toàn bộ */
+  overflow-y: auto; /* scroll chung */
+  position: relative;
 }
+
 .profile-right-column::-webkit-scrollbar {
   display: none;
 }
@@ -20,8 +18,7 @@
 /* Cột trái (35%) */
 .profile-left-column {
   background-color: #1B7EEE;
-  width: 30%;
-  height: auto;
+  width: 35%;
   color: #080000;
   padding: 10px;
   display: flex;
@@ -41,11 +38,12 @@
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  
 }
 
 .doctor-avatar {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 0.25px solid #0c0000;
   object-fit: cover;

@@ -1,78 +1,60 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import patientsData from "./../../../../data/OnlineConsult.json";
+import { FaMicrophone, FaMicrophoneSlash, FaVideo, FaVideoSlash, FaPhoneAlt } from "react-icons/fa";
 import "./OnlineConsult.css";
-import OnlienConsult from "./../../../../data/OnlineConsult.json";
 
 const OnlineConsult = () => {
-  const [patients, setPatients] = useState([]);
-  const [selectedPatient, setSelectedPatient] = useState(null);
-
-  useEffect(() => {
-    setPatients(OnlienConsult);
-    setSelectedPatient(OnlienConsult[0]);
-  }, []);
+  const [patients] = useState(patientsData);
+  const [selectedPatient, setSelectedPatient] = useState(patients[0]);
+  const [micOn, setMicOn] = useState(true);
+  const [cameraOn, setCameraOn] = useState(true);
 
   return (
-<div className="online-container-wrapper">
-  <div className="online-container">
-    {/* Sidebar trái */}
-    <div className="online-sidebar">
-      <h3>Danh sách khám</h3>
+    <div className="online-consult-container">
+      {/* Danh sách khám */}
       <div className="patient-list">
-        {patients.map((p) => (
+        <h3>Danh sách khám</h3>
+        {patients.map((patient) => (
           <div
-            key={p.id}
-            className={`patient-item ${selectedPatient?.id === p.id ? "active" : ""}`}
-            onClick={() => setSelectedPatient(p)}
+            key={patient.id}
+            className={`patient-item ${selectedPatient.id === patient.id ? "active" : ""}`}
+            onClick={() => setSelectedPatient(patient)}
           >
-            <img src={p.avatar} alt={p.name} className="avatar" />
+            <img src={patient.avatar} alt={patient.name} />
             <div>
-              <strong>{p.name}</strong>
-              <p>{p.time} - {p.specialty}</p>
-              <p className={`status ${p.status ? p.status.replace(/\s/g, "-") : ""}`}>
-                {p.status || "Chưa có trạng thái"}
-              </p>
+              <p>{patient.name}</p>
+              <span>{patient.time}</span>
             </div>
           </div>
         ))}
       </div>
-    </div>
 
-    {/* Cột phải */}
-    <div className="online-main">
-      {/* Video */}
+      {/* Video Call */}
       <div className="video-section">
-        <div className="video-box">
-          <div className="video-patient">{selectedPatient?.name || "Bệnh nhân"}</div>
-          <div className="video-doctor">Bác sĩ</div>
+        {/* Video bệnh nhân */}
+        <div className="patient-video">
+          <img src={selectedPatient.consultationInfo.video} alt="Patient Video" />
         </div>
-        <div className="video-controls">
-          <button>🔴</button>
-          <button>🎥</button>
-          <button>🖥️</button>
-          <button>🎙️</button>
-          <button>💬</button>
-          <button>⚙️</button>
-        </div>
-      </div>
 
-      {/* Consultation info */}
-      <div className="consultation-info">
-        <p><strong>ID:</strong> {selectedPatient?.consultationInfo.consultationId}</p>
-        <p><strong>Ngày khám:</strong> {selectedPatient?.consultationInfo.date}</p>
-        <p><strong>Thời lượng:</strong> {selectedPatient?.consultationInfo.duration}</p>
-        <p>
-          <strong>Trạng thái:</strong> 
-          <span className={`status-label ${selectedPatient?.consultationInfo.status.replace(/\s/g, "-")}`}>
-            {selectedPatient?.consultationInfo.status}
-          </span>
-        </p>
-        <p><strong>Kết nối mạng:</strong> {selectedPatient?.consultationInfo.networkStatus}</p>
-        <p><strong>Người tạo lịch:</strong> {selectedPatient?.consultationInfo.creator}</p>
+        {/* Thumbnail video bác sĩ */}
+        <div className="doctor-video">
+          <img src="https://th.bing.com/th/id/R.eb6175173ddee60459d5df8f00ad6285?rik=fHF%2bwPKRRN5AtQ&pid=ImgRaw&r=0" alt="Doctor Video" />
+        </div>
+
+        {/* Toolbar */}
+        <div className="toolbar">
+          <button onClick={() => setMicOn(!micOn)}>
+            {micOn ? <FaMicrophone /> : <FaMicrophoneSlash />}
+          </button>
+          <button onClick={() => setCameraOn(!cameraOn)}>
+            {cameraOn ? <FaVideo /> : <FaVideoSlash />}
+          </button>
+          <button className="end-call">
+            <FaPhoneAlt />
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
   );
 };
 
