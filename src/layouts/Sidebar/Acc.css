@@ -1,3 +1,4 @@
+
 .acc {
     width: 244px;
     height: 40px;
@@ -27,4 +28,10 @@
 .role {
     font-size: 16px;
     color: #6C757D;
+}
+.userAvatar {
+    width: 40px;
+    height: 40px;
+     object-fit: cover;
+    border-radius: 50%;
 }
