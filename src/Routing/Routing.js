@@ -34,7 +34,7 @@ function Routing() {
             <Route path="/thong-ke-bao-cao/tong-quan" element={<Statistical />} />
             <Route path="/thong-ke-bao-cao/thong-ke-doanh-thu" element={<div>Revenue Statistics</div>} />
             <Route path="/doi-mat-khau" element={<Changepassword />} />
-            <Route path="/account/login" element={<div>Login</div>} />
+            <Route path="/login" element={<div></div>}/>;
         </Routes>
     );
 }
