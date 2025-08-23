@@ -1,0 +1,18 @@
+.container-Loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-spinner{
+    font-size: 2rem;
+    color: #1250DC;
+    animation: spiner 1s linear infinite;
+}
+@keyframes spiner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,162 @@
+.container-calldocter {
+    width: 100%;
+    max-width: 1340px;
+    margin-top: 80px;
+    display: flex;
+    padding: 20px;
+}
+
+.wrapper-calldocter {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    overflow-y: auto;
+    margin: 0;
+    flex-basis: 27%;
+    column-gap: 20px;
+}
+
+.wrapper-calldocter::-webkit-scrollbar {
+    display: none;
+}
+
+.image-calldocter {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.name-hour-calldocter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.wrapper-activiti-calldocter {
+    position: relative;
+}
+
+.activiti-calldocter {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    right: 5%;
+    bottom: 10%;
+}
+
+.item-calldocter {
+    display: flex;
+    margin: 0;
+    cursor: pointer;
+    column-gap: 7px;
+    padding: 5px 0;
+    transform: translateX(-10px);
+}
+
+.main-calldocter {
+    flex-basis: 70%;
+}
+
+.item-calldocter:hover {
+    background-color: rgb(248, 242, 242);
+    border-radius: 10px;
+
+}
+
+.infor-calldocter,
+.name-calldocter,
+.hour-calldocter {
+    margin: 0;
+}
+
+.hour-calldocter {
+    color: gray;
+    font-weight: 500;
+    float: inline-end;
+}
+
+.name-calldocter {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.wrapper-action-calldocter {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.screen-calldocter {
+    border: 1px solid rgb(186, 185, 185);
+    height: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.chat-calldocter,
+.video-calldocter,
+.mic-calldocter,
+.control-calldocter {
+    padding: 10px 30px;
+    border: 1px solid rgb(186, 185, 185);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.chat-calldocter:hover,
+.video-calldocter:hover,
+.mic-calldocter:hover,
+.control-calldocter:hover {
+    background-color: #2469df;
+}
+
+@media (max-width:1170px) {
+    .container-calldocter {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .wrapper-calldocter {
+        flex-basis: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        height: max-content;
+    }
+
+    .main-calldocter {
+        flex-basis: 100%;
+        overflow-x: hidden;
+    }
+
+    .screen-calldocter {
+        height: 500px;
+    }
+    .item-calldocter{
+        border-right: 1px solid rgb(232, 230, 230);
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .wrapper-action-calldocter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        justify-content: center;
+    }
+    .item-calldocter{
+        border-right: 1px solid rgb(232, 230, 230);
+        padding-right: 10px;
+    }
+}

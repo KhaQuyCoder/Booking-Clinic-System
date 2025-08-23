@@ -1,0 +1,23 @@
+.container-searchSpecialty{
+    width: 100%;
+    max-width: 1340px;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+.message-searchSpecialty{
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+.done-searchSpecialty{
+    width: 100%;
+    padding: 10px;
+    background-color: #b8f9d5;
+    border-radius: 10px;
+    margin: 10px 0;
+}

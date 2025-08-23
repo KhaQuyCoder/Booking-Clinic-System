@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Nguyễn Hương",
+    "question": "Chào bác sĩ, bé nhà em được 5 ngày tuổi, vùng rốn của bé có dấu hiệu đỏ ửng, có vẻ hơi viêm. Khi đi khám thì bác sĩ bảo bé bị nhiễm trùng rốn nhẹ, có kê thuốc và hướng dẫn lại cách chăm sóc rốn cho bé. Bác sĩ cho em hỏi nhiễm trùng rốn có nguy hiểm không ạ?",
+    "answer": "Nhiễm trùng rốn sơ sinh là tình trạng rốn của trẻ bị nhiễm trùng do sự xâm nhập của vi khuẩn trong giai đoạn sơ sinh (30 ngày đầu tính từ khi trẻ được sinh ra). Staphylococcus aureus là chủng vi khuẩn gây bệnh thường gặp nhất; ngoài ra, còn có một số chủng vi khuẩn gram âm và vi khuẩn kỵ khí.",
+    "clinic": "Hoàng Viết Thắng",
+    "docter": "PGS.TS Trần Tiến Minh",
+    "specityal": "Khoa ngoại nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Lê Thị Mai",
+    "question": "Bé nhà em thường xuyên bị ọc sữa sau khi bú, nhất là khi đặt bé nằm xuống. Điều này có bình thường không hay cần đưa bé đi khám ạ?",
+    "answer": "Ọc sữa ở trẻ sơ sinh thường là hiện tượng sinh lý do cơ vòng thực quản còn yếu. Tuy nhiên, nếu bé bị ọc nhiều, kèm ho, quấy khóc hoặc tăng cân kém thì nên đưa đi khám để loại trừ trào ngược dạ dày-thực quản.",
+    "clinic": "Phòng khám Nhi An Khang",
+    "docter": "BS.CKII Nguyễn Thị Hạnh",
+    "specityal": "Tiêu hóa nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Phạm Quốc Anh",
+    "question": "Con tôi 3 tuần tuổi, da bé hơi vàng, đặc biệt ở vùng mắt và lòng bàn tay. Liệu có phải bé bị vàng da bệnh lý không bác sĩ?",
+    "answer": "Vàng da nhẹ ở trẻ sơ sinh là bình thường, nhưng nếu vàng da kéo dài sau 2 tuần hoặc xuất hiện ở lòng bàn tay, lòng bàn chân thì cần đưa bé đi khám ngay để kiểm tra chức năng gan và loại trừ vàng da bệnh lý.",
+    "clinic": "Phòng khám Hòa Bình",
+    "docter": "BS.CKII Lê Văn Phú",
+    "specityal": "Nhi sơ sinh",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Trần Khánh Linh",
+    "question": "Bé em 2 tuần tuổi bị nổi mụn nhỏ li ti ở mặt, có cần bôi thuốc gì không hay để tự khỏi bác sĩ?",
+    "answer": "Mụn sữa (mụn nhỏ li ti) là hiện tượng sinh lý phổ biến do nội tiết từ mẹ truyền sang. Thường tự hết sau vài tuần mà không cần điều trị. Tránh bôi thuốc hay sờ nắn vùng mụn để tránh nhiễm trùng.",
+    "clinic": "Phòng khám Sài Gòn",
+    "docter": "BS.CKI Nguyễn Tấn Đạt",
+    "specityal": "Da liễu nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Ngô Minh Quân",
+    "question": "Bác sĩ cho em hỏi trẻ sơ sinh hay giật mình khi ngủ có đáng lo không ạ?",
+    "answer": "Giật mình là phản xạ Moro bình thường ở trẻ sơ sinh, thường hết sau 3–4 tháng. Nếu trẻ kèm khóc thét, co giật hoặc ngủ không sâu giấc kéo dài, cần khám chuyên khoa thần kinh nhi.",
+    "clinic": "Phòng khám Nhi Đồng",
+    "docter": "TS.BS Nguyễn Bảo Khoa",
+    "specityal": "Thần kinh nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Đặng Thị Yến",
+    "question": "Con tôi 1 tháng tuổi có dấu hiệu bị tiêu chảy nhẹ. Bác sĩ có thể hướng dẫn cách chăm sóc tại nhà được không?",
+    "answer": "Nếu tiêu chảy nhẹ, bạn nên cho bé bú mẹ nhiều hơn để bù nước. Giữ vệ sinh núm vú và tay sạch sẽ. Theo dõi phân, nhiệt độ và số lần đi tiêu. Nếu bé có dấu hiệu mất nước hay sốt, cần đưa đi khám ngay.",
+    "clinic": "Phòng khám Gia Định",
+    "docter": "PGS.TS Nguyễn Hồng Lê",
+    "specityal": "Tiêu hóa nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Lý Văn Tài",
+    "question": "Bé em được 20 ngày tuổi, gần đây bị nghẹt mũi và thở khò khè. Có nên dùng nước muối sinh lý nhỏ mũi không bác sĩ?",
+    "answer": "Bạn có thể dùng nước muối sinh lý nhỏ mũi và hút mũi nhẹ nhàng cho bé 2–3 lần/ngày. Tránh dùng thuốc xịt hay nhỏ có corticoid. Nếu bé sốt, bỏ bú hoặc thở gấp, hãy đưa đi khám.",
+    "clinic": "Phòng khám Nhân Ái",
+    "docter": "BS.CKII Trần Hữu Long",
+    "specityal": "Tai mũi họng nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Vũ Thị Thanh",
+    "question": "Em mới sinh bé được 10 ngày nhưng bé vẫn chưa rụng rốn. Có phải trễ không bác sĩ?",
+    "answer": "Rốn thường rụng trong vòng 7–15 ngày sau sinh. Nếu quá 3 tuần chưa rụng hoặc có mùi hôi, chảy dịch, cần đi khám để kiểm tra viêm rốn hoặc u hạt rốn.",
+    "clinic": "Phòng khám An Tâm",
+    "docter": "BS.CKII Đỗ Thị Mỹ Linh",
+    "specityal": "Nhi sơ sinh",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Nguyễn Minh Trí",
+    "question": "Bé em hay bị hắt hơi nhiều lần trong ngày. Điều này có bình thường không hay là dấu hiệu cảm cúm?",
+    "answer": "Trẻ sơ sinh hắt hơi thường do phản xạ tự làm sạch mũi. Nếu không kèm sốt, ho, bú bình thường thì không cần lo. Nếu kèm theo các triệu chứng cảm, hãy đưa bé đến bác sĩ nhi khoa.",
+    "clinic": "Phòng khám Việt Nhật",
+    "docter": "BS. Nguyễn Hoàng Minh",
+    "specityal": "Hô hấp nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Phan Thị Bích",
+    "question": "Bác sĩ cho em hỏi trẻ sơ sinh có nên mặc nhiều lớp quần áo không ạ?",
+    "answer": "Bạn chỉ cần mặc cho bé 1 lớp quần áo hơn người lớn một lớp. Không nên ủ ấm quá kỹ khiến bé dễ bị rôm sảy hoặc sốt. Kiểm tra bằng cách sờ gáy hoặc ngực bé để biết nhiệt độ.",
+    "clinic": "Phòng khám Tâm An",
+    "docter": "TS.BS Lưu Thị Thu Hà",
+    "specityal": "Nhi khoa tổng quát",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Trịnh Văn Long",
+    "question": "Con em 1 tháng tuổi ngủ rất nhiều, có hôm ngủ hơn 18 tiếng. Điều đó có bình thường không bác sĩ?",
+    "answer": "Trẻ sơ sinh thường ngủ 16–20 tiếng mỗi ngày. Nếu bé vẫn bú tốt, tăng cân đều, phản xạ bình thường thì không cần lo lắng. Chỉ khi ngủ li bì, bỏ bú mới cần đi khám.",
+    "clinic": "Phòng khám Hy Vọng",
+    "docter": "BS.CKI Lê Thị Bích Phượng",
+    "specityal": "Nhi tổng quát",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Hồ Thị Kim Ngân",
+    "question": "Em vừa sinh bé được 2 tuần, nhưng thấy bé hay bị nấc cụt. Điều này có bình thường không bác sĩ?",
+    "answer": "Nấc cụt là hiện tượng bình thường ở trẻ sơ sinh do hệ thần kinh chưa hoàn thiện. Không ảnh hưởng sức khỏe. Mẹ có thể vỗ nhẹ lưng hoặc cho bé bú để giảm nấc.",
+    "clinic": "Phòng khám Thiện Tâm",
+    "docter": "BS.CKII Trần Văn Nhân",
+    "specityal": "Nhi sơ sinh",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Mai Văn Cường",
+    "question": "Bé nhà em đi ngoài phân lỏng màu xanh lá cây, có mùi hơi chua. Có phải là do sữa mẹ không phù hợp không ạ?",
+    "answer": "Phân xanh có thể do bé bú nhiều sữa đầu (ít béo), do mẹ ăn thực phẩm xanh hoặc đường ruột bé đang điều chỉnh. Nếu bé vẫn tăng cân, bú tốt thì không đáng lo.",
+    "clinic": "Phòng khám Tâm Đức",
+    "docter": "PGS.TS Nguyễn Thanh Hà",
+    "specityal": "Tiêu hóa nhi",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Đoàn Thị Hà",
+    "question": "Bác sĩ cho em hỏi bao lâu thì nên cho trẻ sơ sinh tắm một lần ạ?",
+    "answer": "Bạn nên tắm cho trẻ sơ sinh 2–3 lần/tuần với nước ấm. Ưu tiên lau người bằng khăn ấm hằng ngày. Tránh tắm lâu và trong phòng gió lùa để không làm bé cảm lạnh.",
+    "clinic": "Phòng khám Sức Khỏe Việt",
+    "docter": "BS.CKII Lê Thanh Tùng",
+    "specityal": "Chăm sóc sơ sinh",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Phùng Hữu Khoa",
+    "question": "Con tôi mới sinh được 1 tuần nhưng mắt bé cứ chảy ghèn màu vàng. Có phải bị viêm kết mạc không ạ?",
+    "answer": "Nếu ghèn mắt vàng đặc, kèm sưng mí và bé hay dụi mắt thì có thể là viêm kết mạc. Mẹ nên lau bằng nước muối sinh lý ấm và đưa bé đến bác sĩ để được chẩn đoán rõ hơn.",
+    "clinic": "Phòng khám Việt Mỹ",
+    "docter": "BS.CKII Trần Thị Vân",
+    "specityal": "Mắt trẻ em",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  },
+  {
+    "name": "Nguyễn Quỳnh Như",
+    "question": "Em sinh mổ, giờ bé được 4 ngày mà chưa đi ngoài phân su. Có nên lo lắng không bác sĩ?",
+    "answer": "Trẻ sinh mổ có thể chậm đi ngoài phân su hơn so với sinh thường. Nếu quá 48 giờ mà bé vẫn chưa đi ngoài, bụng chướng hoặc không bú thì cần đưa đi khám.",
+    "clinic": "Phòng khám An Việt",
+    "docter": "TS.BS Nguyễn Phú Quốc",
+    "specityal": "Tiêu hóa sơ sinh",
+    "image":"https://tamanhhospital.vn/wp-content/uploads/2024/10/nguyen-lan-anh.png"
+  }
+]

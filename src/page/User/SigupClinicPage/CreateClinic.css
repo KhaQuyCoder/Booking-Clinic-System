@@ -1,0 +1,274 @@
+:root {
+  --primary: #2469df;
+  --success: #2ecc71;
+  --warning: #e67e22;
+  --border: #e0e0e0;
+  --bg-light: #fafafa;
+  --text-dark: #333;
+  --text-light: #777;
+  --radius: 10px;
+}
+
+.clinic-container {
+    width: 100%;
+  max-width: 1340px;
+  margin-top: 100px;
+  padding: 25px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  margin: 20px 0 15px;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 18px;
+  border-left: 4px solid var(--primary);
+  padding-left: 8px;
+}
+
+.clinic-form {
+  margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+.form-group > input,textarea,label{
+    margin: 0;
+}
+.form-group > label{
+    margin-bottom: 5px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+    width:100%;
+    grid-column: span 2 / span 2;
+}
+
+.div2 {
+    width:100%;
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.div3 {
+    width:100%;
+    grid-row-start: 2;
+}
+
+.div4 {
+    width:100%;
+    grid-row-start: 2;
+}
+
+.div5 {
+    width:100%;
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div6 {
+    width:100%;
+    grid-row-start: 3;
+}
+
+.div7 {
+    width:100%;
+    grid-row-start: 3;
+}
+
+.div8 {
+    width:100%;
+    grid-row-start: 3;
+}
+
+.div9 {
+    width:100%;
+    grid-row-start: 3;
+}
+
+.div10 {
+    width:100%;
+    grid-column: span 4 / span 4;
+}
+.form-group label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(36, 105, 223, 0.1);
+}
+.plan-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  background: var(--bg-light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #2ecc71;
+}
+.plan > ul{
+    margin: 0;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.plan h4 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.plan p {
+  font-weight: 600;
+  margin: 6px 0 12px;
+  color: var(--text-dark);
+}
+
+.plan ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 18px;
+}
+
+.plan ul li {
+  font-size: 14px;
+  color: var(--text-light);
+  margin: 6px 0;
+  padding-left: 18px;
+  position: relative;
+}
+
+.plan ul li::before {
+  content: "✔";
+  color: var(--success);
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: background 0.2s;
+  color: #fff;
+}
+
+.btn-free {
+  background: var(--primary);
+}
+
+.btn-standard {
+  background: var(--success);
+}
+
+.btn-premium {
+  background: var(--warning);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.submit-container {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.btn-submit {
+  background: var(--primary);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: #1e56b3;
+}
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8,
+  .div9,
+  .div10 {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8,
+  .div9,
+  .div10 {
+    grid-column: span 2 / span 2 !important;
+    grid-row: auto !important;
+  }
+}
