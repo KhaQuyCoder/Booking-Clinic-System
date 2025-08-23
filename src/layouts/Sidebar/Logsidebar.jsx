@@ -11,7 +11,7 @@ function Logsidebar() {
                 <LuKeyRound className="iconn" />
                 <div>Đổi mật khẩu</div>
             </Link>
-            <Link to='/account/login' className="logout">
+            <Link to='/login' className="logout">
                 <AiOutlineLogout className="iconn" />
                 <div>Đăng xuất</div>
             </Link>
