@@ -3,6 +3,8 @@
     max-height: 480px;
     display: flex;
     flex-grow: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 #customers {
     width: 100%;
@@ -10,9 +12,10 @@
 }
 #customers thead {
     background-color: #F3F6FA;
+    /* border: 1px solid #000; */
 }
 #customers th {
-    border-right: 1px solid #6C757D;
+    /* border-right: 1px solid #6C757D; */
     padding-left: 10px;
     text-align: left;
     height: 60px;
@@ -34,11 +37,12 @@
     cursor: pointer;
 
     &:hover{
-        background-color: #D9D9D9;
+        background-color: #BDD6F6;
     }
 }
 #customers tbody tr {
     &:hover{
-        background-color: #D9D9D9;
+        background-color: #f1f1f1;
+;
     }
 }

@@ -1,10 +1,12 @@
+
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Logo.css';
 function LogoSidebar() {
     return (
-        <div className="logobox">
+        <Link to='/' className="logobox">
             <img src='/logo.svg' alt="Logo" className="logoSidebar" />
-        </div>
+        </Link>
     );
 }
 export { LogoSidebar };
