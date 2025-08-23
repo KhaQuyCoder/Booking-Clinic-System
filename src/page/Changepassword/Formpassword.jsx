@@ -68,7 +68,7 @@ function Formpassword() {
 
             <div className="checkbox-group">
                 <input type="checkbox" id="logoutOther" checked={logoutOther} onChange={(e) => setLogoutOther(!logoutOther)} />
-                <label htmlFor="logoutOther">Đăng xuất các thiết bị khác. Hãy chọn mục này nếu người khác từng dùn tài khoản của bạn.</label>
+                <label htmlFor="logoutOther">Đăng xuất các thiết bị khác.</label>
             </div>
 
             <button type="submit" className="submitpass">Đổi mật khẩu</button>
