@@ -1,0 +1,212 @@
+[
+  {
+    "invoiceId": "HD001",
+    "taxId": "123456789",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD001",
+    "date": "2025-08-23",
+    "clinic": "Phòng khám Đông Y",
+    "doctor": "Nguyen Van B",
+    "patient": "Nguyen Van A",
+    "dob": "1990-05-12",
+    "items": [
+      {"name": "Khám tổng quát", "quantity": 1, "price": 200000},
+      {"name": "Thuốc giảm đau", "quantity": 2, "price": 50000}
+    ]
+  },
+  {
+    "invoiceId": "HD002",
+    "taxId": "987654321",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD002",
+    "date": "2025-08-22",
+    "clinic": "Phòng khám Răng Hàm Mặt",
+    "doctor": "Tran Thi C",
+    "patient": "Tran Thi B",
+    "dob": "1985-11-02",
+    "items": [
+      {"name": "Khám nha", "quantity": 1, "price": 150000},
+      {"name": "Thuốc tê", "quantity": 1, "price": 30000}
+    ]
+  },
+  {
+    "invoiceId": "HD003",
+    "taxId": "456123789",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD003",
+    "date": "2025-08-21",
+    "clinic": "Phòng khám Tai Mũi Họng",
+    "doctor": "Le Van D",
+    "patient": "Pham Thi C",
+    "dob": "1992-03-15",
+    "items": [
+      {"name": "Khám tai mũi họng", "quantity": 1, "price": 180000},
+      {"name": "Thuốc nhỏ tai", "quantity": 2, "price": 40000}
+    ]
+  },
+  {
+    "invoiceId": "HD004",
+    "taxId": "789456123",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD004",
+    "date": "2025-08-20",
+    "clinic": "Phòng khám Tim mạch",
+    "doctor": "Hoang Van E",
+    "patient": "Nguyen Van F",
+    "dob": "1988-07-20",
+    "items": [
+      {"name": "Khám tim mạch", "quantity": 1, "price": 250000},
+      {"name": "Thuốc bổ tim", "quantity": 1, "price": 70000}
+    ]
+  },
+  {
+    "invoiceId": "HD005",
+    "taxId": "321654987",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD005",
+    "date": "2025-08-19",
+    "clinic": "Phòng khám Nhi khoa",
+    "doctor": "Tran Van G",
+    "patient": "Le Thi H",
+    "dob": "2018-05-10",
+    "items": [
+      {"name": "Khám tổng quát trẻ em", "quantity": 1, "price": 150000},
+      {"name": "Thuốc hạ sốt", "quantity": 1, "price": 20000}
+    ]
+  },
+  {
+    "invoiceId": "HD006",
+    "taxId": "654987321",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD006",
+    "date": "2025-08-18",
+    "clinic": "Phòng khám Da liễu",
+    "doctor": "Nguyen Thi I",
+    "patient": "Pham Van J",
+    "dob": "1995-12-30",
+    "items": [
+      {"name": "Khám da liễu", "quantity": 1, "price": 200000},
+      {"name": "Thuốc bôi da", "quantity": 3, "price": 60000}
+    ]
+  },
+  {
+    "invoiceId": "HD007",
+    "taxId": "159753486",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD007",
+    "date": "2025-08-17",
+    "clinic": "Phòng khám Nội tổng quát",
+    "doctor": "Le Thi K",
+    "patient": "Tran Van L",
+    "dob": "1978-09-05",
+    "items": [
+      {"name": "Khám nội tổng quát", "quantity": 1, "price": 220000},
+      {"name": "Thuốc bổ", "quantity": 2, "price": 50000}
+    ]
+  },
+  {
+    "invoiceId": "HD008",
+    "taxId": "753159486",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD008",
+    "date": "2025-08-16",
+    "clinic": "Phòng khám Mắt",
+    "doctor": "Pham Thi M",
+    "patient": "Nguyen Van N",
+    "dob": "1999-01-25",
+    "items": [
+      {"name": "Khám mắt", "quantity": 1, "price": 180000},
+      {"name": "Thuốc nhỏ mắt", "quantity": 2, "price": 30000}
+    ]
+  },
+  {
+    "invoiceId": "HD009",
+    "taxId": "852963741",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD009",
+    "date": "2025-08-15",
+    "clinic": "Phòng khám Tai Mũi Họng",
+    "doctor": "Hoang Van O",
+    "patient": "Le Thi P",
+    "dob": "1982-08-12",
+    "items": [
+      {"name": "Khám tai mũi họng", "quantity": 1, "price": 180000},
+      {"name": "Thuốc xịt mũi", "quantity": 1, "price": 40000}
+    ]
+  },
+  {
+    "invoiceId": "HD010",
+    "taxId": "963852741",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD010",
+    "date": "2025-08-14",
+    "clinic": "Phòng khám Răng Hàm Mặt",
+    "doctor": "Nguyen Van Q",
+    "patient": "Tran Van R",
+    "dob": "1991-06-18",
+    "items": [
+      {"name": "Khám nha", "quantity": 1, "price": 150000},
+      {"name": "Thuốc tê", "quantity": 1, "price": 30000}
+    ]
+  }, {
+    "invoiceId": "HD004",
+    "taxId": "789456123",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD004",
+    "date": "2025-08-20",
+    "clinic": "Phòng khám Tim mạch",
+    "doctor": "Hoang Van E",
+    "patient": "Nguyen Van F",
+    "dob": "1988-07-20",
+    "items": [
+      {"name": "Khám tim mạch", "quantity": 1, "price": 250000},
+      {"name": "Thuốc bổ tim", "quantity": 1, "price": 70000}
+    ]
+  },
+  {
+    "invoiceId": "HD005",
+    "taxId": "321654987",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD005",
+    "date": "2025-08-19",
+    "clinic": "Phòng khám Nhi khoa",
+    "doctor": "Tran Van G",
+    "patient": "Le Thi H",
+    "dob": "2018-05-10",
+    "items": [
+      {"name": "Khám tổng quát trẻ em", "quantity": 1, "price": 150000},
+      {"name": "Thuốc hạ sốt", "quantity": 1, "price": 20000}
+    ]
+  },
+  {
+    "invoiceId": "HD006",
+    "taxId": "654987321",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD006",
+    "date": "2025-08-18",
+    "clinic": "Phòng khám Da liễu",
+    "doctor": "Nguyen Thi I",
+    "patient": "Pham Van J",
+    "dob": "1995-12-30",
+    "items": [
+      {"name": "Khám da liễu", "quantity": 1, "price": 200000},
+      {"name": "Thuốc bôi da", "quantity": 3, "price": 60000}
+    ]
+  },
+  {
+    "invoiceId": "HD007",
+    "taxId": "159753486",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD007",
+    "date": "2025-08-17",
+    "clinic": "Phòng khám Nội tổng quát",
+    "doctor": "Le Thi K",
+    "patient": "Tran Van L",
+    "dob": "1978-09-05",
+    "items": [
+      {"name": "Khám nội tổng quát", "quantity": 1, "price": 220000},
+      {"name": "Thuốc bổ", "quantity": 2, "price": 50000}
+    ]
+  },
+  {
+    "invoiceId": "HD008",
+    "taxId": "753159486",
+    "qrCode": "https://api.qrserver.com/v1/create-qr-code/?data=HD008",
+    "date": "2025-08-16",
+    "clinic": "Phòng khám Mắt",
+    "doctor": "Pham Thi M",
+    "patient": "Nguyen Van N",
+    "dob": "1999-01-25",
+    "items": [
+      {"name": "Khám mắt", "quantity": 1, "price": 180000},
+      {"name": "Thuốc nhỏ mắt", "quantity": 2, "price": 30000}
+    ]
+  }
+  
+]

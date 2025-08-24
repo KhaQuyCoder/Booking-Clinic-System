@@ -1,18 +1,26 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
+import ForgotPassword from "./../ForgotPassword";
+import { State } from "../../../../state/context";
+
 import iconLogin from "../../../../assets/image/login.png";
 import iconLogo from "../../../../assets/image/logo.png";
-import accounts from "../../../../data/account.json"; // import dữ liệu account
-import "./login.css";
-import { toast } from "react-toastify";
+import bcg from "../../../../assets/image/backgroundBody.webp";
+import accounts from "../../../../data/account.json";
+
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
-import bcg from "../../../../assets//image/backgroundBody.webp";
-import { State } from "../../../../state/context";
+import "./login.css";
+
 const Login = () => {
   const navigate = useNavigate();
+  const { setRole } = useContext(State);
+
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-  const { setRole } = useContext(State);
+  const [showForgot, setShowForgot] = useState(false);
+
   const handleLogin = () => {
     const foundAccount = accounts.find(
       (acc) => acc.phone === phone && acc.password === password
@@ -20,33 +28,28 @@ const Login = () => {
 
     if (foundAccount) {
       localStorage.setItem("role", JSON.stringify(foundAccount.role));
+
       switch (foundAccount.role) {
         case "doctor":
           setRole("doctor");
-          setTimeout(() => {
-            navigate("/doctor");
-          }, 200);
+          setTimeout(() => navigate("/doctor"), 200);
           break;
         case "admin":
           setRole("admin");
-          navigate("/");
-          setTimeout(() => {
-            navigate("/admin");
-          }, 200);
+          setTimeout(() => navigate("/admin"), 200);
           break;
         case "user":
           setRole("user");
-          setTimeout(() => {
-            navigate("/trang-chu");
-          }, 200);
+          setTimeout(() => navigate("/trang-chu"), 200);
           break;
         case "clinic":
           setRole("clinic");
-          setTimeout(() => {
-            navigate("/clinic");
-          }, 200);
+          setTimeout(() => navigate("/clinic"), 200);
+          break;
+        default:
           break;
       }
+
       setTimeout(() => {
         window.location.reload();
       }, 200);
@@ -60,55 +63,66 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container" style={{ backgroundImage: `url(${bcg})` }}>
       <img className="bcg-login" src={bcg} alt="bcg" />
       <div className="wrapper-container">
-        <div className="login-image">
-          <img src={iconLogin} alt="Doctors" />
-        </div>
-
-        <div className="login-box">
-          <div className="logo-box">
-            <img className="logo" src={iconLogo} alt="Logo" />
-          </div>
-
-          <input
-            type="text"
-            placeholder="Số điện thoại"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Mật khẩu"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-
-          <button onClick={handleLogin}>Đăng nhập</button>
-
-          {/* Hiện thông báo */}
-          {/* {error && <p style={{ color: "red" }}>{error}</p>}
-        {success && <p style={{ color: "green" }}>{success}</p>} */}
-
-          <div className="links">
-            <a href="#">Quên mật khẩu?</a> | <a href="#">Đăng ký?</a>
-          </div>
-
-          <div className="social-login">
-            Hoặc đăng nhập bằng
-            <div className="social-icons">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-              />
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                alt="Google"
-              />
+        {!showForgot ? (
+          <>
+            <div className="login-image">
+              <img src={iconLogin} alt="Doctors" />
             </div>
-          </div>
-        </div>
+
+            <div className="login-box">
+              <div className="logo-box">
+                <img className="logo" src={iconLogo} alt="Logo" />
+              </div>
+
+              <input
+                type="text"
+                placeholder="Số điện thoại"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="Mật khẩu"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+
+              <button onClick={handleLogin}>Đăng nhập</button>
+
+              <div className="links">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowForgot(true);
+                  }}
+                >
+                  Quên mật khẩu?
+                </a>{" "}
+                | <a href="#">Đăng ký?</a>
+              </div>
+
+              <div className="social-login">
+                <span>Hoặc đăng nhập bằng</span>
+                <div className="social-icons">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                    alt="Facebook"
+                  />
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                    alt="Google"
+                  />
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <ForgotPassword onBack={() => setShowForgot(false)} />
+        )}
       </div>
     </div>
   );

@@ -1,21 +1,21 @@
 [
   {
     "id": "BN001",
-    "name": "Nguyễn Văn A",
+    "name": "Nguyễn Thành An",
     "gender": "Nam",
     "dob": "1990-01-01",
     "phone": "0123456789"
   },
   {
     "id": "BN002",
-    "name": "Trần Thị B",
+    "name": "Trần Thị Dung",
     "gender": "Nữ",
     "dob": "1992-05-10",
     "phone": "0987654321"
   },
   {
     "id": "BN003",
-    "name": "Lê Văn C",
+    "name": "nguyễn Thành Bảo",
     "gender": "Nam",
     "dob": "1985-07-15",
     "phone": "0911222333"

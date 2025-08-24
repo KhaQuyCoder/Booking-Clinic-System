@@ -18,7 +18,7 @@ import Opacity from "./components/OpacityComponent/Opacity";
 import NotFound from "./components/NotFoundComponent/NotFound";
 import Booking from "./page/User/BookingPage/Booking";
 import HistoryBooking from "./page/User/HistoryBookingPage/HistoryBooking";
-import Profile from "./page/User/ProfilePage/Profile";
+import Profiles from "./page/User/ProfilePage/Profile";
 import AppointmentList from "./page/User/BookingStatus/AppointmentList";
 import SearchClinic from "./page/User/SearchClinicPage/SearchClinic";
 import CreateClinic from "./page/User/SigupClinicPage/CreateClinic";
@@ -32,8 +32,18 @@ import PatientManagementv2 from "./page/Doctor/DocterPage/PatientManagementv2/in
 import ScheduleAppointment from "./page/Doctor/DocterPage/ScheduleMedicalAppointment/index";
 import PatientDetail from "./page/Doctor/DocterPage/PatientManagementv2/PatientDetail/index";
 import PatientEdit from "./page/Doctor/DocterPage/PatientManagementv2/PatientEdit/index";
-import ViewMedicalRecords from "./page/Doctor/DocterPage/PatientManagementv2/ViewMedicalRecords/index";
+import ViewMedicalRecords from "./page/Doctor/DocterPage/ViewMedicalAppointmentSchedule/index.jsx";
 import MedicalHistory from "./page/Doctor/DocterPage/PatientManagementv2/MedicalHistory/index";
+import AcceptMedicalAppointment from "./page/Doctor/DocterPage/AcceptMedicalAppointment/index";
+import QnA from "./page/Doctor/DocterPage/QnA/index";
+import Invoice from "./page/Doctor/DocterPage/Invoice/index";
+import DoctorStatistics from "./page/Doctor/DocterPage/DoctorStatistics/index";
+import Revenue from "./page/Doctor/DocterPage/DoctorStatistics/Revenue/index";
+import Visits from "./page/Doctor/DocterPage/DoctorStatistics/Visits/index";
+import Profile from "./page/Doctor/DocterPage/Profile/index";
+import EditProfile from "./page/Doctor/DocterPage/Profile/EditProfile/index";
+import OnlineConsult from "./page/Doctor/DocterPage/OnlineConsult/index";
+import ForgotPassword from "./page/Doctor/DocterPage/ForgotPassword/index";
 import { PatientProvider } from "./context/patientContext";
 
 // Admin
@@ -93,7 +103,7 @@ function App() {
                 />
                 <Route path="/:slug/dat-lich-kham" element={<Booking />} />
                 <Route path="/lich-su-kham-benh" element={<HistoryBooking />} />
-                <Route path="/trang-ca-nhan" element={<Profile />} />
+                <Route path="/trang-ca-nhan" element={<Profiles />} />
                 <Route path="/xem-lich-kham" element={<AppointmentList />} />
                 <Route path="/tim-kiem" element={<SearchClinic />} />
                 <Route path="/kham-lam-san" element={<CallDocter />} />
@@ -109,44 +119,54 @@ function App() {
               <>
                 <Route path="/doctor" element={<Layout />}>
                   <Route
+                    path="/doctor/patients"
+                    element={<PatientManagementv2 />}
+                  />
+                  <Route path="/doctor" element={<DoctorStatistics />} />
+                  <Route
                     path="/doctor/schedule"
                     element={<ScheduleAppointment />}
-                  />
-                  <Route
-                    path="/doctor/Patients"
-                    element={<PatientManagementv2 />}
                   />
                   <Route
                     path="/doctor/detail"
                     element={<PatientManagementv2 />}
                   />
-                  <Route
-                    path="/doctor/detail/:id"
-                    element={<PatientDetail />}
-                  />
-                  <Route path="/doctor/PatientEdit" element={<PatientEdit />} />
-                  <Route
-                    path="/doctor/PatientEdit/:id"
-                    element={<PatientEdit />}
-                  />
-                  <Route
-                    path="/doctor/ViewMR"
-                    element={<ViewMedicalRecords />}
-                  />
-                  <Route
-                    path="/doctor/ViewMR/:id"
-                    element={<ViewMedicalRecords />}
-                  />
+                  <Route path="detail/:id" element={<PatientDetail />} />
+                  <Route path="doctor/PatientEdit" element={<PatientEdit />} />
+                  <Route path="PatientEdit/:id" element={<PatientEdit />} />
+                  <Route path="/doctor/View" element={<ViewMedicalRecords />} />
+
                   <Route
                     path="/doctor/MedicalHistory"
                     element={<MedicalHistory />}
                   />
                   <Route
-                    path="/doctor/MedicalHistory/:id"
+                    path="MedicalHistory/:id"
                     element={<MedicalHistory />}
                   />
+                  <Route
+                    path="/doctor/Accept"
+                    element={<AcceptMedicalAppointment />}
+                  />
+                  <Route path="/doctor/QnA" element={<QnA />} />
+                  <Route path="/doctor/Invoice" element={<Invoice />} />
+                  <Route
+                    path="/doctor/OnlineConsult"
+                    element={<OnlineConsult />}
+                  />
+                  <Route
+                    path="/doctor/DoctorStatistics"
+                    element={<DoctorStatistics />}
+                  />
+                  <Route
+                    path="/doctor/DoctorStatistics/Revenue"
+                    element={<Revenue />}
+                  />
+                  <Route path="DoctorStatistics/Visits" element={<Visits />} />
+                  <Route path="Profile" element={<Profile />} />
+                  <Route path="Profile/EditProfile" element={<EditProfile />} />
+                  <Route path="ForgotPassword" element={<ForgotPassword />} />
                 </Route>
-
                 <Route path="/*" element={<NotFound />} />
               </>
             )}

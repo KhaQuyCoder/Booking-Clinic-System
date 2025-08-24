@@ -1,5 +1,4 @@
 .logsidebar {
-    width: 244px;
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
 }
 .changePassword,
 .logout {
-    width: 244px;
     height: 40px;
     display: flex;
     flex-direction: row;

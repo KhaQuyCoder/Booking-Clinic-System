@@ -1,5 +1,4 @@
 import React from "react";
-
 const Header = () => {
   return (
     <header
@@ -8,6 +7,9 @@ const Header = () => {
         backgroundColor: "#f5f7fa",
         borderBottom: "1px solid #e8e8e8",
         display: "flex",
+        position: "fixed",
+        left: "19%",
+        right: 0,
         alignItems: "center",
         padding: "0 20px",
         justifyContent: "space-between",
@@ -50,7 +52,7 @@ const Header = () => {
             cursor: "pointer",
           }}
         >
-          🔔
+          <i class="fa-solid fa-bell"></i>
         </button>
         <button
           title="Tin nhắn"
@@ -61,7 +63,7 @@ const Header = () => {
             cursor: "pointer",
           }}
         >
-          💬
+          <i class="fa-regular fa-message"></i>
         </button>
         <img
           src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
@@ -72,6 +74,7 @@ const Header = () => {
             borderRadius: "50%",
             cursor: "pointer",
             border: "1px solid black",
+            objectFit: "cover",
           }}
         />
       </div>

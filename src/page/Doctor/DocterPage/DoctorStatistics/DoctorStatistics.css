@@ -1,0 +1,28 @@
+.statistics-container {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px; 
+  fill: #333; 
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item {
+  font-size: 12px;
+}

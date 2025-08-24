@@ -1,0 +1,8 @@
+[
+  { "month": "Tháng 3", "visits": 120, "revenue": 50000000 },
+  { "month": "Tháng 4", "visits": 150, "revenue": 62000000 },
+  { "month": "Tháng 5", "visits": 170, "revenue": 70000000 },
+  { "month": "Tháng 6", "visits": 200, "revenue": 85000000 },
+  { "month": "Tháng 7", "visits": 210, "revenue": 90000000 },
+  { "month": "Tháng 8", "visits": 230, "revenue": 100000000 }
+]

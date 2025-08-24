@@ -1,179 +1,263 @@
-import React, { useState, useContext } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { PatientContext } from "../../../../../context/patientContext";
-import { toast } from "react-toastify";
-import "./PatientEdit.css";
+import React, { useState, useEffect } from "react";
+import styles from "../PatientManagement.module.css";
 
-const PatientEdit = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const { patients, updatePatient } = useContext(PatientContext);
+const EditPatientForm = ({ patient, onSave, onCancel }) => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    gender: "Nam",
+    dateOfBirth: "",
+    hometown: "",
+    phone: "",
+    occupation: "",
+    height: "",
+    weight: "",
+    medicalHistory: "",
+    currentHealthStatus: "",
+    bloodType: "",
+    drugAllergies: "",
+    address: "",
+  });
 
-  const patient = patients.find((p) => String(p.id) === id);
-  const [formData, setFormData] = useState(patient || {});
-  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    if (patient) {
+      setFormData({
+        fullName: patient.patientName || "",
+        gender: patient.gender || "Nam",
+        dateOfBirth: patient.dateOfBirth || "",
+        hometown: patient.hometown || "",
+        phone: patient.phone || "",
+        occupation: patient.occupation || "",
+        height: patient.height || "",
+        weight: patient.weight || "",
+        medicalHistory: patient.medicalHistory || "",
+        currentHealthStatus: patient.currentHealthStatus || "",
+        bloodType: patient.bloodType || "",
+        drugAllergies: patient.drugAllergies || "",
+        address: patient.address || "",
+      });
+    }
+  }, [patient]);
 
-  if (!patient) {
-    return <p>Không tìm thấy bệnh nhân có ID: {id}</p>;
-  }
-
-  const handleChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
+    setFormData({
+      ...formData,
       [name]: value,
-    }));
+    });
   };
 
- const handleSubmit = (e) => {
-  e.preventDefault();
-  setLoading(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSave({
+      ...patient,
+      ...formData,
+    });
+  };
 
-  // gọi updatePatient để lưu vào context
-  updatePatient(formData);
+  const bloodTypes = ["A", "B", "AB", "O"];
+  const healthStatuses = ["Tốt", "Bình thường", "Yếu", "Có vấn đề sức khỏe"];
 
-  toast.success("Cập nhật thông tin thành công!");
+  return (
+    <div className={styles.editForm}>
+      <h2 className={styles.formTitle}>Chỉnh sửa thông tin bệnh nhân</h2>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.formSections}>
+          <div className={styles.section}>
+            <h3 className={styles.sectionTitle}>Thông tin cá nhân</h3>
+            <div className={styles.formGrid}>
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Họ và tên *</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  required
+                />
+              </div>
 
-  setTimeout(() => {
-    setLoading(false);
-    navigate("/patients"); // điều hướng về danh sách nếu muốn
-  }, 0);
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Giới tính</label>
+                <select
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleInputChange}
+                  className={styles.select}
+                >
+                  <option value="Nam">Nam</option>
+                  <option value="Nữ">Nữ</option>
+                  <option value="Khác">Khác</option>
+                </select>
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Ngày sinh</label>
+                <input
+                  type="date"
+                  name="dateOfBirth"
+                  value={formData.dateOfBirth}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Quê quán</label>
+                <input
+                  type="text"
+                  name="hometown"
+                  value={formData.hometown}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  placeholder="Nhập quê quán"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Số điện thoại *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  required
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Nghề nghiệp</label>
+                <input
+                  type="text"
+                  name="occupation"
+                  value={formData.occupation}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  placeholder="Nhập nghề nghiệp"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Địa chỉ</label>
+                <input
+                  type="text"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.section}>
+            <h3 className={styles.sectionTitle}>Thông tin sức khỏe</h3>
+            <div className={styles.formGrid}>
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Chiều cao (cm)</label>
+                <input
+                  type="number"
+                  name="height"
+                  value={formData.height}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  min="0"
+                  step="0.1"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Cân nặng (kg)</label>
+                <input
+                  type="number"
+                  name="weight"
+                  value={formData.weight}
+                  onChange={handleInputChange}
+                  className={styles.input}
+                  min="0"
+                  step="0.1"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Nhóm máu</label>
+                <select
+                  name="bloodType"
+                  value={formData.bloodType}
+                  onChange={handleInputChange}
+                  className={styles.select}
+                >
+                  <option value="">Chọn nhóm máu</option>
+                  {bloodTypes.map((type) => (
+                    <option key={type} value={type}>
+                      {type}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Dị ứng thuốc</label>
+                <textarea
+                  name="drugAllergies"
+                  value={formData.drugAllergies}
+                  onChange={handleInputChange}
+                  className={styles.textarea}
+                  rows="3"
+                  placeholder="Liệt kê các loại thuốc dị ứng (nếu có)"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Tiền sử bệnh lý</label>
+                <textarea
+                  name="medicalHistory"
+                  value={formData.medicalHistory}
+                  onChange={handleInputChange}
+                  className={styles.textarea}
+                  rows="3"
+                  placeholder="Khai báo tiền sử bệnh lý (nếu có)"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>
+                  Tình trạng sức khỏe hiện tại
+                </label>
+                <select
+                  name="currentHealthStatus"
+                  value={formData.currentHealthStatus}
+                  onChange={handleInputChange}
+                  className={styles.select}
+                >
+                  <option value="">Chọn tình trạng</option>
+                  {healthStatuses.map((status) => (
+                    <option key={status} value={status}>
+                      {status}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.formButtons}>
+          <button type="submit" className={styles.saveButton}>
+            Cập nhật
+          </button>
+          <button
+            type="button"
+            className={styles.cancelButton}
+            onClick={onCancel}
+          >
+            Hủy bỏ
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
-
-return (
-  <div className="patient-edit-container">
-    <h2>THÔNG TIN CHI TIẾT BỆNH NHÂN</h2>
-    <p>
-      Nhắc nhở:<br></br> 
-      -Bác sĩ khai báo đúng, đầy đủ thông tin và chịu trách nhiệm với các thông tin mà bản thân đã khai báo.<br></br> 
-      -Những mục được đánh dấu <span className="s">*</span> là bắt buộc phải khai báo.
-    </p>
-    <form onSubmit={handleSubmit} className="form-box">
-      {/* Hàng 1: 4 cột */}
-      <div className="grid-4col">
-        {/* Cột 1 */}
-        <div className="form-col">
-          <label><span className="s">*</span>Mã bệnh nhân:
-            <input type="text" value={formData.id} disabled />
-          </label>
-          <label><span className="s">*</span>Họ và tên:
-            <input type="text" name="name" value={formData.name} onChange={handleChange} />
-          </label>
-          <label><span className="s">*</span>Số điện thoại:
-            <input type="text" name="phone" value={formData.phone} onChange={handleChange} />
-          </label>
-          <label><span className="s">*</span>Quốc tịch:
-            <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} />
-          </label>
-        </div>
-
-        {/* Cột 2 (trống) */}
-        <div></div>
-
-        {/* Cột 3 */}
-        <div className="form-col">
-          <label>Giới tính:
-            <select name="gender" value={formData.gender} onChange={handleChange}>
-              <option value="">--Chọn--</option>
-              <option value="Nam">Nam</option>
-              <option value="Nữ">Nữ</option>
-            </select>
-          </label>
-          <label>Năm sinh:
-            <input type="date" name="dob" value={formData.dob} onChange={handleChange} />
-          </label>
-          <label>Nghề nghiệp:
-            <input type="text" name="job" value={formData.job} onChange={handleChange} />
-          </label>
-          <label><span className="s">*</span>Dân tộc:
-            <input type="text" name="ethnicity" value={formData.ethnicity} onChange={handleChange} />
-          </label>
-        </div>
-
-        {/* Cột 4: Avatar vuông */}
-        <div className="avatar-col">
-          <img src={formData.avatar} alt="avatar" className="avatar-square" />
-          <label className="upload-btn">
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => {
-                const file = e.target.files[0];
-                if (file) {
-                  const url = URL.createObjectURL(file);
-                  setFormData((prev) => ({ ...prev, avatar: url }));
-                }
-              }}
-            />
-            Chọn ảnh
-          </label>
-        </div>
-      </div>
-
-      {/* Hàng 2: Quê quán, địa chỉ, bảo hiểm */}
-      <div className="grid-2col">
-        <div className="form-col">
-          <label><span className="s">*</span>Quê quán:
-            <div className="row-inputs">
-              <input type="text" placeholder="Tỉnh" name="province" onChange={handleChange} />
-              <input type="text" placeholder="Huyện" name="district" onChange={handleChange} />
-              <input type="text" placeholder="Xã" name="ward" onChange={handleChange} />
-            </div>
-          </label>
-          <label><span className="s">*</span>Địa chỉ thường trú:
-            <div className="row-inputs">
-              <input type="text" placeholder="Tỉnh" name="addressProvince" onChange={handleChange} />
-              <input type="text" placeholder="Huyện" name="addressDistrict" onChange={handleChange} />
-              <input type="text" placeholder="Xã" name="addressWard" onChange={handleChange} />
-              <input type="text" placeholder="Chi tiết" name="addressDetail" onChange={handleChange} />
-            </div>
-          </label>
-          <label>Bảo hiểm:
-            <div className="row-inputs">
-              <input type="text" placeholder="Loại BHYT" name="insurance" onChange={handleChange} />
-              <input type="text" placeholder="Số BHYT" name="insuranceId" onChange={handleChange} />
-            </div>
-          </label>
-        </div>
-        <div></div>
-      </div>
-
-      {/* Hàng 3: Thông tin sức khỏe */}
-      <h3>Thông tin sức khỏe</h3>
-      <div className="form-col">
-        <div className="row-inputs">
-          <input type="text" placeholder="Chiều cao (cm)" name="height" onChange={handleChange} />
-          <input type="text" placeholder="Cân nặng (kg)" name="weight" onChange={handleChange} />
-          <input type="text" placeholder="Nhóm máu" name="blood" onChange={handleChange} />
-        </div>
-        <label>Tiền sử bệnh:
-          <input type="text" name="medicalHistory" onChange={handleChange} />
-        </label>
-        <label>Dị ứng thuốc:
-          <input type="text" name="allergy" onChange={handleChange} />
-        </label>
-        <label>Tình trạng sức khỏe hiện tại:
-          <textarea name="currentHealth" onChange={handleChange}></textarea>
-        </label>
-      </div>
-
-      {/* Nút chức năng */}
-      <div className="button-group">
-        <button type="submit" className="btn btn-blue" disabled={loading}>
-          {loading ? "Đang cập nhật..." : "Cập nhật"}
-        </button>
-        <button
-          type="button"
-          className="btn btn-gray"
-          onClick={() => navigate("/patients")}
-        >
-          Quay lại
-        </button>
-      </div>
-    </form>
-  </div>
-);
-};
-
-export default PatientEdit;
+export default EditPatientForm;

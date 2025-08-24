@@ -8,7 +8,7 @@
     "finalDiagnosis": "Tai biến mạch máu não giai đoạn sớm",
     "status": "Đã xử lý",
     "notes": "Bệnh nhân cần nghỉ ngơi, tránh căng thẳng",
-    "avatar": "https://chothuestudio.com/wp-content/uploads/2022/08/b6wee1gedvoxsunes6k1644935334560-533x800.jpg"
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS002",
@@ -18,7 +18,8 @@
     "doctorName": "BS. Nguyễn Thị Hoa",
     "finalDiagnosis": "Thiếu máu cơ tim cục bộ",
     "status": "Tái khám",
-    "notes": "Khám lại sau 1 tháng"
+    "notes": "Khám lại sau 1 tháng",
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS003",
@@ -28,7 +29,8 @@
     "doctorName": "BS. Lê Văn Hùng",
     "finalDiagnosis": "Tiểu đường type 2",
     "status": "Đang theo dõi",
-    "notes": "Cần đo đường huyết hàng ngày"
+    "notes": "Cần đo đường huyết hàng ngày",
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS004",
@@ -38,7 +40,8 @@
     "doctorName": "BS. Nguyễn Thị Hoa",
     "finalDiagnosis": "Đau thắt ngực ổn định",
     "status": "Đã xử lý",
-    "notes": "Hạn chế vận động mạnh"
+    "notes": "Hạn chế vận động mạnh",
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS005",
@@ -48,7 +51,8 @@
     "doctorName": "BS. Trần Văn Minh",
     "finalDiagnosis": "Nhức đầu căng cơ",
     "status": "Tái khám",
-    "notes": "Uống thuốc khi cần"
+    "notes": "Uống thuốc khi cần",
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS006",
@@ -58,7 +62,8 @@
     "doctorName": "BS. Phạm Thị Lan",
     "finalDiagnosis": "Cúm mùa",
     "status": "Đã xử lý",
-    "notes": "Nghỉ ngơi và uống thuốc"
+    "notes": "Nghỉ ngơi và uống thuốc",
+    "attachments": ["file1.pdf","image1.jpg"]
   },
   {
     "recordId": "HS006",
@@ -68,6 +73,7 @@
     "doctorName": "BS. Phạm Thị Lan",
     "finalDiagnosis": "Cúm mùa",
     "status": "Đã xử lý",
-    "notes": "Nghỉ ngơi và uống thuốc"
+    "notes": "Nghỉ ngơi và uống thuốc",
+    "attachments": ["file1.pdf","image1.jpg"]
   }
 ]

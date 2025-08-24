@@ -26,7 +26,7 @@ const Docter = () => {
   ];
   const specialtyData = useMemo(() => {
     const allSpecialties = clinicData.flatMap((item) => item.specialty || []);
-    return [...new Set(allSpecialties.map((s) => s.trim()))];
+    return [...new Set(allSpecialties.map((s) => s.trim()))]; 
   }, []);
 
   const allDoctors = useMemo(() => {

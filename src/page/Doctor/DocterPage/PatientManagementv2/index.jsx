@@ -1,144 +1,187 @@
-import { useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  Button,
-  TablePagination,
-} from "@mui/material";
-import patients from "../../../../data/Patient.json"; // import dữ liệu JSON
-import "./PatientManagement.css";
-import iconSearch from "../../../../assets/svg/magnifying-glass-solid-full.svg";
-import iconEdit from "../../../../assets/svg/pen-to-square-solid-full.svg";
-import iconView from "../../../../assets/svg/file-waveform-solid-full.svg";
-import iconHistory from "../../../../assets/svg/id-badge-solid-full.svg";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import AddPatientForm from "./AddPatientForm/AddPatientForm";
+import EditPatientForm from "./PatientEdit/index";
+import PatientDetailsModal from "./PatientDetail/index";
+import MedicalHistoryModal from "./MedicalHistory/index";
+import DeletePatientButton from "./DeletePatient/DeletePatientButton";
+import styles from "./PatientManagement.module.css";
+import dataUser from "../../../../data/AcceptMedicalAppointment.json";
+const PatientManagement = () => {
+  const [patients, setPatients] = useState(dataUser);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [editingPatient, setEditingPatient] = useState(null);
+  const [selectedPatient, setSelectedPatient] = useState(null);
+  const [showDetailModal, setShowDetailModal] = useState(false);
+  const [showHistoryModal, setShowHistoryModal] = useState(false);
 
-const PatientTable = () => {
-  // state phân trang
-  const [page, setPage] = useState(0); // trang hiện tại
-  const [rowsPerPage, setRowsPerPage] = useState(5); // số dòng/trang
-  const navigate = useNavigate();
-  // đổi trang
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
+  const filteredPatients = patients.filter(
+    (patient) =>
+      patient.patientName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      patient.phone.includes(searchTerm)
+  );
+
+  const handleAddPatient = (newPatient) => {
+    const newId = `${String(patients.length + 1)}`;
+    const patientToAdd = {
+      ...newPatient,
+      id: newId,
+    };
+    setPatients([...patients, patientToAdd]);
+    setShowAddForm(false);
   };
 
-  // đổi số dòng hiển thị
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
+  const handleEditPatient = (updatedPatient) => {
+    const PatientEdit = {
+      ...updatedPatient,
+      patientName: updatedPatient.fullName || updatedPatient.patientName,
+    };
+
+    setPatients(
+      patients.map((patient) =>
+        patient.id === PatientEdit.id ? PatientEdit : patient
+      )
+    );
+    setEditingPatient(null);
+  };
+
+  const handleDeletePatient = (id) => {
+    setPatients(patients.filter((patient) => patient.id !== id));
+  };
+
+  const viewPatientDetails = (patient) => {
+    setSelectedPatient(patient);
+    setShowDetailModal(true);
+  };
+
+  const viewMedicalHistory = (patient) => {
+    setSelectedPatient(patient);
+    setShowHistoryModal(true);
   };
 
   return (
-    <Paper
-      className="patient-management-wrap"
-      sx={{
-        mt: 3,
-        p: 2,
-        boxShadow: "0px 4px 20px rgba(0,0,0,0.2)",
-        borderRadius: "12px",
-      }}
-    >
-      <h2>Danh sách bệnh nhân</h2>
-      <TableContainer>
-        <Table>
-          {/* Tiêu đề bảng */}
-          <TableHead>
-            <TableRow>
-              <TableCell>
-                <b>Mã BN</b>
-              </TableCell>
-              <TableCell>
-                <b>Họ tên</b>
-              </TableCell>
-              <TableCell>
-                <b>Giới tính</b>
-              </TableCell>
-              <TableCell>
-                <b>Ngày sinh</b>
-              </TableCell>
-              <TableCell>
-                <b>Số điện thoại</b>
-              </TableCell>
-              <TableCell align="center">
-                <b>Thao tác</b>
-              </TableCell>
-            </TableRow>
-          </TableHead>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1 className={styles.title}>Quản lý Bệnh nhân</h1>
+      </div>
 
-          {/* Nội dung bảng */}
-          <TableBody>
-            {patients
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((p, index) => (
-                <TableRow key={`${p.id}-${index}`} hover>
-                  <TableCell>{p.id}</TableCell>
-                  <TableCell>{p.name}</TableCell>
-                  <TableCell>{p.gender}</TableCell>
-                  <TableCell>{p.dob}</TableCell>
-                  <TableCell>{p.phone}</TableCell>
-                  <TableCell align="center" className="btn-action">
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="small"
-                      sx={{ mr: 1, height: "40px" }}
-                      onClick={() => navigate(`/doctor/detail/${p.id}`)}
-                    >
-                      <img src={iconSearch} />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="small"
-                      sx={{ mr: 1, height: "40px" }}
-                      onClick={() => navigate(`/doctor/PatientEdit/${p.id}`)}
-                    >
-                      <img src={iconEdit} />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="small"
-                      sx={{ mr: 1, height: "40px" }}
-                      onClick={() => navigate(`/doctor/ViewMR/${p.id}`)}
-                    >
-                      <img src={iconView} />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="small"
-                      sx={{ mr: 1, height: "40px" }}
-                      onClick={() => navigate(`/doctor/MedicalHistory/${p.id}`)}
-                    >
-                      <img src={iconHistory} />
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <div className={styles.controls}>
+        <div className={styles.searchContainer}>
+          <input
+            type="text"
+            placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className={styles.searchInput}
+          />
+          <span className={styles.searchIcon}>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
 
-      {/* Thanh phân trang */}
-      <TablePagination
-        rowsPerPageOptions={[5, 10, 25]}
-        component="div"
-        count={patients.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-        labelRowsPerPage="Số dòng/trang"
-      />
-    </Paper>
+        <button
+          className={styles.addButton}
+          onClick={() => setShowAddForm(true)}
+        >
+          + Thêm bệnh nhân
+        </button>
+      </div>
+
+      {showAddForm && (
+        <AddPatientForm
+          onSave={handleAddPatient}
+          onCancel={() => setShowAddForm(false)}
+        />
+      )}
+
+      {editingPatient && (
+        <EditPatientForm
+          patient={editingPatient}
+          onSave={handleEditPatient}
+          onCancel={() => setEditingPatient(null)}
+        />
+      )}
+
+      <div className={styles.tableContainer}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Mã BN</th>
+              <th>Họ tên</th>
+              <th>Giới tính</th>
+              <th>Số điện thoại</th>
+              <th>Ngày sinh</th>
+              <th>Tuổi</th>
+              <th>Địa chỉ</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredPatients.map((patient) => (
+              <tr key={patient.id}>
+                <td>
+                  <span className={styles.patientId}>{patient.id}</span>
+                </td>
+                <td>
+                  <div className={styles.patientName}>
+                    {patient.patientName || patient.fullName}
+                  </div>
+                </td>
+                <td>{patient.gender}</td>
+                <td>{patient.phone}</td>
+                <td>{patient.date}</td>
+
+                <td>{patient.age} tuổi</td>
+                <td>{patient.address}</td>
+
+                <td>
+                  <div className={styles.actions}>
+                    <button
+                      className={styles.viewButton}
+                      onClick={() => viewPatientDetails(patient)}
+                    >
+                      <i class="fa-solid fa-eye"></i>
+                    </button>
+                    <button
+                      className={styles.historyButton}
+                      onClick={() => viewMedicalHistory(patient)}
+                    >
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                    </button>
+                    <button
+                      className={styles.editButton}
+                      onClick={() => setEditingPatient(patient)}
+                    >
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <DeletePatientButton
+                      patientId={patient.id}
+                      patientName={patient.fullName}
+                      onDelete={handleDeletePatient}
+                    />
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {showDetailModal && selectedPatient && (
+        <PatientDetailsModal
+          patient={selectedPatient}
+          onClose={() => setShowDetailModal(false)}
+        />
+      )}
+
+      {showHistoryModal && selectedPatient && (
+        <MedicalHistoryModal
+          patient={selectedPatient}
+          onClose={() => setShowHistoryModal(false)}
+        />
+      )}
+    </div>
   );
 };
 
-export default PatientTable;
+export default PatientManagement;

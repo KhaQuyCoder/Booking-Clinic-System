@@ -1,0 +1,255 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header {
+  margin-bottom: 10px;
+  padding: 25px;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.subtitle {
+  font-size: 15px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.searchContainer {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.searchIcon > i {
+  position: absolute;
+  left: 0;
+  top: 48%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filterLabel {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.filterSelect {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+}
+
+.table th {
+  padding: 15px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  border: none;
+  background-color: #2563eb;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tableRow:hover {
+  background-color: #f9f9f9;
+}
+
+.tableCell {
+  vertical-align: top;
+}
+
+.patientInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.patientName {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.patientId {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.address {
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.symptoms {
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.statusPending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.statusApproved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.statusRejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.approveButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
+
+.approveButton:hover {
+  background-color: #218838;
+}
+
+.rejectButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
+
+.rejectButton:hover {
+  background-color: #c82333;
+}
+
+.noActions {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.noData {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 30px;
+  font-style: italic;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.summaryItem:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.summaryLabel {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}

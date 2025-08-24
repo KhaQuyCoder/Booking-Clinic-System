@@ -1,138 +1,182 @@
-import React, { useContext } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { PatientContext } from "../../../../../context/patientContext";
-import "./PatientDetail.css";
+import React from "react";
+import styles from "../PatientManagement.module.css";
 
-const PatientDetail = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const { patients } = useContext(PatientContext);
+const PatientDetailsModal = ({ patient, onClose }) => {
+  const calculateAge = (dateOfBirth) => {
+    const today = new Date();
+    const birthDate = new Date(dateOfBirth);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
 
-  const patient = patients.find((p) => String(p.id) === id);
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
 
-  if (!patient) {
-    return <p>Không tìm thấy bệnh nhân có ID: {id}</p>;
-  }
+    return age;
+  };
 
+  const formatDate = (dateString) => {
+    if (!dateString) return "Chưa cập nhật";
+    const date = new Date(dateString);
+    return date.toLocaleDateString("vi-VN");
+  };
 
-return (
-    <div className="patient-edit-container">
-      <h2>THÔNG TIN CHI TIẾT BỆNH NHÂN</h2>
+  const calculateBMI = (height, weight) => {
+    if (!height || !weight) return "Chưa đủ thông tin";
+    const heightInMeter = height / 100;
+    const bmi = (weight / (heightInMeter * heightInMeter)).toFixed(1);
 
-      <div className="form-box">
-        {/* Hàng 1: 4 cột */}
-        <div className="grid-4col">
-          {/* Cột 1 */}
-          <div className="form-col">
-            <label>
-              Mã bệnh nhân:
-              <input type="text" value={patient.id} disabled />
-            </label>
-            <label>
-              Họ và tên:
-              <input type="text" value={patient.name} disabled />
-            </label>
-            <label>
-              Số điện thoại:
-              <input type="text" value={patient.phone} disabled />
-            </label>
-            <label>
-              Quốc tịch:
-              <input type="text" value={patient.nationality} disabled />
-            </label>
+    let status = "";
+    if (bmi < 18.5) status = "Thiếu cân";
+    else if (bmi >= 18.5 && bmi < 23) status = "Bình thường";
+    else if (bmi >= 23 && bmi < 25) status = "Tiền béo phì";
+    else if (bmi >= 25 && bmi < 30) status = "Béo phì độ I";
+    else status = "Béo phì độ II";
+
+    return `${bmi} (${status})`;
+  };
+
+  // chuẩn hóa tên hiển thị
+  const displayName = patient.fullName || patient.patientName;
+
+  return (
+    <div className={styles.modalOverlay}>
+      <div className={styles.modal}>
+        <div className={styles.modalHeader}>
+          <h2>Thông tin chi tiết bệnh nhân</h2>
+          <button className={styles.closeButton} onClick={onClose}>
+            &times;
+          </button>
+        </div>
+        <div className={styles.modalContent}>
+          <div className={styles.patientProfile}>
+            <div className={styles.profileInfo}>
+              <h3>{displayName}</h3>
+              <p>Mã bệnh nhân: {patient.id}</p>
+            </div>
           </div>
 
-          {/* Cột 2 (trống) */}
-          <div></div>
+          <div className={styles.detailSections}>
+            <div className={styles.section}>
+              <h4 className={styles.sectionTitle}>Thông tin cá nhân</h4>
+              <div className={styles.detailGrid}>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Họ và tên:</span>
+                  <span className={styles.detailValue}>{displayName}</span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Giới tính:</span>
+                  <span className={styles.detailValue}>{patient.gender}</span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Ngày sinh:</span>
+                  <span className={styles.detailValue}>
+                    {formatDate(patient.dateOfBirth || patient.date)}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Tuổi:</span>
+                  <span className={styles.detailValue}>
+                    {patient.dateOfBirth
+                      ? `${calculateAge(patient.dateOfBirth)} tuổi`
+                      : patient.age
+                      ? `${patient.age} tuổi`
+                      : "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Quê quán:</span>
+                  <span className={styles.detailValue}>
+                    {patient.hometown || "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Nghề nghiệp:</span>
+                  <span className={styles.detailValue}>
+                    {patient.occupation || "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Số điện thoại:</span>
+                  <span className={styles.detailValue}>{patient.phone}</span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Email:</span>
+                  <span className={styles.detailValue}>
+                    {patient.email || "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Địa chỉ:</span>
+                  <span className={styles.detailValue}>
+                    {patient.address || "Chưa cập nhật"}
+                  </span>
+                </div>
+              </div>
+            </div>
 
-          {/* Cột 3 */}
-          <div className="form-col">
-            <label>
-              Giới tính:
-              <input type="text" value={patient.gender} disabled />
-            </label>
-            <label>
-              Năm sinh:
-              <input type="date" value={patient.dob} disabled />
-            </label>
-            <label>
-              Nghề nghiệp:
-              <input type="text" value={patient.job} disabled />
-            </label>
-            <label>
-              Dân tộc:
-              <input type="text" value={patient.ethnicity} disabled />
-            </label>
-          </div>
-
-          {/* Cột 4: Avatar */}
-          <div className="avatar-col">
-            <img src={patient.avatar} alt="avatar" className="avatar-square" />
+            <div className={styles.section}>
+              <h4 className={styles.sectionTitle}>Thông tin sức khỏe</h4>
+              <div className={styles.detailGrid}>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Chiều cao:</span>
+                  <span className={styles.detailValue}>
+                    {patient.height ? `${patient.height} cm` : "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Cân nặng:</span>
+                  <span className={styles.detailValue}>
+                    {patient.weight ? `${patient.weight} kg` : "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Chỉ số BMI:</span>
+                  <span className={styles.detailValue}>
+                    {calculateBMI(patient.height, patient.weight)}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Nhóm máu:</span>
+                  <span className={styles.detailValue}>
+                    {patient.bloodType || "Chưa cập nhật"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Dị ứng thuốc:</span>
+                  <span className={styles.detailValue}>
+                    {patient.drugAllergies || "Không có"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>Tiền sử bệnh lý:</span>
+                  <span className={styles.detailValue}>
+                    {patient.medicalHistory || "Không có"}
+                  </span>
+                </div>
+                <div className={styles.detailItem}>
+                  <span className={styles.detailLabel}>
+                    Tình trạng sức khỏe hiện tại:
+                  </span>
+                  <span className={styles.detailValue}>
+                    {patient.currentHealthStatus || "Bình thường"}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Hàng 2: Quê quán, địa chỉ, bảo hiểm */}
-        <div className="grid-2col">
-          <div className="form-col">
-            <label>
-              Quê quán:
-              <div className="row-inputs">
-                <input type="text" value={patient.province} disabled />
-                <input type="text" value={patient.district} disabled />
-                <input type="text" value={patient.ward} disabled />
-              </div>
-            </label>
-            <label>
-              Địa chỉ thường trú:
-              <div className="row-inputs">
-                <input type="text" value={patient.addressProvince} disabled />
-                <input type="text" value={patient.addressDistrict} disabled />
-                <input type="text" value={patient.addressWard} disabled />
-                <input type="text" value={patient.addressDetail} disabled />
-              </div>
-            </label>
-            <label>
-              Bảo hiểm:
-              <div className="row-inputs">
-                <input type="text" value={patient.insurance} disabled />
-                <input type="text" value={patient.insuranceId} disabled />
-              </div>
-            </label>
-          </div>
-          <div></div>
+        <div className={styles.modalFooter}>
+          <button className={styles.closeModalButton} onClick={onClose}>
+            Đóng
+          </button>
         </div>
-
-        {/* Hàng 3: Thông tin sức khỏe */}
-        <h3>Thông tin sức khỏe</h3>
-        <div className="form-col">
-          <div className="row-inputs">
-            <input type="text" value={patient.height} disabled />
-            <input type="text" value={patient.weight} disabled />
-            <input type="text" value={patient.blood} disabled />
-          </div>
-          <label>
-            Tiền sử bệnh:
-            <input type="text" value={patient.medicalHistory} disabled />
-          </label>
-          <label>
-            Dị ứng thuốc:
-            <input type="text" value={patient.allergy} disabled />
-          </label>
-          <label>
-            Tình trạng sức khỏe hiện tại:
-            <textarea value={patient.currentHealth} disabled></textarea>
-          </label>
-        </div>
-      </div>
-
-      {/* Chỉ còn nút quay lại */}
-      <div className="button-group">
-        <button className="btn btn-gray" onClick={() => navigate(-1)}>
-          Quay lại
-        </button>
       </div>
     </div>
   );
 };
 
-export default PatientDetail;
+export default PatientDetailsModal;

@@ -52,10 +52,10 @@
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
-.searchIcon {
+.searchIcon > i {
   position: absolute;
-  left: 15px;
-  top: 50%;
+  left: 0;
+  top: 48%;
   transform: translateY(-50%);
   color: #7f8c8d;
 }
@@ -284,5 +284,3 @@
   padding: 30px;
   font-style: italic;
 }
-
-  

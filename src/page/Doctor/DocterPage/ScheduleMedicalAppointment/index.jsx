@@ -1,72 +1,125 @@
 import React, { useState } from "react";
-import TIME_SLOTS from './ScheduleData';
-import './ScheduleAppointment.css';
+import styles from "./ScheduleAppointment.module.css";
 
 const ScheduleAppointment = () => {
-    const [selectedDate, setSelectedDate] = useState(null);// state luu ngay
-    const [selectedSlots, setSelectedSlots] = useState([]);//state luu khung gio
-    // xu ly khi nguoi dung chon hoac bo chon 1 khung gio
-    const handleSlotToggle = (slot) => {
-        setSelectedSlots((prev) =>
-            prev.includes(slot)
-                ? prev.filter((s) => s !== slot)
-                : [...prev, slot]
-        );
-    };
+  const [form, setForm] = useState({
+    session: "",
+    timeSlot: "",
+    date: "",
+  });
 
-    // xu ly khi nguoi dung bm nut "luu lich"
-    const handleSave = () => {
-        //kiem tra xe, da chon ngay va cos it nhat 1 slot chua
-        if (!selectedDate || selectedSlots.length === 0) {
-            alert('Vui long chon ngay va it nhat mot khung gio')
-            return;
-        }
-        // gui du lieu (mock)
-        console.log('luu lich lam viec:', {
-            date: selectedDate,
-            timeSlots: selectedSlots,
-        });
-        alert('luu lich thanh cong!');
-    };
-    //----------------JSX tra ve-----------------
-    return (
-        <div className="Schedule-container">
-            <h2>Lập Lịch Khám</h2>
+  const [appointments, setAppointments] = useState([]);
 
-            {/*Chọn ngày làm việc */}
-            <div className="form-group-Duc">
-                <label>Chọn ngày làm việc:</label>
-                <input
-                    type="date"
-                    value={selectedDate}
-                    onChange={(e) => setSelectedDate(e.target.value)}
-                //Khi chọn ngày thì cập nhật selectedDate
-                />
-            </div>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-            {/* chọn khung giờ khắm */}
-            <div className="form-group">
-                <label>Chọn khung giờ khám:</label>
-                <div className="slots-container">
-                    {TIME_SLOTS.map((slot) => (
-                        <button
-                            key={slot}
-                            className={`slot-btn ${selectedSlots.includes(slot) ? 'selected' : ''}`}
-                            //gắn class"selected" nếu slot đang được chọn
-                            onClick={() => handleSlotToggle(slot)}
-                        // khi bấm vào thì toggle slot
-                        >
-                            {slot}
-                        </button>
-                    ))}
-                </div>
-            </div>
-            
-            {/*nút lưu*/}
-            <button className="save-btn" onClick = {handleSave}>
-                Lưu lịch
-            </button>
-        </div>
-    );
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!form.session || !form.timeSlot || !form.date) {
+      alert("Vui lòng chọn đầy đủ thông tin!");
+      return;
+    }
+    setAppointments([...appointments, form]);
+    setForm({ session: "", timeSlot: "", date: "" });
+  };
+  const handelDeleCalenda = (hour) => {
+    const tmp = appointments.filter((apt) => apt.timeSlot !== hour);
+    setAppointments(tmp);
+  };
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.leftCol}>
+        <h2 className={styles.title}>Thiết lập lịch khám</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.formGroup}>
+            <label>Chọn buổi</label>
+            <select
+              name="session"
+              value={form.session}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Chọn buổi --</option>
+              <option value="Sáng">Sáng</option>
+              <option value="Chiều">Chiều</option>
+            </select>
+          </div>
+
+          <div className={styles.formGroup}>
+            <label>Chọn khung giờ</label>
+            <select
+              name="timeSlot"
+              value={form.timeSlot}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Chọn khung giờ --</option>
+              <option value="08:00 - 08:30">08:00 - 08:30</option>
+              <option value="09:00 - 09:30">09:00 - 09:30</option>
+              <option value="10:00 - 10:30">10:00 - 10:30</option>
+              <option value="11:00 - 11:30">11:00 - 11:30</option>
+              <option value="13:30 - 14:00">13:30 - 14:00</option>
+              <option value="14:30 - 15:00">14:30 - 15:00</option>
+              <option value="15:30 - 16:00">15:30 - 16:00</option>
+              <option value="16:30 - 17:00">16:30 - 17:00</option>
+            </select>
+          </div>
+
+          <div className={styles.formGroup}>
+            <label>Chọn ngày</label>
+            <input
+              type="date"
+              name="date"
+              value={form.date}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <button type="submit" className={styles.btn}>
+            Xác nhận đặt lịch
+          </button>
+        </form>
+      </div>
+
+      <div className={styles.rightCol}>
+        <h2 className={styles.title}>Lịch khám đã thiết lập</h2>
+        {appointments.length === 0 ? (
+          <p className={styles.empty}>Chưa có lịch nào được thiết lập</p>
+        ) : (
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Ngày</th>
+                <th>Buổi</th>
+                <th>Khung giờ</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              {appointments.map((a, idx) => (
+                <tr key={idx}>
+                  <td>{a.date}</td>
+                  <td>{a.session}</td>
+                  <td>{a.timeSlot}</td>
+                  <td>
+                    <i
+                      class="fa-solid fa-trash"
+                      onClick={() => handelDeleCalenda(a.timeSlot)}
+                    ></i>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
+    </div>
+  );
 };
+
 export default ScheduleAppointment;

@@ -1,80 +1,66 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import "./Sidebar.css";
 
-const Sidebar = ({ menuItems, name }) => {
+const Sidebar = ({ menuItems }) => {
+  const location = useLocation();
+
+  const isMenuOpen = (item) => {
+    if (item.subMenu) {
+      return (
+        item.path === location.pathname ||
+        item.subMenu.some((sub) => sub.path === location.pathname)
+      );
+    }
+    return false;
+  };
+
   return (
-    <aside
-      style={{
-        width: 260,
-        backgroundColor: "#2469DF",
-        position: "fixed",
-        left: 0,
-        top: 0,
-        bottom: 0,
-        height: "100vh",
-        color: "#212529 ",
-        padding: "20px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
-    >
-      <div>
-        <div
-          style={{
-            marginBottom: 20,
-            fontWeight: "bold",
-            fontSize: 18,
-            color: "#212529 ",
-          }}
-        >
-          <div style={{ marginBottom: 10 }}>
-            <img src="/logo.svg" alt="Logo" width={100} />
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img
-              src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
-              alt="avatar doctor"
-              width={50}
-              height={50}
-              style={{ borderRadius: "50%", objectFit: "cover" }}
-            />
-            <div>
-              <div
-                style={{ fontWeight: "bold", fontSize: 16, color: "#212529 " }}
-              >
-                Hoàng Việt Thắng
-              </div>
-              <div style={{ fontSize: 14, opacity: 0.7 }}>{name}</div>
-            </div>
+    <aside className="sidebar">
+      {/* Header cố định */}
+      <div className="sidebar-header">
+        <img src="/logo.svg" alt="Logo" width={100} />
+        <div className="doctor-info">
+          <img
+            src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
+            alt="avatar doctor"
+            className="doctor-avt"
+          />
+          <div className="doctor-name-role">
+            <div className="doctor-name">Hoàng Việt Thắng</div>
+            <div className="doctor-role">Bác sĩ</div>
           </div>
         </div>
-        <nav>
-          {menuItems.map((item, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: "flex",
-                marginBottom: 15,
-                cursor: "pointer",
-                fontSize: 15,
-                opacity: 0.85,
-              }}
+      </div>
+
+      {/* Menu (scroll khi dài, nhưng sidebar header cố định) */}
+      <div className="sidebar-menu">
+        {menuItems.map((item, idx) => (
+          <div key={idx}>
+            <NavLink
+              to={item.path}
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
             >
-              <Link
-                to={item.path}
-                style={{
-                  color: "#212529",
-                  textDecoration: "none",
-                  margin: 0,
-                }}
-              >
-                <span style={{ marginRight: 10 }}>{item.icon}</span>
-                <span style={{ color: "white" }}>{item.label}</span>
-              </Link>
-            </div>
-          ))}
-        </nav>
+              <span className="menu-icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </NavLink>
+
+            {item.subMenu &&
+              isMenuOpen(item) &&
+              item.subMenu.map((sub, subIdx) => (
+                <NavLink
+                  key={subIdx}
+                  to={sub.path}
+                  className={({ isActive }) =>
+                    isActive ? "sub-menu-item active" : "sub-menu-item"
+                  }
+                >
+                  {sub.label}
+                </NavLink>
+              ))}
+          </div>
+        ))}
       </div>
     </aside>
   );

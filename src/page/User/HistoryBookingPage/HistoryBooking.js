@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./HistoryBooking.css";
+import styles from "./HistoryBooking.module.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import HistoryBookingDat from "../../../data/HistoryBooking.json";
 import Footer from "../../../components/FooterComponent/Footer";
@@ -14,10 +14,10 @@ const HistoryBooking = () => {
   return (
     <>
       <Header />
-      <div className="history-container">
+      <div className={styles.historyContainer}>
         <h2>Lịch sử khám bệnh</h2>
-        <div className="table-responsive">
-          <table className="history-table">
+        <div className={styles.tableResponsive}>
+          <table className={styles.historyTable}>
             <thead>
               <tr>
                 <th>STT</th>
@@ -47,7 +47,7 @@ const HistoryBooking = () => {
                   </td>
                   <td>{item.date}</td>
                   <td>{item.specialty}</td>
-                  <td className="status-done">
+                  <td className={styles.statusDone}>
                     <i class="fa-solid fa-circle-check"></i>
                   </td>
                 </tr>
@@ -58,10 +58,13 @@ const HistoryBooking = () => {
 
         {selectedInvoice && (
           <div
-            className="modal-overlay"
+            className={styles.modalOverlay}
             onClick={() => setSelectedInvoice(null)}
           >
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div
+              className={styles.modalContent}
+              onClick={(e) => e.stopPropagation()}
+            >
               <h3>Chi tiết hóa đơn</h3>
               <table>
                 <thead>
@@ -81,7 +84,7 @@ const HistoryBooking = () => {
                   ))}
                 </tbody>
               </table>
-              <p className="total">Tổng tiền: {selectedInvoice.total}</p>
+              <p className={styles.total}>Tổng tiền: {selectedInvoice.total}</p>
               <button onClick={() => setSelectedInvoice(null)}>Đóng</button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import Footer from "../../../components/FooterComponent/Footer";
 import { State } from "../../../state/context";
@@ -47,27 +47,27 @@ const Profile = () => {
   return (
     <>
       <Header />
-      <div className="profile-container">
+      <div className={styles.profileContainer}>
         {warning && (
-          <div className="done-searchSpecialty profile">
+          <div className={styles.profile}>
             <p style={{ margin: "0" }}>
               Nếu có thể hãy điền đầy đủ thông tin bên dưới để bác sĩ có thể nắm
               bắt được tình hình sức khỏe của bạn nhé!
             </p>
             <i
               style={{ margin: "0" }}
-              class="fa-solid fa-xmark close"
+              class={`fa-solid fa-xmark ${styles.close}`}
               onClick={() => setWarning(false)}
             ></i>
           </div>
         )}
-        <div className="profile-card">
+        <div className={styles.profileCard}>
           <h2>Hồ sơ cá nhân</h2>
-          <div className="wrapper-profile">
-            <div className="edit-image">
-              <img src={avatar} className="image-profile" />
+          <div className={styles.wrapperProfile}>
+            <div className={styles.editImage}>
+              <img src={avatar} className={styles.imageProfile} />
               <p
-                className="btn-edit"
+                className={styles.btnEdit}
                 onClick={() => document.getElementById("avatarInput").click()}
               >
                 {" "}
@@ -81,10 +81,12 @@ const Profile = () => {
                 onChange={handleImageChange}
               />
             </div>
-            <div className="infor-user-profile">
+            <div className={styles.inforUserProfile}>
               {Object.keys(profile).map((key) => (
-                <div className="profile-field" key={key}>
-                  <label className="name-field-profile">{getLabel(key)}</label>
+                <div className={styles.profileField} key={key}>
+                  <label className={styles.nameFieldProfile}>
+                    {getLabel(key)}
+                  </label>
                   {isEditing ? (
                     <input
                       type="text"
@@ -97,7 +99,7 @@ const Profile = () => {
                   )}
                 </div>
               ))}
-              <div className="profile-actions">
+              <div className={styles.profileActions}>
                 <button onClick={toggleEdit}>
                   {isEditing ? "Lưu thông tin" : "Chỉnh sửa"}
                 </button>

@@ -1,0 +1,14 @@
+[
+  { "month": "1", "revenue": 12000000, "department": "Nội tổng hợp" },
+  { "month": "2", "revenue": 15000000, "department": "Nội tổng hợp" },
+  { "month": "3", "revenue": 18000000, "department": "Ngoại khoa" },
+  { "month": "4", "revenue": 20000000, "department": "Ngoại khoa" },
+  { "month": "5", "revenue": 22000000, "department": "Sản khoa" },
+  { "month": "6", "revenue": 25000000, "department": "Sản khoa" },
+  { "month": "7", "revenue": 12000000, "department": "Nội tổng hợp" },
+  { "month": "8", "revenue": 15000000, "department": "Nội tổng hợp" },
+  { "month": "9", "revenue": 18000000, "department": "Ngoại khoa" },
+  { "month": "10", "revenue": 20000000, "department": "Ngoại khoa" },
+  { "month": "11", "revenue": 22000000, "department": "Sản khoa" },
+  { "month": "12", "revenue": 25000000, "department": "Sản khoa" }
+]

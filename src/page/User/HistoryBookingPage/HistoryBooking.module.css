@@ -1,4 +1,4 @@
-.history-container {
+.historyContainer {
     padding: 20px;  
     width: 100%;
     max-width: 1340px;
@@ -11,34 +11,34 @@ h2 {
     margin-bottom: 20px;
 }
 
-.table-responsive {
+.tableResponsive {
     width: 100%;
     overflow-x: auto;
 }
 
-.history-table {
+.historyTable {
     width: 100%;
     border-collapse: collapse;
 }
-.table-responsive::-webkit-scrollbar{
+.tableResponsive::-webkit-scrollbar{
     display: none !important;
 }
-.history-table th,
-.history-table td {
+.historyTable th,
+.historyTable td {
     padding: 12px 15px;
     text-align: left;
     white-space: nowrap;
 }
-.history-table tr:hover{
+.historyTable tr:hover{
     background-color: #fbf7f7;
 }
-.history-table thead {
+.historyTable thead {
     border: 1px solid #2469df;
     border-radius: 10px;
     color: black;
 }
 
-.history-table tbody tr:nth-child(even) {
+.historyTable tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
 .fa-eye{
@@ -46,12 +46,12 @@ h2 {
     cursor: pointer;
 }
 
-.status-done {
+.statusDone {
     color: green;
 }
 
 
-.modal-overlay {
+.modalOverlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@ h2 {
     z-index: 999;
 }
 
-.modal-content {
+.modalContent {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -73,24 +73,24 @@ h2 {
     animation: slideDown 0.3s ease;
 }
 
-.modal-content table {
+.modalContent table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.modal-content th,
-.modal-content td {
+.modalContent th,
+.modalContent td {
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
 
-.modal-content .total {
+.modalContent .total {
     margin-top: 15px;
     font-weight: bold;
     color: #dc3545;
 }
 
-.modal-content button {
+.modalContent button {
     background: #007bff;
     color: white;
     padding: 8px 15px;
@@ -114,13 +114,13 @@ h2 {
 
 @media (max-width: 768px) {
 
-    .history-table th,
-    .history-table td {
+    .historyTable th,
+    .historyTable td {
         font-size: 14px;
         padding: 8px;
     }
 
-    .modal-content {
+    .modalContent {
         padding: 15px;
     }
 }

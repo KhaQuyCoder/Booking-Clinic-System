@@ -1,0 +1,12 @@
+[
+  { "month": "01/2025", "visits": 120, "department": "Nội tổng quát" },
+  { "month": "02/2025", "visits": 150, "department": "Nội tổng quát" },
+  { "month": "03/2025", "visits": 90,  "department": "Nhi khoa" },
+  { "month": "04/2025", "visits": 170, "department": "Nhi khoa" },
+  { "month": "05/2025", "visits": 200, "department": "Tim mạch" },
+  { "month": "06/2025", "visits": 220, "department": "Tim mạch" },
+  { "month": "07/2025", "visits": 140, "department": "Tai Mũi Họng" },
+  { "month": "08/2025", "visits": 180, "department": "Tai Mũi Họng" },
+  { "month": "09/2025", "visits": 210, "department": "Ngoại khoa" },
+  { "month": "10/2025", "visits": 190, "department": "Ngoại khoa" }
+]

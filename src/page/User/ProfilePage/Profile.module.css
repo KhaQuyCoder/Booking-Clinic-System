@@ -1,22 +1,22 @@
-.profile-container {
+.profileContainer {
   width: 100%;
   max-width: 1340px;
   margin-top: 100px;
   padding: 20px;
 }
 
-.wrapper-profile {
+.wrapperProfile {
   display: flex;
   column-gap: 50px;
   width: 100%;
 }
 
-.profile-container h2 {
+.profileContainer h2 {
   margin-bottom: 20px;
   color: #2469df;
 }
 
-.image-profile {
+.imageProfile {
   margin: 0;
   width: 300px;
   height: 300px;
@@ -24,19 +24,19 @@
   object-fit: cover;
 }
 
-.infor-user-profile {
+.inforUserProfile {
   margin: 0;
   width: 100%;
 }
 
-.profile-card {
+.profileCard {
   background: #fff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.profile-field {
+.profileField {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -45,31 +45,30 @@
   border-bottom: 1px solid rgb(241, 239, 239);
 }
 
-.profile-field label {
+.profileField label {
   font-weight: bold;
   color: #333;
   width: 40%;
 }
 
-.profile-field p,
-.profile-field input {
+.profileField p,
+.profileField input {
   width: 55%;
   border: none;
   outline: none;
   padding: 5px;
   font-size: 16px;
 }
-
-.profile-field input {
+.profileField input {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
 
-.profile-actions {
+.profileActions {
   margin-top: 20px;
 }
 
-.profile-actions button {
+.profileActions button {
   background: #2469df;
   color: white;
   border: none;
@@ -79,16 +78,16 @@
   font-size: 16px;
 }
 
-.profile-actions button:hover {
+.profileActions button:hover {
   background: #1a4fb5;
 }
 
-.edit-image {
+.editImage {
   height: max-content;
   position: relative;
 }
 
-.btn-edit {
+.btnEdit {
   position: absolute;
   border: 1px solid black;
   padding: 7px;
@@ -108,25 +107,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #b8f9d5;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
 }
 .close{
   float: inline-end;
   cursor: pointer;
 }
 @media (max-width: 700px) {
-  .profile-field {
+  .profileField {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .profile-field label,
-  .profile-field p,
-  .profile-field input {
+  .profileField label,
+  .profileField p,
+  .profileField input {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  .wrapper-profile {
+  .wrapperProfile {
     flex-wrap: wrap;
   }
 }

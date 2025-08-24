@@ -142,7 +142,9 @@ const MNSpecialty = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className={styles.searchInput}
           />
-          <span className={styles.searchIcon}>🔍</span>
+          <span className={styles.searchIcon}>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
         </div>
 
         <button className={styles.addButton} onClick={() => setShowForm(true)}>

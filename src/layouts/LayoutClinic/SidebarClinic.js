@@ -14,8 +14,8 @@ const SidebarClinic = ({ children }) => {
     { icon: "📰", label: "Cập nhật tin tức", path: "/clinic/NewsEditor" },
     { icon: "📋", label: "Quản lý chuyên khoa", path: "/clinic/specialty" },
     { icon: "📈", label: "Thống kê báo cáo", path: "/clinic/statistical" },
-    { icon: "🔑", label: "Đổi mật khẩu", path: "/clinic/doi-mat-khau" },
     { icon: "👤", label: "Profile", path: "/clinic/profile" },
+    { icon: "🔑", label: "Đổi mật khẩu", path: "/clinic/doi-mat-khau" },
     { icon: "↩️", label: "Đăng xuất", path: "/login" },
   ];
 
@@ -29,7 +29,7 @@ const SidebarClinic = ({ children }) => {
           display: "flex",
           flexDirection: "column",
           position: "relative",
-          left: "20%",
+          left: "19%",
           maxWidth: "80%",
         }}
       >
@@ -39,6 +39,7 @@ const SidebarClinic = ({ children }) => {
             flexGrow: 1,
             padding: "20px",
             background: "#f9f9f9",
+            marginTop: "50px",
           }}
         >
           {children}
