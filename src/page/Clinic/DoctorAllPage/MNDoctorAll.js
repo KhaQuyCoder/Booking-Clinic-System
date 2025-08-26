@@ -63,12 +63,6 @@ const MNDoctorAll = () => {
               <td>{data.HocHam}</td>
               <td>
                 <button
-                  className={styles.btnAction}
-                  onClick={() => handleViewDoctor(data.idDocter)}
-                >
-                  <i className="fa-solid fa-pen"></i>
-                </button>
-                <button
                   className={styles.btnDelete}
                   onClick={() => handleDeleteDoctor(data.idDocter)}
                 >

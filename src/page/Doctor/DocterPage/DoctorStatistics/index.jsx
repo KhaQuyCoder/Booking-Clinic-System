@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   ResponsiveContainer,
   BarChart,
@@ -18,7 +18,12 @@ const DoctorStatistics = () => {
   const handleFilter = (filtered) => {
     setFilteredData(filtered);
   };
-
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
   return (
     <div className="statistics-container">
       <FilterSection data={statisticsData} onFilter={handleFilter} />

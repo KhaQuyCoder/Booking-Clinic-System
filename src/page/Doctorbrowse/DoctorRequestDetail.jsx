@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./Clinicpage.module.css";
+import styles from "../Clinicbrowse/Clinicpage.module.css";
 
-const ClinicRequestDetails = ({ request, onClose }) => {
+const Doctorbrowses = ({ request, onClose }) => {
   const formatDate = (dateString) => {
     if (!dateString) return "Chưa cập nhật";
     const date = new Date(dateString);
@@ -36,9 +35,9 @@ const ClinicRequestDetails = ({ request, onClose }) => {
 
   return (
     <div className={styles.modalOverlay}>
-      <div className={`${styles.modal} ${styles.modalClinic}`}>
+      <div className={styles.modal}>
         <div className={styles.modalHeader}>
-          <h2>Chi tiết yêu cầu đăng ký phòng khám</h2>
+          <h2>Chi tiết yêu cầu đăng ký bác sĩ</h2>
           <button className={styles.closeButton} onClick={onClose}>
             &times;
           </button>
@@ -49,18 +48,16 @@ const ClinicRequestDetails = ({ request, onClose }) => {
               <h3 className={styles.sectionTitle}>Thông tin cơ bản</h3>
               <div className={styles.infoGrid}>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>ID Phòng khám:</span>
+                  <span className={styles.infoLabel}>ID Bác sĩ:</span>
                   <span className={styles.infoValue}>{request.id}</span>
                 </div>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Tên phòng khám:</span>
+                  <span className={styles.infoLabel}>Tên Bác sĩ:</span>
                   <span className={styles.infoValue}>{request.name}</span>
                 </div>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>
-                    Loại hình phòng khám:
-                  </span>
-                  <span className={styles.infoValue}>{request.type}</span>
+                  <span className={styles.infoLabel}>Giới tính:</span>
+                  <span className={styles.infoValue}>{request.gender}</span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Mô tả ngắn:</span>
@@ -69,22 +66,24 @@ const ClinicRequestDetails = ({ request, onClose }) => {
                   </span>
                 </div>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Ngày thành lập:</span>
+                  <span className={styles.infoLabel}>Ngày sinh:</span>
                   <span className={styles.infoValue}>
-                    {formatDate(request.establishmentDate)}
+                    {request.dateofbirth}
                   </span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Địa chỉ cụ thể:</span>
-                  <span className={styles.infoValue}>{request.address}</span>
+                  <span className={styles.infoValue}>{request.hometown}</span>
                 </div>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Xã/Phường:</span>
-                  <span className={styles.infoValue}>{request.ward}</span>
+                  <span className={styles.infoLabel}>Học hàm:</span>
+                  <span className={styles.infoValue}>
+                    {request.academictitle}
+                  </span>
                 </div>
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Tỉnh/Thành phố:</span>
-                  <span className={styles.infoValue}>{request.city}</span>
+                  <span className={styles.infoLabel}>Chuyên khoa:</span>
+                  <span className={styles.infoValue}>{request.specialty}</span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Số điện thoại:</span>
@@ -118,19 +117,15 @@ const ClinicRequestDetails = ({ request, onClose }) => {
               <div className={styles.infoGrid}>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Số giấy phép:</span>
-                  <span className={styles.infoValue}>
-                    {request.licenseNumber}
-                  </span>
+                  <span className={styles.infoValue}>{request.idnumber}</span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Ngày cấp:</span>
-                  <span className={styles.infoValue}>
-                    {formatDate(request.issueDate)}
-                  </span>
+                  <span className={styles.infoValue}>{request.dateofid}</span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Nơi cấp:</span>
-                  <span className={styles.infoValue}>{request.issuePlace}</span>
+                  <span className={styles.infoValue}>{request.placeofid}</span>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Tệp đính kèm:</span>
@@ -151,32 +146,6 @@ const ClinicRequestDetails = ({ request, onClose }) => {
                 </div>
               </div>
             </div>
-
-            <div className={styles.infoSection}>
-              <h3 className={styles.sectionTitle}>Thông tin người đại diện</h3>
-              <div className={styles.infoGrid}>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Tên người đại diện:</span>
-                  <span className={styles.infoValue}>
-                    {request.representative}
-                  </span>
-                </div>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>
-                    Số điện thoại cá nhân:
-                  </span>
-                  <span className={styles.infoValue}>
-                    {request.representativePhone}
-                  </span>
-                </div>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>
-                    Tên tài khoản/Email quản trị:
-                  </span>
-                  <span className={styles.infoValue}>{request.adminEmail}</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className={styles.modalFooter}>
@@ -189,4 +158,4 @@ const ClinicRequestDetails = ({ request, onClose }) => {
   );
 };
 
-export default ClinicRequestDetails;
+export default Doctorbrowses;

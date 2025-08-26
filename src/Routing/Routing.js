@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Clinicbrowses } from "../page/Clinicbrowse/Clinicbrowses";
 import { Detailclinicbrowse } from "../page/Detailclinicbrowse/Detailclinicbrowse";
@@ -14,11 +13,19 @@ import { Fixpackage } from "../page/package/Fixpackage/Fixpackage";
 import { Changepassword } from "../page/Changepassword/Changepassword";
 import { UserProfile } from "../page/profile/Userprofile";
 import Statistical from "../page/statistical/Statistical";
+import SidebarAdmin from "../layouts/Sidebar/Sidebar";
 
 function Routing() {
   return (
     <Routes>
-      <Route path="/admin" element={<Statistical />} />
+      <Route
+        path="/admin"
+        element={
+          <SidebarAdmin>
+            <Statistical />
+          </SidebarAdmin>
+        }
+      />
       <Route path="/account/userprofile" element={<UserProfile />} />
       <Route path="/duyet-phong-kham" element={<Clinicbrowses />} />
       <Route

@@ -4,10 +4,11 @@ import styles from "../PatientManagement.module.css";
 const AddPatientForm = ({ onSave, onCancel }) => {
   const [formData, setFormData] = useState({
     patientName: "",
-    age: "Nam",
+    gender: "" || "Nam",
     phone: "",
     date: "",
     address: "",
+    age: "",
   });
 
   const handleInputChange = (e) => {
@@ -44,7 +45,7 @@ const AddPatientForm = ({ onSave, onCancel }) => {
             <label className={styles.label}>Giới tính</label>
             <select
               name="gender"
-              value={formData.age}
+              value={formData.gender}
               onChange={handleInputChange}
               className={styles.select}
             >
@@ -83,6 +84,16 @@ const AddPatientForm = ({ onSave, onCancel }) => {
               type="text"
               name="address"
               value={formData.address}
+              onChange={handleInputChange}
+              className={styles.input}
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label className={styles.label}>Tuổi</label>
+            <input
+              type="number"
+              name="age"
+              value={formData.age}
               onChange={handleInputChange}
               className={styles.input}
             />

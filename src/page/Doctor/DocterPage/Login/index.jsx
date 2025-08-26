@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import ForgotPassword from "./../ForgotPassword";
 import { State } from "../../../../state/context";
 
 import iconLogin from "../../../../assets/image/login.png";
@@ -19,7 +18,6 @@ const Login = () => {
 
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-  const [showForgot, setShowForgot] = useState(false);
 
   const handleLogin = () => {
     const foundAccount = accounts.find(
@@ -63,66 +61,51 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container" style={{ backgroundImage: `url(${bcg})` }}>
+    <div className="login-container">
       <img className="bcg-login" src={bcg} alt="bcg" />
       <div className="wrapper-container">
-        {!showForgot ? (
-          <>
-            <div className="login-image">
-              <img src={iconLogin} alt="Doctors" />
-            </div>
+        <div className="login-image">
+          <img src={iconLogin} alt="Doctors" />
+        </div>
 
-            <div className="login-box">
-              <div className="logo-box">
-                <img className="logo" src={iconLogo} alt="Logo" />
-              </div>
+        <div className="login-box">
+          <div className="logo-box">
+            <img className="logo" src={iconLogo} alt="Logo" />
+          </div>
 
-              <input
-                type="text"
-                placeholder="Số điện thoại"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+          <input
+            type="text"
+            placeholder="Số điện thoại"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Mật khẩu"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <button onClick={handleLogin}>Đăng nhập</button>
+
+          <div className="links">
+            <a href="/forgotPassword">Quên mật khẩu?</a> |{" "}
+            <a href="/register">Đăng ký?</a>
+          </div>
+          <div className="social-login">
+            <span>Hoặc đăng nhập bằng</span>
+            <div className="social-icons">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
               />
-              <input
-                type="password"
-                placeholder="Mật khẩu"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                alt="Google"
               />
-
-              <button onClick={handleLogin}>Đăng nhập</button>
-
-              <div className="links">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setShowForgot(true);
-                  }}
-                >
-                  Quên mật khẩu?
-                </a>{" "}
-                | <a href="#">Đăng ký?</a>
-              </div>
-
-              <div className="social-login">
-                <span>Hoặc đăng nhập bằng</span>
-                <div className="social-icons">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                    alt="Facebook"
-                  />
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                    alt="Google"
-                  />
-                </div>
-              </div>
             </div>
-          </>
-        ) : (
-          <ForgotPassword onBack={() => setShowForgot(false)} />
-        )}
+          </div>
+        </div>
       </div>
     </div>
   );

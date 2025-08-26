@@ -1,8 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import { useContext, useEffect, useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-
 import "./App.css";
+
 // User
 import Home from "./page/User/HomePage/Home";
 import { State } from "./state/context";
@@ -13,7 +14,6 @@ import Blog from "./page/User/BlogPage/Blog";
 import Security from "./page/User/SecurityPage/Security";
 import Confirm from "./page/User/ConfirmPage/Confirm";
 import DetailClinic from "./page/User/DetailPage/DetailClinic";
-import { useContext, useEffect, useState } from "react";
 import Opacity from "./components/OpacityComponent/Opacity";
 import NotFound from "./components/NotFoundComponent/NotFound";
 import Booking from "./page/User/BookingPage/Booking";
@@ -46,10 +46,7 @@ import OnlineConsult from "./page/Doctor/DocterPage/OnlineConsult/index";
 import ForgotPassword from "./page/Doctor/DocterPage/ForgotPassword/index";
 import { PatientProvider } from "./context/patientContext";
 
-// Admin
-import { Routing } from "./Routing/Routing";
-import { Header } from "./layouts/header/Header";
-import { Sidebar } from "./layouts/Sidebar/Sidebar";
+// Clinic
 import { CommonProvider } from "./components/CommonContext";
 import SidebarClinic from "./layouts/LayoutClinic/SidebarClinic";
 import CreateDoctor from "./page/Clinic/CreateDoctorPage/CreateDoctor";
@@ -59,15 +56,29 @@ import NotificationEditor from "./page/Clinic/NotificationPage/NotificationEdite
 import NewsEditor from "./page/Clinic/NewEditerPage/NewsEditor.js";
 import UpdateClinic from "./page/Clinic/UpdateClinicPage/UpdateClinic.js";
 import Statistics from "./page/Clinic/StatisticalPage/Statistical.js";
-import { Changepassword } from "./page/Changepassword/Changepassword.jsx";
+import Changepassword from "./page/Changepassword/Changepassword.jsx";
 import MNSpecialty from "./page/Clinic/MNSpecialtyPage/MNSpecialty.js";
 import ClinicView from "./page/Clinic/ProfileClinicPage/ClinicView.js";
+
+// admin system
+import Clinicbrowses from "./page/Clinicbrowse/Clinicbrowses";
+import Doctorbrowses from "./page/Doctorbrowse/Doctorbrowses";
+import Clinicmanagers from "./page/Clinicmanager/Clinicmanagers";
+import Createpackage from "./page/package/createpackage/Createpackage";
+import UserProfile from "./page/profile/Userprofile";
+import Statistical from "./page/statistical/Statistical";
+import SidebarAdmin from "./layouts/Sidebar/Sidebar.jsx";
+import Registration from "./page/Doctor/DocterPage/Regester/Registration.js";
 
 function App() {
   const { valueText, roleLocal } = useContext(State);
   const [role, setRole] = useState(roleLocal);
   useEffect(() => {
     const savedRole = roleLocal || JSON.parse(localStorage.getItem("role"));
+    if (!savedRole) {
+      localStorage.setItem("role", JSON.stringify("doctor"));
+      setRole(JSON.parse(localStorage.getItem("role")));
+    }
     setRole(savedRole);
     if (savedRole === "user") {
       import("./userOnly.css");
@@ -83,6 +94,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/forgotPassword" element={<ForgotPassword />} />
+            <Route path="/register" element={<Registration />} />
+
             {/* User */}
             {role === "user" && (
               <>
@@ -127,23 +141,7 @@ function App() {
                     path="/doctor/schedule"
                     element={<ScheduleAppointment />}
                   />
-                  <Route
-                    path="/doctor/detail"
-                    element={<PatientManagementv2 />}
-                  />
-                  <Route path="detail/:id" element={<PatientDetail />} />
-                  <Route path="doctor/PatientEdit" element={<PatientEdit />} />
-                  <Route path="PatientEdit/:id" element={<PatientEdit />} />
                   <Route path="/doctor/View" element={<ViewMedicalRecords />} />
-
-                  <Route
-                    path="/doctor/MedicalHistory"
-                    element={<MedicalHistory />}
-                  />
-                  <Route
-                    path="MedicalHistory/:id"
-                    element={<MedicalHistory />}
-                  />
                   <Route
                     path="/doctor/Accept"
                     element={<AcceptMedicalAppointment />}
@@ -170,26 +168,84 @@ function App() {
                 <Route path="/*" element={<NotFound />} />
               </>
             )}
-            {/* Admin */}
+            {/* Admin system*/}
             {role === "admin" && (
               <>
                 <Route
-                  path="/*"
+                  path="/admin"
                   element={
-                    <div className="App">
-                      <Sidebar />
-                      <div className="main-layout">
-                        <Header />
-                        <div className="content">
-                          <Routing />
-                        </div>
-                      </div>
-                    </div>
+                    <SidebarAdmin>
+                      <Statistical />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/profile"
+                  element={
+                    <SidebarAdmin>
+                      <UserProfile />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/duyet-phong-kham"
+                  element={
+                    <SidebarAdmin>
+                      <Clinicbrowses />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/duyet-bac-si"
+                  element={
+                    <SidebarAdmin>
+                      <Doctorbrowses />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/quan-ly-phong-kham"
+                  element={
+                    <SidebarAdmin>
+                      <Clinicmanagers />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/viet-thong-bao"
+                  element={
+                    <SidebarAdmin>
+                      <NotificationEditor />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/quan-ly-goi/tao-goi"
+                  element={
+                    <SidebarAdmin>
+                      <Createpackage />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/thong-ke-bao-cao"
+                  element={
+                    <SidebarAdmin>
+                      <Statistical />
+                    </SidebarAdmin>
+                  }
+                />
+                <Route
+                  path="/doi-mat-khau"
+                  element={
+                    <SidebarAdmin>
+                      <Changepassword />
+                    </SidebarAdmin>
                   }
                 />
               </>
             )}
-
+            {/* clinic */}
             {role === "clinic" && (
               <>
                 <Route

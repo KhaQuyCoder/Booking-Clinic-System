@@ -6,9 +6,27 @@ const Layout = () => {
   const menuItems = [
     { icon: "👥", label: "Quản lý bệnh nhân", path: "/doctor/Patients" },
     { icon: "📅", label: "Lập lịch khám", path: "/doctor/schedule" },
-    { icon: "✔️", label: "Duyệt yêu cầu khám", path: "/doctor/View" },
-    { icon: "💬", label: "Trả lời hỏi đáp", path: "/doctor/QnA" },
-    { icon: "💻", label: "Khám online", path: "/doctor/OnlineConsult" },
+    {
+      icon: "✔️",
+      label: "Duyệt yêu cầu khám",
+      path: "/doctor/View",
+      index: true,
+      noti: 3,
+    },
+    {
+      icon: "💬",
+      label: "Trả lời hỏi đáp",
+      path: "/doctor/QnA",
+      index: true,
+      noti: 4,
+    },
+    {
+      icon: "💻",
+      label: "Khám online",
+      path: "/doctor/OnlineConsult",
+      index: true,
+      noti: 2,
+    },
     { icon: "🧾", label: "Lập hóa đơn", path: "/doctor/Invoice" },
     {
       icon: "📊",
@@ -34,7 +52,14 @@ const Layout = () => {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      <Sidebar menuItems={menuItems} name={"Bác sĩ"} />
+      <Sidebar
+        role={"Nguyễn Hữu Cảnh"}
+        menuItems={menuItems}
+        name={"Bác sĩ"}
+        urlimage={
+          "https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
+        }
+      />
       <div
         style={{
           flexGrow: 1,
@@ -45,7 +70,11 @@ const Layout = () => {
           maxWidth: "80%",
         }}
       >
-        <Header />
+        <Header
+          urlImage={
+            "https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
+          }
+        />
         <div
           style={{
             flexGrow: 1,

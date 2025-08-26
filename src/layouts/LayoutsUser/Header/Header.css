@@ -1,74 +1,75 @@
-.main-home{
-    position: relative;
-    overflow-x: hidden;
-    z-index: 999999;
-    height: max-content;
+.main-home {
+  position: relative;
+  overflow-x: hidden;
+  z-index: 999999;
+  height: max-content;
 }
-.custom-container{
-    font-family: 'Inter';
-    position: fixed;
-    top:0;
-    z-index: 99999;
+.custom-container {
+  font-family: "Inter";
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
-.bcg-Header{
-    height: 100px;
+.bcg-Header {
+  height: 100px;
 }
-.imageHeader{
-    width: 100vw;
-    height: 90px;
+.imageHeader {
+  width: 100vw;
+  height: 90px;
 }
-.logo-header{
-    cursor: pointer;
+.logo-header {
+  cursor: pointer;
 }
-.menuHeader{
-    position: relative;
-    display: flex;
-    align-items: center;
-    max-width: 1600px;
-    transform: translateY(-85px);
+.menuHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  transform: translateY(-85px);
 }
-.Option-Header{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+.Option-Header {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
-.Option-Header > li{
-    padding: 0 10px;
-    cursor: pointer;
-    font-size: 15px;
+.Option-Header > li {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
-.Option-Header > li:hover{
-    color: #ffff;
+.Option-Header > li:hover {
+  color: #ffff;
 }
-.Search-Header{
-    position: relative;
-    height: max-content;
-    margin-top: 6px;
-    z-index: 99999999999999;
+.Search-Header {
+  position: relative;
+  height: max-content;
+  margin-top: 6px;
+  z-index: 99999999999999;
 }
-.custom-Search-Header-text{
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-    color: #6C757D;
-    min-width: 73%;
-    margin-left: 10px;
+.custom-Search-Header-text {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: #6c757d;
+  width: 73%;
+  margin-left: 10px;
 }
-.custom-text-Input,.fa-magnifying-glass{
-    position: absolute;
-    top: 25%;
-    padding-left: 20px;
-    color: #6C757D;
-    font-size: 15px;
+.custom-text-Input,
+.fa-magnifying-glass {
+  position: absolute;
+  top: 25%;
+  padding-left: 20px;
+  color: #6c757d;
+  font-size: 15px;
 }
-.fa-magnifying-glass{
-    right: 28%;
-    cursor: pointer;
-    margin-top: 2px;
+.fa-magnifying-glass {
+  right: 28%;
+  cursor: pointer;
+  margin-top: 2px;
 }
-.Option-Address{
+.Option-Address {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -87,101 +88,110 @@
   cursor: pointer;
 }
 select.Option-Address::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
-.fa-bars{
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+.fa-bars {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
 }
 
-@media (max-width: 500px){
-   .Option-Header{
-        display: none;
-    }
-    .logo-header{
-        width: 80px;
-    }
-   .fa-bars{
-        display: block;
-        font-size: 20px;
-        margin-left: 30px;
-    }
-    .menuHeader{
-        margin-top: 10px;
-    }
-    .Search-Header-text,
-    .custom-text-Input,
-    .fa-magnifying-glass{
-        display: none;
-    }
+@media (max-width: 500px) {
+  .Option-Header {
+    display: none;
+  }
+  .logo-header {
+    width: 80px;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .menuHeader {
+    margin-top: 10px;
+  }
+  .Search-Header-text,
+  .custom-text-Input,
+  .fa-magnifying-glass {
+    display: none;
+  }
 }
 @media (min-width: 501px) and (max-width: 840px) {
-    .menuHeader{
-        padding: 0 20px;
-    }
-   .Option-Header,.custom-text-Input,.custom-Search-Header-text,.fa-magnifying-glass{
-        display: none;
-    }
-   .fa-bars{
-        display: block;
-        font-size: 20px;
-        margin-left: 30px;
-    }
-    .Search-Header-text{
-        width: 100%;
-        margin-left: 0px;
-    }
-   .Option-Address{
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 6px;
-    }
-   .System-Option-Header{
-        width: 100px;
-    }
-   .Search-Header{
-        margin: 0 30px;
-    }
-
-}
-@media (max-width:1050px) {
-    .Option-Header,.custom-Search-Header-text,.fa-magnifying-glass,.custom-text-Input{
-        display: none;
-    }
-    .fa-bars{
-        display: block;
-        font-size: 20px;
-        margin-left: 30px;
-    }
-}
-@media (min-width:841px) and (max-width:1023px) {
-    .menuHeader{
-        padding: 0 20px;
-   }
-   .logo-header{
-        width: 100px;
-   }
-   .Option-Header > li{
-        width: max-content;
-   }
-   .System-Option-Header{
-        display: flex;flex-direction: column;row-gap: 5px;
-   }
-   .custom-text-Input{
+  .menuHeader {
+    padding: 0 20px;
+  }
+  .Option-Header,
+  .custom-text-Input,
+  .custom-Search-Header-text,
+  .fa-magnifying-glass {
     display: none;
-   }
+  }
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .Search-Header-text {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .Option-Address {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 6px;
+  }
+  .System-Option-Header {
+    width: 100px;
+  }
+  .Search-Header {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 1050px) {
+  .Option-Header,
+  .custom-Search-Header-text,
+  .fa-magnifying-glass,
+  .custom-text-Input {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 841px) and (max-width: 1023px) {
+  .menuHeader {
+    padding: 0 20px;
+  }
+  .logo-header {
+    width: 100px;
+  }
+  .Option-Header > li {
+    width: max-content;
+  }
+  .System-Option-Header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .custom-text-Input {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .Option-Header > li{
+  .Option-Header > li {
     width: max-content;
-   }
-   .System-Option-Header{
-        display: flex;flex-direction: column;row-gap: 5px;
-   }
-   .menuHeader{
-        padding: 0 20px;
-   }
+  }
+  .System-Option-Header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .menuHeader {
+    padding: 0 20px;
+  }
 }

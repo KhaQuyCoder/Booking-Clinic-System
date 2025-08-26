@@ -1,43 +1,43 @@
 .container-confirm {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgae-confirm {
-    width: 600px;
+  width: 600px;
 }
 
 .name-confirm {
-    color: #2469df;
-    font-size: 4rem;
-    max-width: 600px;
+  color: #2469df;
+  font-size: 4rem;
+  max-width: 600px;
 }
 
 .next-confirm {
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #2469df;
-    margin: 20px 0;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #2469df;
+  margin: 20px 0;
 }
 
 .next-confirm:hover {
-    color: #ffff;
+  color: #ffff;
 }
 
 @media screen and (max-width: 1201px) {
-    .imgae-confirm {
-        width: 400px;
-    }
-    .container-confirm{
-        padding: 0 40px;
-    }
-    .name-confirm {
-        font-size: 3rem;
-    }
-
+  .imgae-confirm {
+    width: 400px;
+  }
+  .container-confirm {
+    padding: 0 40px;
+  }
+  .name-confirm {
+    font-size: 3rem;
+  }
 }

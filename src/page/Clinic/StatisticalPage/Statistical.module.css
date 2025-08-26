@@ -1,6 +1,5 @@
 .page {
   min-height: 100vh;
-  background: #f9fafb;
 }
 
 .title {
@@ -20,7 +19,7 @@
   background: white;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s;
 }
 

@@ -1,0 +1,162 @@
+:root {
+  --bg: black;
+  --card: black;
+  --accent: #6ee7b7;
+  --muted: black;
+  --glass: black;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  z-index: 999999999999999;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.card {
+  background-color: #fff;
+  width: 380px;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.2px;
+}
+
+.subtitle {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  outline: none;
+  color: black;
+  font-size: 14px;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.nextBtn {
+  margin-top: 6px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #1e73e8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.18);
+}
+
+.nextBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 6px;
+  background: rgba(255, 69, 58, 0.08);
+  color: #ff8b84;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.otpWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.otpInputs {
+  display: flex;
+  gap: 8px;
+}
+
+.otp {
+  font-size: 22px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.verifyBtn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #1e73e8;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resendBtn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+}
+
+.backLink {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.small {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .card {
+    width: 92%;
+    padding: 20px;
+  }
+  .otp {
+    width: 40px;
+    height: 48px;
+  }
+}

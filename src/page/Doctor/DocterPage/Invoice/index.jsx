@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import styles from "./Invoice.module.css";
 
 const emptyItem = {
@@ -36,7 +36,12 @@ const PrescriptionInvoice = () => {
     address: "456 Trần Hưng Đạo, Q.1, TP.HCM",
     patientId: "BN-2025-0123",
   });
-
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
   const [items, setItems] = useState([
     {
       ...emptyItem,

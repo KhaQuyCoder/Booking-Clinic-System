@@ -1,11 +1,12 @@
 .login-container {
-  position: relative;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
   display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  column-gap: 200px;
+  height: 100vh;
 }
-.bcg-login{
+.bcg-login {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -14,17 +15,16 @@
   right: 0;
   bottom: 0;
 }
-.wrapper-container{
+.wrapper-container {
   height: 100vh;
-  width: 100%;
   position: absolute;
   z-index: 999999999999;
   display: flex;
-  column-gap: 300px;
+  column-gap: 300px !important;
   align-items: center;
   justify-content: center;
 }
-.login-image  {
+.login-image {
   width: 380px;
   z-index: 999999999999999999;
 }
@@ -33,13 +33,15 @@
   background: #fff;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.7);
   width: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 9999999999;
 }
 
 .login-box img.logo {
@@ -104,7 +106,7 @@
   margin-top: 10px;
   gap: 15px;
 }
-.social-icons > img{
+.social-icons > img {
   margin: 0;
 }
 .login-box .social-icons img {
@@ -117,9 +119,8 @@
 .login-box .social-icons img:hover {
   transform: scale(1.1);
 }
-@media (max-width:950px){
-  .login-image{
-
+@media (max-width: 950px) {
+  .login-image {
     display: none;
   }
 }

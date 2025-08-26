@@ -1,44 +1,150 @@
-import React from "react";
-import { FaFileAlt, FaCheckCircle } from "react-icons/fa";
-import './Listbrowseclinic.css';
-import { Commontable } from "../../components/table/Commontable";
-import { FaCircleXmark } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
-import { useCommon } from "../../components/CommonContext";
+import styles from "./Listbrowseclinic.module.css";
 
-function Listbrowseclinic() {
-    const navigate = useNavigate();
-    const {clinics, approveClinic, rejectClinic} = useCommon();
+const ClinicRequestTable = ({
+  requests,
+  onApprove,
+  onReject,
+  onViewDetails,
+  currentPage,
+  totalPages,
+  setCurrentPage,
+}) => {
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("vi-VN");
+  };
 
-    const handleApprove = (id) => {
-        approveClinic(id);
-    };
-    const handleReject = (id) => {
-        const confirmDelete = window.confirm("Bạn có chắc muốn từ chối phòng khám này?");
-        if (confirmDelete) {
-            rejectClinic(id);
-        }
-    };
-    const handleReview = (clinic) => {
-        navigate(`/duyet-phong-kham/thong-tin-phong-kham/${clinic.id}`, { state: { clinic } });
-    };
+  const getStatusText = (status) => {
+    switch (status) {
+      case "pending":
+        return "Chờ duyệt";
+      case "approved":
+        return "Đã duyệt";
+      case "rejected":
+        return "Đã từ chối";
+      default:
+        return status;
+    }
+  };
 
-    const columnsClinic = [
-        { name: "ID phòng khám", key: 'id' },
-        { name: "Tên phòng khám", key: 'name' },
-        { name: "Loại hình phòng khám", key: 'type' },
-        { name: "Vai trò", key: 'role' },
-        { name: "Thời gian gửi", key: 'timesent' },
-    ];
-    const actions = [
-        (clinic) => <FaFileAlt title="Xem chi tiết" className="iconf" onClick={() => handleReview(clinic)} />,
-        (clinic) => <FaCheckCircle title="Duyệt" className="iconf" onClick={() => handleApprove(clinic.id)} />,
-        (clinic) => <FaCircleXmark title="Từ chối" className="iconf" onClick={() => handleReject(clinic.id)} />,
-    ];
-    return (
-        <div>
-            <Commontable columns={columnsClinic} data={clinics} actions={actions} />
-        </div>
-    );
-}
-export { Listbrowseclinic };
+  const getStatusClass = (status) => {
+    switch (status) {
+      case "pending":
+        return styles.statusPending;
+      case "approved":
+        return styles.statusApproved;
+      case "rejected":
+        return styles.statusRejected;
+      default:
+        return "";
+    }
+  };
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  return (
+    <>
+      <div className={styles.tableContainer}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>ID Phòng khám</th>
+              <th>Tên phòng khám</th>
+              <th>Người đại diện</th>
+              <th>Loại phòng khám</th>
+              <th>Địa chỉ</th>
+              <th>Ngày đăng ký</th>
+              <th>Trạng thái</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            {requests.length > 0 ? (
+              requests.map((request) => (
+                <tr key={request.id}>
+                  <td>
+                    <span className={styles.clinicId}>{request.id}</span>
+                  </td>
+                  <td>
+                    <div className={styles.clinicName}>{request.name}</div>
+                  </td>
+                  <td>{request.representative}</td>
+                  <td>{request.type}</td>
+                  <td>
+                    <div className={styles.address}>{request.address}</div>
+                  </td>
+                  <td>{formatDate(request.registrationDate)}</td>
+                  <td>
+                    <span
+                      className={`${styles.status} ${getStatusClass(
+                        request.status
+                      )}`}
+                    >
+                      {getStatusText(request.status)}
+                    </span>
+                  </td>
+                  <td>
+                    <div className={styles.actions}>
+                      <button
+                        className={styles.viewButton}
+                        onClick={() => onViewDetails(request)}
+                      >
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
+                      {request.status === "pending" && (
+                        <>
+                          <button
+                            className={styles.approveButton}
+                            onClick={() => onApprove(request.id)}
+                          >
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                          <button
+                            className={styles.rejectButton}
+                            onClick={() => onReject(request.id)}
+                          >
+                            <i class="fa-solid fa-square-xmark"></i>
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="8" className={styles.noData}>
+                  Không có yêu cầu đăng ký nào
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+      <div className={styles.pagination}>
+        <button
+          disabled={currentPage === 1}
+          onClick={() => paginate(currentPage - 1)}
+        >
+          <i className="fa-solid fa-square-caret-left"></i>
+        </button>
+        {[...Array(totalPages)].map((_, idx) => (
+          <button
+            key={idx + 1}
+            className={currentPage === idx + 1 ? styles.activePage : ""}
+            onClick={() => paginate(idx + 1)}
+          >
+            {idx + 1}
+          </button>
+        ))}
+        <button
+          disabled={currentPage === totalPages}
+          onClick={() => paginate(currentPage + 1)}
+        >
+          <i className="fa-solid fa-square-caret-right"></i>
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default ClinicRequestTable;

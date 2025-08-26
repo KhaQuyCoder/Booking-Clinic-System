@@ -1,5 +1,5 @@
 import React from "react";
-const Header = () => {
+const Header = ({ urlImage }) => {
   return (
     <header
       style={{
@@ -8,13 +8,14 @@ const Header = () => {
         borderBottom: "1px solid #e8e8e8",
         display: "flex",
         position: "fixed",
-        left: "19%",
+        top: 0,
+        left: "290px",
         right: 0,
         alignItems: "center",
         padding: "0 20px",
         justifyContent: "space-between",
         boxSizing: "border-box",
-        margin: 0,
+        zIndex: "99",
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: 15 }}>
@@ -66,8 +67,7 @@ const Header = () => {
           <i class="fa-regular fa-message"></i>
         </button>
         <img
-          src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
-          alt="avatar doctor"
+          src={urlImage}
           style={{
             width: 30,
             height: 30,

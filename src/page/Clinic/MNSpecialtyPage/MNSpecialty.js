@@ -41,6 +41,7 @@ const MNSpecialty = () => {
   ];
 
   const [departments, setDepartments] = useState(initialDepartments);
+  const [currentPage, setCurrentPage] = useState(1);
   const [formData, setFormData] = useState({
     id: null,
     name: "",
@@ -60,7 +61,12 @@ const MNSpecialty = () => {
       [name]: value,
     });
   };
+  const itemsPerPage = 5;
+  const indexOfLast = currentPage * itemsPerPage;
+  const indexOfFirst = indexOfLast - itemsPerPage;
+  const currentData = initialDepartments.slice(indexOfFirst, indexOfLast);
 
+  const totalPages = Math.ceil(initialDepartments.length / itemsPerPage);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -257,8 +263,8 @@ const MNSpecialty = () => {
             </tr>
           </thead>
           <tbody>
-            {filteredDepartments.length > 0 ? (
-              filteredDepartments.map((dept) => (
+            {currentData.length > 0 ? (
+              currentData.map((dept) => (
                 <tr key={dept.id}>
                   <td>
                     <div className={styles.deptName}>{dept.name}</div>
@@ -303,6 +309,29 @@ const MNSpecialty = () => {
             )}
           </tbody>
         </table>
+      </div>
+      <div className={styles.pagination}>
+        <button
+          disabled={currentPage === 1}
+          onClick={() => setCurrentPage((prev) => prev - 1)}
+        >
+          <i className="fa-solid fa-square-caret-left"></i>
+        </button>
+        {[...Array(totalPages)].map((_, i) => (
+          <button
+            key={i}
+            className={currentPage === i + 1 ? styles.activePage : ""}
+            onClick={() => setCurrentPage(i + 1)}
+          >
+            {i + 1}
+          </button>
+        ))}
+        <button
+          disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage((prev) => prev + 1)}
+        >
+          <i className="fa-solid fa-square-caret-right"></i>
+        </button>
       </div>
     </div>
   );

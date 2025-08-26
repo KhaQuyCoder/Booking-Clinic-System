@@ -1,7 +1,3 @@
-.container {
-  background-color: #f5f7fa;
-}
-
 .header {
   margin-bottom: 30px;
   padding: 20px;
@@ -283,4 +279,26 @@
   color: #7f8c8d;
   padding: 30px;
   font-style: italic;
+}
+.pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 3px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background-color: #f1f1f1;
+}
+
+.activePage {
+  background-color: #007bff !important;
+  color: white !important;
 }

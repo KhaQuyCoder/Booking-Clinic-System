@@ -1,12 +1,9 @@
 .sidebar {
-  position: fixed;          
-  top: 0;               
-  left: 0;             
-  width: 250px;            
-  height: 100vh;         
+  width: 250px;
+  height: 100vh;
+  position: fixed;
   color: white;
   padding: 20px;
-  overflow-y: auto;         
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
   background-color: #1759ca;
   z-index: 1000;
@@ -32,6 +29,17 @@
 .doctor-name-role {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.noti {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(239, 86, 86);
+  color: black;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -62,7 +70,7 @@
 }
 
 .sidebar-menu::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
 }
 
@@ -88,8 +96,8 @@
   background-color: #0d47a1;
   color: #fff;
   font-weight: 600;
-  border: 1px solid #000; 
-  border-radius: 3px; 
+  border: 1px solid #000;
+  border-radius: 3px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -114,5 +122,4 @@
 .sub-menu-item.active {
   background-color: #0b357a;
   font-weight: 600;
-  
 }

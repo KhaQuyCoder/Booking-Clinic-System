@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import styles from "./HistoryBooking.module.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import HistoryBookingDat from "../../../data/HistoryBooking.json";
-import Footer from "../../../components/FooterComponent/Footer";
 const HistoryBooking = () => {
   const [selectedInvoice, setSelectedInvoice] = useState(null);
   useEffect(() => {
@@ -42,6 +41,10 @@ const HistoryBooking = () => {
                   <td>
                     <i
                       class="fa-regular fa-eye"
+                      style={{
+                        color: "#007bff",
+                        cursor: "pointer",
+                      }}
                       onClick={() => setSelectedInvoice(item.invoice)}
                     ></i>
                   </td>
@@ -90,7 +93,6 @@ const HistoryBooking = () => {
           </div>
         )}
       </div>
-      <Footer />
     </>
   );
 };

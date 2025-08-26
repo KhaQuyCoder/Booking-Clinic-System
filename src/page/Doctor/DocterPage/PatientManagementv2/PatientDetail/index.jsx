@@ -39,7 +39,6 @@ const PatientDetailsModal = ({ patient, onClose }) => {
     return `${bmi} (${status})`;
   };
 
-  // chuẩn hóa tên hiển thị
   const displayName = patient.fullName || patient.patientName;
 
   return (

@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import "./Sidebar.css";
 
-const Sidebar = ({ menuItems }) => {
+const Sidebar = ({ role, menuItems, name, urlimage }) => {
   const location = useLocation();
 
   const isMenuOpen = (item) => {
@@ -16,23 +16,17 @@ const Sidebar = ({ menuItems }) => {
 
   return (
     <aside className="sidebar">
-      {/* Header cố định */}
       <div className="sidebar-header">
         <img src="/logo.svg" alt="Logo" width={100} />
         <div className="doctor-info">
-          <img
-            src="https://img4.thuthuatphanmem.vn/uploads/2021/01/10/hinh-anh-bac-si-ao-trang-rat-dep_021521356.jpg"
-            alt="avatar doctor"
-            className="doctor-avt"
-          />
+          <img src={urlimage} alt="avatar doctor" className="doctor-avt" />
           <div className="doctor-name-role">
-            <div className="doctor-name">Hoàng Việt Thắng</div>
-            <div className="doctor-role">Bác sĩ</div>
+            <div className="doctor-name">{role}</div>
+            <div className="doctor-role">{name}</div>
           </div>
         </div>
       </div>
 
-      {/* Menu (scroll khi dài, nhưng sidebar header cố định) */}
       <div className="sidebar-menu">
         {menuItems.map((item, idx) => (
           <div key={idx}>
@@ -43,7 +37,16 @@ const Sidebar = ({ menuItems }) => {
               }
             >
               <span className="menu-icon">{item.icon}</span>
-              <span>{item.label}</span>
+              <div
+                style={{
+                  position: "relative",
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+              >
+                <span>{item.label}</span>
+                {item.index ? <span className="noti">{item.noti}</span> : <></>}
+              </div>
             </NavLink>
 
             {item.subMenu &&

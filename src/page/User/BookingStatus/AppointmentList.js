@@ -81,7 +81,6 @@ const AppointmentList = () => {
           </table>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

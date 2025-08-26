@@ -3,7 +3,8 @@ import styles from "./AppointmentApproval.module.css";
 import AppointmentApprovalData from "../../../../data/AcceptMedicalAppointment.json";
 const AppointmentApproval = () => {
   const [appointments, setAppointments] = useState(AppointmentApprovalData);
-
+  const [currentPage, setCurrentPage] = useState(1);
+  const patientsPerPage = 5;
   const [filter, setFilter] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -31,7 +32,13 @@ const AppointmentApproval = () => {
       app.doctor.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesFilter && matchesSearch;
   });
-
+  const totalPages = Math.ceil(filteredAppointments.length / patientsPerPage);
+  const indexOfLastPatient = currentPage * patientsPerPage;
+  const indexOfFirstPatient = indexOfLastPatient - patientsPerPage;
+  const currentPatients = filteredAppointments.slice(
+    indexOfFirstPatient,
+    indexOfLastPatient
+  );
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("vi-VN");
@@ -49,7 +56,7 @@ const AppointmentApproval = () => {
         return status;
     }
   };
-
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const getStatusClass = (status) => {
     switch (status) {
       case "pending":
@@ -136,8 +143,8 @@ const AppointmentApproval = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredAppointments.length > 0 ? (
-                filteredAppointments.map((app, index) => (
+              {currentPatients.length > 0 ? (
+                currentPatients.map((app, index) => (
                   <tr key={app.id} className={styles.tableRow}>
                     <td className={styles.tableCell}>
                       <div className={styles.patientInfo}>
@@ -200,6 +207,29 @@ const AppointmentApproval = () => {
               )}
             </tbody>
           </table>
+        </div>
+        <div className={styles.pagination}>
+          <button
+            disabled={currentPage === 1}
+            onClick={() => paginate(currentPage - 1)}
+          >
+            <i className="fa-solid fa-square-caret-left"></i>
+          </button>
+          {[...Array(totalPages)].map((_, idx) => (
+            <button
+              key={idx + 1}
+              className={currentPage === idx + 1 ? styles.activePage : ""}
+              onClick={() => paginate(idx + 1)}
+            >
+              {idx + 1}
+            </button>
+          ))}
+          <button
+            disabled={currentPage === totalPages}
+            onClick={() => paginate(currentPage + 1)}
+          >
+            <i className="fa-solid fa-square-caret-right"></i>
+          </button>
         </div>
       </div>
     </>

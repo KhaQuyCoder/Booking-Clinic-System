@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddPatientForm from "./AddPatientForm/AddPatientForm";
 import EditPatientForm from "./PatientEdit/index";
 import PatientDetailsModal from "./PatientDetail/index";
@@ -6,6 +6,7 @@ import MedicalHistoryModal from "./MedicalHistory/index";
 import DeletePatientButton from "./DeletePatient/DeletePatientButton";
 import styles from "./PatientManagement.module.css";
 import dataUser from "../../../../data/AcceptMedicalAppointment.json";
+
 const PatientManagement = () => {
   const [patients, setPatients] = useState(dataUser);
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,10 +16,28 @@ const PatientManagement = () => {
   const [showDetailModal, setShowDetailModal] = useState(false);
   const [showHistoryModal, setShowHistoryModal] = useState(false);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const patientsPerPage = 5;
+
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
+
   const filteredPatients = patients.filter(
     (patient) =>
       patient.patientName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       patient.phone.includes(searchTerm)
+  );
+
+  const totalPages = Math.ceil(filteredPatients.length / patientsPerPage);
+  const indexOfLastPatient = currentPage * patientsPerPage;
+  const indexOfFirstPatient = indexOfLastPatient - patientsPerPage;
+  const currentPatients = filteredPatients.slice(
+    indexOfFirstPatient,
+    indexOfLastPatient
   );
 
   const handleAddPatient = (newPatient) => {
@@ -59,6 +78,8 @@ const PatientManagement = () => {
     setShowHistoryModal(true);
   };
 
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -75,7 +96,7 @@ const PatientManagement = () => {
             className={styles.searchInput}
           />
           <span className={styles.searchIcon}>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </span>
         </div>
 
@@ -117,7 +138,7 @@ const PatientManagement = () => {
             </tr>
           </thead>
           <tbody>
-            {filteredPatients.map((patient) => (
+            {currentPatients.map((patient) => (
               <tr key={patient.id}>
                 <td>
                   <span className={styles.patientId}>{patient.id}</span>
@@ -130,29 +151,27 @@ const PatientManagement = () => {
                 <td>{patient.gender}</td>
                 <td>{patient.phone}</td>
                 <td>{patient.date}</td>
-
                 <td>{patient.age} tuổi</td>
                 <td>{patient.address}</td>
-
                 <td>
                   <div className={styles.actions}>
                     <button
                       className={styles.viewButton}
                       onClick={() => viewPatientDetails(patient)}
                     >
-                      <i class="fa-solid fa-eye"></i>
+                      <i className="fa-solid fa-eye"></i>
                     </button>
                     <button
                       className={styles.historyButton}
                       onClick={() => viewMedicalHistory(patient)}
                     >
-                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      <i className="fa-solid fa-clock-rotate-left"></i>
                     </button>
                     <button
                       className={styles.editButton}
                       onClick={() => setEditingPatient(patient)}
                     >
-                      <i class="fa-solid fa-pen"></i>
+                      <i className="fa-solid fa-pen"></i>
                     </button>
                     <DeletePatientButton
                       patientId={patient.id}
@@ -165,6 +184,30 @@ const PatientManagement = () => {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div className={styles.pagination}>
+        <button
+          disabled={currentPage === 1}
+          onClick={() => paginate(currentPage - 1)}
+        >
+          <i className="fa-solid fa-square-caret-left"></i>
+        </button>
+        {[...Array(totalPages)].map((_, idx) => (
+          <button
+            key={idx + 1}
+            className={currentPage === idx + 1 ? styles.activePage : ""}
+            onClick={() => paginate(idx + 1)}
+          >
+            {idx + 1}
+          </button>
+        ))}
+        <button
+          disabled={currentPage === totalPages}
+          onClick={() => paginate(currentPage + 1)}
+        >
+          <i className="fa-solid fa-square-caret-right"></i>
+        </button>
       </div>
 
       {showDetailModal && selectedPatient && (

@@ -1,9 +1,8 @@
 .container {
   margin: 0 auto;
   padding: 1rem;
-  background-color: #f8f9fa;
   min-height: 100vh;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .header {
@@ -319,4 +318,3 @@
   width: auto;
   min-width: 150px;
 }
-

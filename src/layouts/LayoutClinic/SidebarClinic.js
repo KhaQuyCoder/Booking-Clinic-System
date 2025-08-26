@@ -21,7 +21,14 @@ const SidebarClinic = ({ children }) => {
 
   return (
     <div style={{ display: "flex", height: "100vh" }}>
-      <Sidebar menuItems={menuItems} name={"Phòng khám"} />
+      <Sidebar
+        role={"Hoàng Viết Thắng"}
+        menuItems={menuItems}
+        name={"Phòng khám"}
+        urlimage={
+          "https://media.vov.vn/sites/default/files/styles/large/public/2023-06/1_11.png"
+        }
+      />
 
       <div
         style={{
@@ -29,17 +36,21 @@ const SidebarClinic = ({ children }) => {
           display: "flex",
           flexDirection: "column",
           position: "relative",
-          left: "19%",
-          maxWidth: "80%",
+          maxWidth: "77%",
         }}
       >
-        <Header />
+        <Header
+          urlImage={
+            "https://media.vov.vn/sites/default/files/styles/large/public/2023-06/1_11.png"
+          }
+        />
         <main
           style={{
             flexGrow: 1,
+            width: "100%",
             padding: "20px",
-            background: "#f9f9f9",
             marginTop: "50px",
+            marginLeft: "300px",
           }}
         >
           {children}

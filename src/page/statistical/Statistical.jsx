@@ -1,4 +1,3 @@
-
 import styles from "./Statistical.module.css";
 import React, { useState } from "react";
 import {
@@ -30,14 +29,11 @@ const Statistical = () => {
     { month: "12", revenue: 30000000, visits: 600 },
   ]);
 
-//   const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"];
-
   return (
     <div className={styles.page}>
-      <h1 className={styles.title}>Thống kê phòng khám</h1>
+      <h1 className={styles.title}>Thống kê</h1>
 
       <div className={styles.cards}>
-        {/* Doanh thu */}
         <div className={styles.card}>
           <h2 className={styles.cardTitle}>Doanh thu (VNĐ)</h2>
           <ResponsiveContainer width="100%" height={300}>
@@ -62,7 +58,7 @@ const Statistical = () => {
         </div>
 
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Lượt khám</h2>
+          <h2 className={styles.cardTitle}>Lượt đăng ký</h2>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />

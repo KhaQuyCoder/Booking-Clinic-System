@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ScheduleAppointment.module.css";
 
 const ScheduleAppointment = () => {
@@ -7,7 +7,12 @@ const ScheduleAppointment = () => {
     timeSlot: "",
     date: "",
   });
-
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
   const [appointments, setAppointments] = useState([]);
 
   const handleChange = (e) => {
@@ -25,8 +30,8 @@ const ScheduleAppointment = () => {
     setAppointments([...appointments, form]);
     setForm({ session: "", timeSlot: "", date: "" });
   };
-  const handelDeleCalenda = (hour) => {
-    const tmp = appointments.filter((apt) => apt.timeSlot !== hour);
+  const handelDeleCalenda = (index) => {
+    const tmp = appointments.filter((_, i) => i !== index);
     setAppointments(tmp);
   };
 
@@ -109,7 +114,7 @@ const ScheduleAppointment = () => {
                   <td>
                     <i
                       class="fa-solid fa-trash"
-                      onClick={() => handelDeleCalenda(a.timeSlot)}
+                      onClick={() => handelDeleCalenda(idx)}
                     ></i>
                   </td>
                 </tr>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./QAPage.module.css";
 
 const DoctorQAPage = () => {
@@ -23,7 +23,12 @@ const DoctorQAPage = () => {
   ]);
 
   const [answers, setAnswers] = useState({});
-
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
   const handleAnswerChange = (id, value) => {
     setAnswers({ ...answers, [id]: value });
   };

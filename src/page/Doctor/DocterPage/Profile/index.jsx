@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Profile.css";
-import avatarDoctorProfile from "./../../../../assets/svg/OIP (2).webp"; // Bạn có thể thêm một ảnh placeholder
 
 const Profile = () => {
+  useEffect(() => {
+    window.scrollTo({
+      behavior: "instant",
+      top: "true",
+    });
+  }, []);
   return (
     <div className="profile-container">
       <div className="profile-left-column">
         <div className="avatar-section">
           <img
-            src={avatarDoctorProfile}
+            src="https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
             alt="Avatar Bác sĩ"
             className="doctor-avatar"
           />
