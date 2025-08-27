@@ -10,7 +10,7 @@ export default function Register() {
   const [otp, setOtp] = useState(new Array(6).fill(""));
   const [error, setError] = useState("");
   const [sendingOtp, setSendingOtp] = useState(false);
-
+  const role = JSON.parse(localStorage.getItem("role"));
   function validatePhone(p) {
     return /^((\+84)|0)\d{9}$/.test(p);
   }
@@ -75,6 +75,7 @@ export default function Register() {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   inputMode="tel"
+                  style={{ width: role === "user" ? "93%" : "85%" }}
                 />
               </label>
 
@@ -86,6 +87,7 @@ export default function Register() {
                   placeholder="Ít nhất 6 ký tự, có chữ và số"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  style={{ width: role === "user" ? "93%" : "85%" }}
                 />
               </label>
 

@@ -4,7 +4,7 @@ import "./ForgotPassword.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import bcg from "../../../../assets/image/backgroundBody.webp";
-import iconLogin from "../../../../assets/image/login.png";
+import logo from "../../../../assets/image/logo.png";
 import { useNavigate } from "react-router-dom";
 const ForgotPassword = () => {
   const [phone, setPhone] = useState("");
@@ -58,7 +58,7 @@ const ForgotPassword = () => {
       <div className="login-container">
         <div className="login-box">
           <div className="logo-box">
-            <img className="logo" src="./Logo.svg" alt="Logo" />
+            <img className="logo" src={logo} alt="Logo" />
           </div>
 
           {step === 1 && (
