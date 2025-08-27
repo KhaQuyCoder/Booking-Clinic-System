@@ -31,7 +31,7 @@
 
 .login-box {
   background: #fff;
-  padding: 40px 30px;
+  padding: 40px 10px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.7);
   width: 350px;
@@ -40,7 +40,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   z-index: 9999999999;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .login-box input {
-  width: 100%;
+  width: 85%;
   padding: 12px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -66,7 +65,7 @@
 }
 
 .login-box button {
-  width: 100%;
+  width: 93%;
   padding: 12px;
   margin-top: 15px;
   background: #1e73e8;
@@ -122,5 +121,8 @@
 @media (max-width: 950px) {
   .login-image {
     display: none;
+  }
+  .bcg-login {
+    height: 100vh;
   }
 }

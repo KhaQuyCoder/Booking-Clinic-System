@@ -57,13 +57,14 @@
   border: 1px solid gainsboro;
   outline: none;
   color: black;
+  width: 88%;
   font-size: 14px;
   transition: transform 120ms ease, box-shadow 120ms ease;
 }
 
 .nextBtn {
   margin-top: 6px;
-  width: 100%;
+  width: 95%;
   padding: 12px 14px;
   border-radius: 12px;
   background: #1e73e8;
