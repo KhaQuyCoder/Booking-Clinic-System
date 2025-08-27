@@ -62,12 +62,7 @@ const ClinicRequestDetails = ({ request, onClose }) => {
                   </span>
                   <span className={styles.infoValue}>{request.type}</span>
                 </div>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Mô tả ngắn:</span>
-                  <span className={styles.infoValue}>
-                    {request.description}
-                  </span>
-                </div>
+
                 <div className={styles.infoItem}>
                   <span className={styles.infoLabel}>Ngày thành lập:</span>
                   <span className={styles.infoValue}>
@@ -110,6 +105,10 @@ const ClinicRequestDetails = ({ request, onClose }) => {
                     {getStatusText(request.status)}
                   </span>
                 </div>
+              </div>
+              <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Mô tả ngắn:</span>
+                <span className={styles.infoValue}>{request.description}</span>
               </div>
             </div>
 

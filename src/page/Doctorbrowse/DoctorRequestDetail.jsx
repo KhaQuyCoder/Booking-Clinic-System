@@ -59,10 +59,15 @@ const Doctorbrowses = ({ request, onClose }) => {
                   <span className={styles.infoLabel}>Giới tính:</span>
                   <span className={styles.infoValue}>{request.gender}</span>
                 </div>
+
                 <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Mô tả ngắn:</span>
-                  <span className={styles.infoValue}>
-                    {request.description}
+                  <span className={styles.infoLabel}>Trạng thái:</span>
+                  <span
+                    className={`${styles.infoValue} ${getStatusClass(
+                      request.status
+                    )}`}
+                  >
+                    {getStatusText(request.status)}
                   </span>
                 </div>
                 <div className={styles.infoItem}>
@@ -95,14 +100,8 @@ const Doctorbrowses = ({ request, onClose }) => {
                 </div>
               </div>
               <div className={styles.infoItem}>
-                <span className={styles.infoLabel}>Trạng thái:</span>
-                <span
-                  className={`${styles.infoValue} ${getStatusClass(
-                    request.status
-                  )}`}
-                >
-                  {getStatusText(request.status)}
-                </span>
+                <span className={styles.infoLabel}>Mô tả ngắn:</span>
+                <span className={styles.infoValue}>{request.description}</span>
               </div>
             </div>
 
