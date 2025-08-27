@@ -3,7 +3,7 @@ import IsloginSucessfull from "../../components/IsLoginComponent/IsLoginSucessfu
 import "./SideBar.css";
 const SideBar = ({ mobileRef }) => {
   const optionMenuMobile = [
-    { name: "Trang chủ", path: "/", id: 1 },
+    { name: "Trang chủ", path: "/trang-chu", id: 1 },
     { name: "Bác sĩ", path: "/bac-si", id: 2 },
     { name: "Phòng khám", path: "/phong-kham", id: 3 },
     { name: "Tư vấn", path: "/tu-van", id: 4 },
