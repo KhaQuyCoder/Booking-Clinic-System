@@ -23,7 +23,7 @@ const HistoryBooking = () => {
                 <th>Phòng khám</th>
                 <th>Bác sĩ</th>
                 <th>Địa chỉ</th>
-                <th>Triệu chứng</th>
+                <th>Chuẩn đoán bệnh</th>
                 <th>Hóa đơn</th>
                 <th>Ngày khám</th>
                 <th>Chuyên khoa</th>
