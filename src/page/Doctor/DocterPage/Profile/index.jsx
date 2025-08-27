@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Profile.css";
+import { State } from "../../../../state/context";
 
 const Profile = () => {
   useEffect(() => {
@@ -8,15 +9,12 @@ const Profile = () => {
       top: "true",
     });
   }, []);
+  const { image } = useContext(State);
   return (
     <div className="profile-container">
       <div className="profile-left-column">
         <div className="avatar-section">
-          <img
-            src="https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
-            alt="Avatar Bác sĩ"
-            className="doctor-avatar"
-          />
+          <img src={image} alt="Avatar Bác sĩ" className="doctor-avatar" />
         </div>
 
         <div className="info-section contact-info">
