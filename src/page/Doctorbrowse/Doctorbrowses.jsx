@@ -50,7 +50,7 @@ const Doctorbrowses = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.title}>Duyệt các yêu cầu đăng ký bac sĩ mới</p>
+      <p className={styles.title}>Duyệt các yêu cầu đăng ký bác sĩ mới</p>
       <div className={styles.controls}>
         <div className={styles.searchContainer}>
           <input

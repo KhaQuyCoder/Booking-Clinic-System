@@ -93,22 +93,16 @@ const Doctorbrowses = ({ request, onClose }) => {
                   <span className={styles.infoLabel}>Email:</span>
                   <span className={styles.infoValue}>{request.email}</span>
                 </div>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Giờ hoạt động:</span>
-                  <span className={styles.infoValue}>
-                    {request.operatingHours}
-                  </span>
-                </div>
-                <div className={styles.infoItem}>
-                  <span className={styles.infoLabel}>Trạng thái:</span>
-                  <span
-                    className={`${styles.infoValue} ${getStatusClass(
-                      request.status
-                    )}`}
-                  >
-                    {getStatusText(request.status)}
-                  </span>
-                </div>
+              </div>
+              <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Trạng thái:</span>
+                <span
+                  className={`${styles.infoValue} ${getStatusClass(
+                    request.status
+                  )}`}
+                >
+                  {getStatusText(request.status)}
+                </span>
               </div>
             </div>
 
