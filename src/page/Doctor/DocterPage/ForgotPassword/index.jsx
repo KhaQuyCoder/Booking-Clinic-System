@@ -12,6 +12,7 @@ const ForgotPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [step, setStep] = useState(1);
   const [error, setError] = useState("");
+  const role = JSON.parse(localStorage.getItem("role"));
   const navigate = useNavigate();
   const handleCheckPhone = (e) => {
     e.preventDefault();
@@ -71,6 +72,7 @@ const ForgotPassword = () => {
                 placeholder="Số điện thoại"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
+                style={{ width: role === "user" ? "93%" : "85%" }}
               />
               {error && <p className="error">{error}</p>}
               <button type="submit">Tiếp theo</button>

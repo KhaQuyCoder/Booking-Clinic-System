@@ -15,10 +15,9 @@ import "./login.css";
 const Login = () => {
   const navigate = useNavigate();
   const { setRole } = useContext(State);
-
+  const role = JSON.parse(localStorage.getItem("role"));
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-
   const handleLogin = () => {
     const foundAccount = accounts.find(
       (acc) => acc.phone === phone && acc.password === password
@@ -78,11 +77,13 @@ const Login = () => {
             placeholder="Số điện thoại"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
+            style={{ width: role === "user" ? "93%" : "85%" }}
           />
           <input
             type="password"
             placeholder="Mật khẩu"
             value={password}
+            style={{ width: role === "user" ? "93%" : "85%" }}
             onChange={(e) => setPassword(e.target.value)}
           />
 

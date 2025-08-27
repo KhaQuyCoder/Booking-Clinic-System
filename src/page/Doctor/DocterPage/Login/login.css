@@ -55,7 +55,7 @@
 }
 
 .login-box input {
-  width: 85%;
+  /* width: 85%; */
   padding: 12px;
   margin: 10px 0;
   border: 1px solid #ddd;
