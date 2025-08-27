@@ -158,7 +158,7 @@ function App() {
                   />
                   <Route
                     path="/doctor/DoctorStatistics/Revenue"
-                    element={<Revenue />}
+                    element={<Statistical />}
                   />
                   <Route path="DoctorStatistics/Visits" element={<Visits />} />
                   <Route path="Profile" element={<Profile />} />
@@ -317,7 +317,7 @@ function App() {
                   path="/clinic/statistical"
                   element={
                     <SidebarClinic>
-                      <Statistics />
+                      <Revenue />
                     </SidebarClinic>
                   }
                 />

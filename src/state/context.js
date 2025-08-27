@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { createContext } from "react";
-
+import imgae from "../assets/svg/OIP (2).webp";
 export const State = createContext();
 
 const Context = ({ children }) => {
@@ -14,6 +14,7 @@ const Context = ({ children }) => {
   const [avatar, setAvatar] = useState(
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeMDKbB1z_3RjaG4elUPjtTa-zd9OFxSpaA&s"
   );
+  const [image, setImage] = useState(imgae);
   const messageRef = useRef();
   return (
     <State.Provider
@@ -33,6 +34,8 @@ const Context = ({ children }) => {
         setPhone,
         roleLocal,
         setRole,
+        image,
+        setImage,
       }}
     >
       {children}

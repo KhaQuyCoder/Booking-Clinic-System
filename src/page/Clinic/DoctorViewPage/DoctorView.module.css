@@ -5,13 +5,11 @@
   --muted: #6b7280;
   --primary: #2563eb;
   --primary-600: #1d4ed8;
-  --ring: 0 0 0 3px rgba(37, 99, 235, 0.15);
   --border: #e5e7eb;
 }
 
 .page {
   padding: 0 24px;
-  background: var(--bg);
   min-height: 100vh;
   color: var(--text);
 }
@@ -41,29 +39,39 @@
   gap: 10px;
 }
 
-.btnPrimary, .btnGhost {
+.btnPrimary,
+.btnGhost {
   padding: 10px 14px;
   border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
-  transition: transform .05s ease, box-shadow .2s ease, background .2s ease;
+  transition: transform 0.05s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btnPrimary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, .22);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
 }
-.btnPrimary:hover { background: var(--primary-600); transform: translateY(-1px); }
-.btnPrimary:disabled { opacity: .6; cursor: not-allowed; }
+.btnPrimary:hover {
+  background: var(--primary-600);
+  transform: translateY(-1px);
+}
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 .btnGhost {
   background: #fff;
   color: var(--text);
   border-color: var(--border);
 }
-.btnGhost:hover { box-shadow: var(--ring); transform: translateY(-1px); }
+.btnGhost:hover {
+  box-shadow: var(--ring);
+  transform: translateY(-1px);
+}
 
 .grid {
   display: grid;
@@ -73,11 +81,10 @@
 
 .card {
   grid-column: span 12;
-  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 18px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, .05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
 }
 
 .cardTitle {
@@ -93,14 +100,14 @@
 }
 
 .field {
-  grid-column: span 6; /* mặc định 1 cột lớn = nửa hàng */
+  grid-column: span 6;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
 .col2 {
-  grid-column: span 12; /* full hàng */
+  grid-column: span 12;
 }
 
 .label {
@@ -108,17 +115,19 @@
   color: var(--muted);
 }
 
-.input, .textarea {
+.input,
+.textarea {
   padding: 10px 12px;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: #fff;
   outline: none;
-  transition: box-shadow .2s ease, border-color .2s ease, transform .05s ease;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.05s ease;
   font-size: 14px;
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
   box-shadow: var(--ring);
   border-color: var(--primary);
   transform: translateY(-1px);
@@ -129,8 +138,9 @@
   color: #374151;
 }
 
-.textarea { resize: vertical; }
-
+.textarea {
+  resize: vertical;
+}
 
 .uploadWrap {
   border: 1px dashed var(--border);
@@ -141,14 +151,15 @@
 
 .uploadLabel {
   display: inline-block;
-  background: #111827;
   color: #fff;
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
 }
-.uploadLabel input { display: none; }
+.uploadLabel input {
+  display: none;
+}
 
 .fileRow {
   display: flex;
@@ -166,7 +177,9 @@
   font-weight: 600;
   text-decoration: none;
 }
-.link:hover { text-decoration: underline; }
+.link:hover {
+  text-decoration: underline;
+}
 
 .hint {
   color: var(--muted);

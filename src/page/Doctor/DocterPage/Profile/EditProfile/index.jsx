@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./../Profile.css";
 import avatarDoctorProfile from "./../../../../../assets/svg/OIP (2).webp";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { State } from "../../../../../state/context";
 
 const EditProfile = () => {
   const initialDoctorInfo = {
@@ -62,7 +63,7 @@ const EditProfile = () => {
 
   const [doctorInfo, setDoctorInfo] = useState(initialDoctorInfo);
   const [editingField, setEditingField] = useState(null);
-
+  const { image, setImage } = useContext(State);
   const handleChange = (e, index = null, type = null) => {
     const { name, value } = e.target;
     if (type === "careerGoals") {
@@ -103,7 +104,6 @@ const EditProfile = () => {
     }
   };
 
-  // Chọn ảnh hoạt động mới
   const handleActivityImageChange = (e, index) => {
     const file = e.target.files[0];
     if (file) {
@@ -117,11 +117,10 @@ const EditProfile = () => {
   return (
     <>
       <div className="profile-container">
-        {/* Cột trái */}
         <div className="profile-left-column">
           <div className="avatar-section" style={{ position: "relative" }}>
             <img
-              src="https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
+              src={doctorInfo.avatar}
               alt="Avatar Bác sĩ"
               className="doctor-avatar"
             />
@@ -148,13 +147,13 @@ const EditProfile = () => {
                 const file = e.target.files[0];
                 if (file) {
                   const url = URL.createObjectURL(file);
+                  setImage(url);
                   setDoctorInfo({ ...doctorInfo, avatar: url });
                 }
               }}
             />
           </div>
 
-          {/* Thông tin liên hệ */}
           <div className="info-section contact-info">
             <h4>Thông Tin Liên Hệ</h4>
             <ul>

@@ -1,8 +1,11 @@
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
 import { Outlet } from "react-router-dom";
-
+import imageDocotor from "../../../assets/svg/OIP (2).webp";
+import { useContext, useState } from "react";
+import { State } from "../../../state/context";
 const Layout = () => {
+  const { image } = useContext(State);
   const menuItems = [
     { icon: "👥", label: "Quản lý bệnh nhân", path: "/doctor/Patients" },
     { icon: "📅", label: "Lập lịch khám", path: "/doctor/schedule" },
@@ -56,9 +59,7 @@ const Layout = () => {
         role={"Nguyễn Hữu Cảnh"}
         menuItems={menuItems}
         name={"Bác sĩ"}
-        urlimage={
-          "https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
-        }
+        urlimage={image}
       />
       <div
         style={{
@@ -70,11 +71,7 @@ const Layout = () => {
           maxWidth: "80%",
         }}
       >
-        <Header
-          urlImage={
-            "https://tamanhhospital.vn/wp-content/uploads/2021/10/avt-bac-si-giao-su-ngo-quy-chau.png"
-          }
-        />
+        <Header urlImage={image} />
         <div
           style={{
             flexGrow: 1,
