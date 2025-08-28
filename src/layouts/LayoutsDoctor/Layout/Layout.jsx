@@ -46,6 +46,7 @@ const Layout = () => {
       path: "/doctor/Profile",
       subMenu: [{ label: "Sửa Profile", path: "/doctor/Profile/EditProfile" }],
     },
+    { icon: "🔑", label: "Đổi mật khẩu", path: "/doctor/doi-mat-khau" },
     { icon: "↩️", label: "Đăng xuất", path: "/login" },
   ];
   return (

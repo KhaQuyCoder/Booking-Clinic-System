@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./AppointmentList.css";
 import Header from "../../../layouts/LayoutsUser/Header/Header";
 import Footer from "../../../components/FooterComponent/Footer";
 import appointmentsData from "../../../data/calendaDone.json";
+import { State } from "../../../state/context";
 const AppointmentList = () => {
+  const { bookingDone } = useContext(State);
   const [appointments, setAppointments] = useState(appointmentsData);
-
+  useEffect(() => {
+    if (bookingDone && bookingDone.clinic) {
+      setAppointments((prev) => [...prev, bookingDone]);
+    }
+  }, [bookingDone]);
   const cancelAppointment = (id) => {
     const confirmCancel = window.confirm("Bạn có chắc muốn hủy lịch khám này?");
     if (confirmCancel) {

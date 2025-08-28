@@ -13,11 +13,12 @@ import Message from "../../../components/MessageComponent/Message.js";
 import { State } from "../../../state/context.js";
 import calendaDone from "../../../data/calendaDone.json";
 const Booking = () => {
+  const now = new Date();
   const { slug: slugParam } = useParams();
   const [day, setDay] = useState();
   const [hour, setHour] = useState();
   const [clickBooking, setClickBooking] = useState(false);
-  const { messageRef } = useContext(State);
+  const { messageRef, setBookingDone } = useContext(State);
   const nameDocterBooking = JSON.parse(
     localStorage.getItem("nameDocterBooking")
   );
@@ -46,6 +47,18 @@ const Booking = () => {
     setClickBooking(true);
   };
   const handelShowMessage = () => {
+    const today = new Date();
+    const formattedDate = today.toISOString().split("T")[0];
+    setBookingDone({
+      id: calendaDone.length + 1,
+      clinic: dataFilterClinic.name,
+      doctor: docterFind.name,
+      address: dataFilterClinic.address,
+      date: formattedDate,
+      time: hour,
+      method: "Khám trực tiếp",
+      status: "Chờ xác nhận",
+    });
     messageRef.current.style.transform = "translateX(0%)";
     setClickBooking(false);
     setTimeout(() => {

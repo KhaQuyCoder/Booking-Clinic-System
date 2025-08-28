@@ -1,25 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./UpdateClinic.module.css";
 import { toast } from "react-toastify";
-const defaultClinic = {
-  id: "",
-  name: "",
-  type: "",
-  address: "",
-  email: "",
-  phone: "",
-  establishedDate: "",
-  description: "",
-  workingHours: "",
-  businessLicense: null,
-  representative: "",
-  clinicImage: null,
-  hometown: "",
-  residence: "",
-};
+import { State } from "../../../state/context";
 
 const UpdateClinic = () => {
-  const [clinic, setClinic] = useState(defaultClinic);
+  const { profileClinic, setProfileClinic } = useContext(State);
+  const [clinic, setClinic] = useState(profileClinic);
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
 
@@ -32,6 +18,7 @@ const UpdateClinic = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setClinic((prev) => ({ ...prev, [name]: value }));
+    setProfileClinic((pre) => ({ ...pre, [name]: value }));
   };
 
   const handleFile = (e, field) => {
@@ -54,8 +41,8 @@ const UpdateClinic = () => {
     if (!clinic.establishedDate)
       newErr.establishedDate = "Chọn ngày thành lập.";
     if (!clinic.businessLicense) newErr.businessLicense = "Tải lên giấy phép.";
-    if (!clinic.representative.trim())
-      newErr.representative = "Nhập tên người đại diện.";
+    if (!clinic.representativeName.trim())
+      newErr.representativeName = "Nhập tên người đại diện.";
     if (!clinic.clinicImage) newErr.clinicImage = "Tải lên ảnh phòng khám.";
     return newErr;
   };
@@ -152,7 +139,7 @@ const UpdateClinic = () => {
               <label>Giờ hoạt động</label>
               <input
                 name="workingHours"
-                value={clinic.workingHours}
+                value={clinic.openingHours}
                 onChange={handleChange}
                 placeholder="VD: 7h - 17h"
               />
@@ -175,7 +162,7 @@ const UpdateClinic = () => {
               <label>Người đại diện *</label>
               <input
                 name="representative"
-                value={clinic.representative}
+                value={clinic.representativeName}
                 onChange={handleChange}
               />
               <Error msg={errors.representative} />
@@ -191,8 +178,8 @@ const UpdateClinic = () => {
             <div className={styles.fieldWide}>
               <label>Địa chỉ cư trú</label>
               <input
-                name="residence"
-                value={clinic.residence}
+                name="licenseImage"
+                value={clinic.hometown}
                 onChange={handleChange}
               />
             </div>

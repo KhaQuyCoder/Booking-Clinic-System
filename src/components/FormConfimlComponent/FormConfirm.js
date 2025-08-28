@@ -1,5 +1,6 @@
 import { Exit } from "../ButtonComponent/Button";
 import "./FormConfirm.css";
+
 const FormConfiml = ({
   dataDocter,
   dataClinic,
@@ -8,12 +9,10 @@ const FormConfiml = ({
   setClickBooking,
   handelShowMessage,
 }) => {
-  const today = new Date();
-  const month = today.getMonth() + 1;
-  const year = today.getFullYear();
   const handelClickExit = () => {
     setClickBooking(false);
   };
+
   return (
     <div className="container-formConfirm">
       <p className="confirm-title">Xác nhận đặt lịch khám</p>

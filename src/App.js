@@ -136,6 +136,10 @@ function App() {
                     path="/doctor/patients"
                     element={<PatientManagementv2 />}
                   />
+                  <Route
+                    path="/doctor/doi-mat-khau"
+                    element={<Changepassword />}
+                  />
                   <Route path="/doctor" element={<DoctorStatistics />} />
                   <Route
                     path="/doctor/schedule"
