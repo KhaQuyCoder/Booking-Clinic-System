@@ -44,7 +44,7 @@ const Introdution = () => {
             />
             <div className="name-system">
               <h1 className="titile-home" ref={titleRef}>
-                Hệ thống tư vấn và đạt lịch khám Online
+                Hệ thống tư vấn và đặt lịch khám Online
               </h1>
               <div ref={bookRef}>
                 <BookingHome />
